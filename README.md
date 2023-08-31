@@ -71,7 +71,7 @@ canvasEl
 
 ## Context2d
 
-All APIs take `Dom.Element` as the first paramter. `getContext('2d)` is called under the hood.
+All APIs take `Dom.Element` as the first paramter. `getContext('2d')` is called under the hood.
 
 ```mint
 /*
