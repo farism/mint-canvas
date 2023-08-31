@@ -30,7 +30,7 @@ component Main {
 }
 ```
 
-# [Demo Website]()
+# [Demo Website](https://mint-canvas.netlify.app/)
 
 Most of the examples on MDN's [CanvasRenderingContext2D](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/) site have been ported to `mint-canvas` and can be viewed on the demo website.
 
