@@ -4,7 +4,7 @@ component CreatePattern {
       @format {
         let draw =
           () {
-            case canvas {
+            case Dom.Canvas.fromDomElement(canvas) {
               Maybe::Just(canvasEl) =>
                 case image {
                   Maybe::Just(imageEl) =>

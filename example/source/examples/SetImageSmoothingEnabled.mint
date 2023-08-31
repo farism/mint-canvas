@@ -4,7 +4,7 @@ component SetImageSmoothingEnabled {
       @format {
         let draw =
           () {
-            case canvas {
+            case Dom.Canvas.fromDomElement(canvas) {
               Maybe::Just(el) =>
                 case image {
                   Maybe::Just(img) =>

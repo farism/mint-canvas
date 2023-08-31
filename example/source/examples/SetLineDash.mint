@@ -4,7 +4,7 @@ component SetLineDash {
       @format {
         let draw =
           () {
-            case canvas {
+            case Dom.Canvas.fromDomElement(canvas) {
               Maybe::Just(el) =>
                 {
                   // Dashed line

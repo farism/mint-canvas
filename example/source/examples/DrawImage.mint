@@ -4,7 +4,7 @@ component DrawImage {
       @format {
         let draw =
           () {
-            case canvas {
+            case Dom.Canvas.fromDomElement(canvas) {
               Maybe::Just(el) =>
                 case image {
                   Maybe::Just(img) =>
@@ -13,9 +13,12 @@ component DrawImage {
                         Dom.getDimensions(img)
 
                       // resize canvas to display full image
-                      Dom.setAttribute(el, "width", "#{dims.width}")
-                      Dom.setAttribute(el, "height", "#{dims.width}")
                       Dom.setStyle(img, "display", "none")
+
+                      el
+                      |> Dom.Canvas.toDomElement
+                      |> Dom.setAttribute("width", "#{dims.width}")
+                      |> Dom.setAttribute("height", "#{dims.width}")
 
                       let imageData =
                         CanvasImageSource.fromImage(img)

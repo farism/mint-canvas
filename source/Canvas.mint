@@ -160,14 +160,14 @@ module Canvas {
   The path starts at `startAngle`, ends at `endAngle`, and travels in the direction given by `counterclockwise`.
   */
   fun arc (
-    el : Dom.Element,
+    el : Dom.Canvas,
     x : Number,
     y : Number,
     radius : Number,
     startAngle : Number,
     endAngle : Number,
     counterclockwise : Bool = false
-  ) {
+  ) : Dom.Canvas {
     `#{el}.getContext('2d').arc(#{x}, #{y}, #{radius}, #{startAngle}, #{endAngle}, #{counterclockwise})`
     el
   }
@@ -180,19 +180,19 @@ module Canvas {
   This method is commonly used for making rounded corners.
   */
   fun arcTo (
-    el : Dom.Element,
+    el : Dom.Canvas,
     x1 : Number,
     y1 : Number,
     x2 : Number,
     y2 : Number,
     radius : Number
-  ) : Dom.Element {
+  ) : Dom.Canvas {
     `#{el}.getContext('2d').arcTo(#{x1}, #{y1}, #{x2}, #{y2}, #{radius})`
     el
   }
 
   /* Starts a new path by emptying the list of sub-paths. Call this method when you want to create a new path. */
-  fun beginPath (el : Dom.Element) {
+  fun beginPath (el : Dom.Canvas) {
     `#{el}.getContext('2d').beginPath()`
     el
   }
@@ -205,14 +205,14 @@ module Canvas {
   The starting point is the latest point in the current path, which can be changed using `moveTo()` before creating the Bézier curve.
   */
   fun bezierCurveTo (
-    el : Dom.Element,
+    el : Dom.Canvas,
     cp1x : Number,
     cp1y : Number,
     cp2x : Number,
     cp2y : Number,
     x : Number,
     y : Number
-  ) : Dom.Element {
+  ) : Dom.Canvas {
     `#{el}.getContext('2d').bezierCurveTo(#{cp1x}, #{cp1y}, #{cp2x}, #{cp2y}, #{x}, #{y})`
     el
   }
@@ -222,9 +222,11 @@ module Canvas {
 
   Same as calling clearRect(0, 0, width, height)
   */
-  fun clear (el : Dom.Element) : Dom.Element {
+  fun clear (el : Dom.Canvas) : Dom.Canvas {
     let dims =
-      Dom.getDimensions(el)
+      el
+      |> Dom.Canvas.toDomElement
+      |> Dom.getDimensions
 
     `#{el}.getContext('2d').clearRect(0, 0, #{dims.width}, #{dims.height})`
     el
@@ -232,12 +234,12 @@ module Canvas {
 
   /* Erases the pixels in a rectangular area by setting them to transparent black. */
   fun clearRect (
-    el : Dom.Element,
+    el : Dom.Canvas,
     x : Number,
     y : Number,
     width : Number,
     height : Number
-  ) : Dom.Element {
+  ) : Dom.Canvas {
     `#{el}.getContext('2d').clearRect(#{x}, #{y}, #{width}, #{height})`
     el
   }
@@ -248,9 +250,9 @@ module Canvas {
   The previous clipping region, if any, is intersected with the current or given path to create the new clipping region.
   */
   fun clip (
-    el : Dom.Element,
+    el : Dom.Canvas,
     fillRule : CanvasFillRule = CanvasFillRule::Nonzero
-  ) : Dom.Element {
+  ) : Dom.Canvas {
     `#{el}.getContext('2d').clip(#{fillRuleToStr(fillRule)})`
     el
   }
@@ -261,10 +263,10 @@ module Canvas {
   The previous clipping region, if any, is intersected with the current or given path to create the new clipping region.
   */
   fun clipPath (
-    el : Dom.Element,
+    el : Dom.Canvas,
     path : Path2D,
     fillRule : CanvasFillRule = CanvasFillRule::Nonzero
-  ) : Dom.Element {
+  ) : Dom.Canvas {
     `#{el}.getContext('2d').clip(#{path}, #{fillRuleToStr(fillRule)})`
     el
   }
@@ -276,7 +278,7 @@ module Canvas {
 
   This method doesn't draw anything to the canvas directly. You can render the path using the `stroke()` or `fill()` methods.
   */
-  fun closePath (el : Dom.Element) : Dom.Element {
+  fun closePath (el : Dom.Canvas) : Dom.Canvas {
     `#{el}.getContext('2d').closePath()`
     el
   }
@@ -287,7 +289,7 @@ module Canvas {
   This method returns a conic `CanvasGradient`. To be applied to a shape, the gradient must first be assigned to the `fillStyle` or `strokeStyle` properties.
   */
   fun createConicGradient (
-    el : Dom.Element,
+    el : Dom.Canvas,
     startAngle : Number,
     x : Number,
     y : Number
@@ -297,7 +299,7 @@ module Canvas {
 
   /* Creates a new, blank ImageData object with the specified dimensions. All of the pixels in the new object are transparent black. */
   fun createImageData (
-    el : Dom.Element,
+    el : Dom.Canvas,
     width : Number,
     height : Number,
     colorSpace : String = "srgb"
@@ -313,7 +315,7 @@ module Canvas {
   This method returns a `CanvasGradient`. To be applied to a shape, the gradient must first be assigned to the `fillStyle` or `strokeStyle` properties.
   */
   fun createLinearGradient (
-    el : Dom.Element,
+    el : Dom.Canvas,
     x0 : Number,
     y0 : Number,
     x1 : Number,
@@ -328,7 +330,7 @@ module Canvas {
   This method doesn't draw anything to the canvas directly. The pattern it creates must be assigned to the `fillStyle` or `strokeStyle` properties, after which it is applied to any subsequent drawing.
   */
   fun createPattern (
-    el : Dom.Element,
+    el : Dom.Canvas,
     image : CanvasImageSource,
     repetition : CanvasPatternRepeat
   ) : Maybe(CanvasPattern) {
@@ -354,7 +356,7 @@ module Canvas {
   This method returns a `CanvasGradient`. To be applied to a shape, the gradient must first be assigned to the `fillStyle` or `strokeStyle` properties.
   */
   fun createRadialGradient (
-    el : Dom.Element,
+    el : Dom.Canvas,
     x0 : Number,
     y0 : Number,
     r0 : Number,
@@ -396,17 +398,16 @@ module Canvas {
 
   /* Draws a CanvasImageSource to the canvas */
   fun drawFocusIfNeeded (
-    el : Dom.Element,
+    el : Dom.Canvas,
     targetEl : Dom.Element,
     path : Maybe(Path2D)
-    
-  ) : Dom.Element {
+  ) : Dom.Canvas {
     `#{el}.getContext('2d').drawFocusIfNeeded(#{targetEl})`
   }
 
   /* Draws a CanvasImageSource to the canvas */
   fun drawImage (
-    el : Dom.Element,
+    el : Dom.Canvas,
     image : CanvasImageSource,
     x : Number,
     y : Number,
@@ -416,7 +417,7 @@ module Canvas {
     dy : Number = 0,
     dWidth : Number = 0,
     dHeight : Number = 0
-  ) : Dom.Element {
+  ) : Dom.Canvas {
     if dx != 0 || dy != 0 || dWidth != 0 || dHeight != 0 {
       `#{el}.getContext('2d').drawImage(#{image}, #{x}, #{y}, #{width}, #{height}, #{dx}, #{dy}, #{dWidth}, #{dHeight})`
     } else if width != 0 || height != 0 {
@@ -436,7 +437,7 @@ module Canvas {
   This method is commonly used for making rounded corners.
   */
   fun ellipse (
-    el : Dom.Element,
+    el : Dom.Canvas,
     x : Number,
     y : Number,
     radiusX : Number,
@@ -445,26 +446,26 @@ module Canvas {
     startAngle : Number,
     endAngle : Number,
     counterclockwise : Bool = false
-  ) : Dom.Element {
+  ) : Dom.Canvas {
     `#{el}.getContext('2d').ellipse(#{x}, #{y}, #{radiusX}, #{radiusY}, #{rotation}, #{startAngle}, #{endAngle}, #{counterclockwise})`
     el
   }
 
   /* Fills the current path with the current or given `fillRule`. */
   fun fill (
-    el : Dom.Element,
+    el : Dom.Canvas,
     fillRule : CanvasFillRule = CanvasFillRule::Nonzero
-  ) : Dom.Element {
+  ) : Dom.Canvas {
     `#{el}.getContext('2d').fill(#{fillRuleToStr(fillRule)})`
     el
   }
 
   /* Fills given path with the current or given `fillRule`. */
   fun fillPath (
-    el : Dom.Element,
+    el : Dom.Canvas,
     path : Path2D,
     fillRule : CanvasFillRule = CanvasFillRule::Nonzero
-  ) : Dom.Element {
+  ) : Dom.Canvas {
     `#{el}.getContext('2d').fill(#{path}, #{fillRuleToStr(fillRule)})`
     el
   }
@@ -475,12 +476,12 @@ module Canvas {
   This method draws directly to the canvas without modifying the current path, so any subsequent fill() or stroke() calls will have no effect on it.
   */
   fun fillRect (
-    el : Dom.Element,
+    el : Dom.Canvas,
     x : Number,
     y : Number,
     width : Number,
     height : Number
-  ) : Dom.Element {
+  ) : Dom.Canvas {
     `#{el}.getContext('2d').fillRect(#{x}, #{y}, #{width}, #{height})`
     el
   }
@@ -518,12 +519,12 @@ module Canvas {
   The text is rendered using the font and text layout configuration as defined by the `font`, `textAlign`, `textBaseline`, and `direction` properties.
   */
   fun fillText (
-    el : Dom.Element,
+    el : Dom.Canvas,
     text : String,
     x : Number,
     y : Number,
     maxWidth : Number = -1
-  ) : Dom.Element {
+  ) : Dom.Canvas {
     `#{el}.getContext('2d').fillText(#{text}, #{x}, #{y}, #{maxWidth} === -1 ? undefined : #{maxWidth} )`
     el
   }
@@ -558,16 +559,16 @@ module Canvas {
   }
 
   /*  */
-  fun getContextAttributes (el : Dom.Element) : String {
+  fun getContextAttributes (el : Dom.Canvas) : String {
     `#{el}.getContext('2d').getContextAttributes()` as String
   }
 
-  fun getDirection (el : Dom.Element) : CanvasDirection {
+  fun getDirection (el : Dom.Canvas) : CanvasDirection {
     `#{el}.getContext('2d').direction`
     |> directionFromStr
   }
 
-  fun getFillStyle (el : Dom.Element) : CanvasFillStyle {
+  fun getFillStyle (el : Dom.Canvas) : CanvasFillStyle {
     `
     (() => {
       const $fillStyle = #{el}.getContext('2d').fillStyle
@@ -583,24 +584,24 @@ module Canvas {
     `
   }
 
-  fun getFilter (el : Dom.Element) : String {
+  fun getFilter (el : Dom.Canvas) : String {
     `#{el}.getContext('2d').filter`
   }
 
-  fun getFont (el : Dom.Element) : String {
+  fun getFont (el : Dom.Canvas) : String {
     `#{el}.getContext('2d').font`
   }
 
-  fun getFontKerning (el : Dom.Element) : CanvasFontKerning {
+  fun getFontKerning (el : Dom.Canvas) : CanvasFontKerning {
     `#{el}.getContext('2d').fontKerning`
     |> fontKerningFromStr
   }
 
-  fun getGlobalAlpha (el : Dom.Element) {
+  fun getGlobalAlpha (el : Dom.Canvas) {
     `#{el}.getContext('2d').globalAlpha`
   }
 
-  fun getGlobalCompositeOperation (el : Dom.Element) : CanvasGlobalCompositeOperation {
+  fun getGlobalCompositeOperation (el : Dom.Canvas) : CanvasGlobalCompositeOperation {
     `#{el}.getContext('2d').globalCompositeOperation`
     |> globalCompositeOperationFromStr
   }
@@ -611,7 +612,7 @@ module Canvas {
   This method is not affected by the canvas's transformation matrix. If the specified rectangle extends outside the bounds of the canvas, the pixels outside the canvas are transparent black in the returned `ImageData` object.
   */
   fun getImageData (
-    el : Dom.Element,
+    el : Dom.Canvas,
     x : Number,
     y : Number,
     width : Number,
@@ -621,16 +622,16 @@ module Canvas {
     ImageData.create()
   }
 
-  fun getImageSmoothingEnabled (el : Dom.Element) : Bool {
+  fun getImageSmoothingEnabled (el : Dom.Canvas) : Bool {
     `#{el}.getContext('2d').imageSmoothingEnabled`
   }
 
-  fun getImageSmoothingQuality (el : Dom.Element) : CanvasImageSmoothingQuality {
+  fun getImageSmoothingQuality (el : Dom.Canvas) : CanvasImageSmoothingQuality {
     `#{el}.getContext('2d').imageSmoothingQuality`
     |> imageSmoothingFromStr
   }
 
-  fun getLetterSpacing (el : Dom.Element) : Number {
+  fun getLetterSpacing (el : Dom.Canvas) : Number {
     let ls =
       `#{el}.getContext('2d').letterSpacing` as String
 
@@ -640,48 +641,48 @@ module Canvas {
     }
   }
 
-  fun getLineCap (el : Dom.Element) : CanvasLineCap {
+  fun getLineCap (el : Dom.Canvas) : CanvasLineCap {
     `#{el}.getContext('2d').lineCap`
     |> lineCapFromStr
   }
 
-  fun getLineDash (el : Dom.Element) : Array(Number) {
+  fun getLineDash (el : Dom.Canvas) : Array(Number) {
     `#{el}.getContext('2d').getLineDash()` as Array(Number)
   }
 
-  fun getLineDashOffset (el : Dom.Element) : Number {
+  fun getLineDashOffset (el : Dom.Canvas) : Number {
     `#{el}.getContext('2d').lineDashOffset`
   }
 
-  fun getLineJoin (el : Dom.Element) : CanvasLineJoin {
+  fun getLineJoin (el : Dom.Canvas) : CanvasLineJoin {
     lineJoinFromStr(`#{el}.getContext('2d').lineJoin`)
   }
 
-  fun getLineWidth (el : Dom.Element) : Number {
+  fun getLineWidth (el : Dom.Canvas) : Number {
     `#{el}.getContext('2d').lineWidth`
   }
 
-  fun getMiterLimit (el : Dom.Element) : Number {
+  fun getMiterLimit (el : Dom.Canvas) : Number {
     `#{el}.getContext('2d').miterLimit`
   }
 
-  fun getShadowBlur (el : Dom.Element) : Number {
+  fun getShadowBlur (el : Dom.Canvas) : Number {
     `#{el}.getContext('2d').shadowBlur`
   }
 
-  fun getShadowColor (el : Dom.Element) : String {
+  fun getShadowColor (el : Dom.Canvas) : String {
     `#{el}.getContext('2d').shadowColor`
   }
 
-  fun getShadowOffsetX (el : Dom.Element) : Number {
+  fun getShadowOffsetX (el : Dom.Canvas) : Number {
     `#{el}.getContext('2d').shadowOffsetX`
   }
 
-  fun getShadowOffsetY (el : Dom.Element) : Number {
+  fun getShadowOffsetY (el : Dom.Canvas) : Number {
     `#{el}.getContext('2d').shadowOffsetY`
   }
 
-  fun getStrokeStyle (el : Dom.Element) : CanvasFillStyle {
+  fun getStrokeStyle (el : Dom.Canvas) : CanvasFillStyle {
     `
     (() => {
       const $strokeStyle = #{el}.getContext('2d').strokeStyle
@@ -697,21 +698,21 @@ module Canvas {
     `
   }
 
-  fun getTextAlign (el : Dom.Element) : CanvasTextAlign {
+  fun getTextAlign (el : Dom.Canvas) : CanvasTextAlign {
     `#{el}.getContext('2d').textAlign`
     |> textAlignFromStr
   }
 
-  fun getTextBaseline (el : Dom.Element) : CanvasTextBaseline {
+  fun getTextBaseline (el : Dom.Canvas) : CanvasTextBaseline {
     `#{el}.getContext('2d').textBaseline`
     |> textBaselineFromStr
   }
 
-  fun getTransform (el : Dom.Element) : DOMMatrix {
+  fun getTransform (el : Dom.Canvas) : DOMMatrix {
     `#{el}.getContext('2d').getTransform()` as DOMMatrix
   }
 
-  fun getWordSpacing (el : Dom.Element) : Number {
+  fun getWordSpacing (el : Dom.Canvas) : Number {
     let ws =
       `#{el}.getContext('2d').wordSpacing` as String
 
@@ -831,7 +832,7 @@ module Canvas {
 
   /* Returns whether or not the specified point is contained in the given path (if passed) or current path. */
   fun isPointInPath (
-    el : Dom.Element,
+    el : Dom.Canvas,
     x : Number,
     y : Number,
     fillRule : CanvasFillRule = CanvasFillRule::Nonzero,
@@ -848,7 +849,7 @@ module Canvas {
 
   /* Returns whether or not the specified point is inside the area contained by the stroking of a path. */
   fun isPointInStroke (
-    el : Dom.Element,
+    el : Dom.Canvas,
     x : Number,
     y : Number,
     path : Maybe(Path2D) = Maybe::Nothing
@@ -927,18 +928,18 @@ module Canvas {
 
   To draw the path onto a canvas, you can use the `fill()` or `stroke()` methods.
   */
-  fun lineTo (el : Dom.Element, x : Number, y : Number) : Dom.Element {
+  fun lineTo (el : Dom.Canvas, x : Number, y : Number) : Dom.Canvas {
     `#{el}.getContext('2d').lineTo(#{x}, #{y})`
     el
   }
 
   /* Returns a `TextMetrics` object that contains information about the measured text (such as its width, for example). */
-  fun measureText (el : Dom.Element, text : String) : TextMetrics {
+  fun measureText (el : Dom.Canvas, text : String) : TextMetrics {
     `#{el}.getContext('2d').measureText(#{text})` as TextMetrics
   }
 
   /* Begins a new sub-path at the point specified by the given `(x, y)` coordinates. */
-  fun moveTo (el : Dom.Element, x : Number, y : Number) : Dom.Element {
+  fun moveTo (el : Dom.Canvas, x : Number, y : Number) : Dom.Canvas {
     `#{el}.getContext('2d').moveTo(#{x}, #{y})`
     el
   }
@@ -980,18 +981,18 @@ module Canvas {
 
   /* Paints data from the given ImageData object onto the canvas. This method is not affected by the canvas transformation matrix. */
   fun putImageData (
-    el : Dom.Element,
+    el : Dom.Canvas,
     imageData : ImageData,
     x : Number,
     y : Number
-  ) : Dom.Element {
+  ) : Dom.Canvas {
     `#{el}.getContext('2d').putImageData(#{imageData}, #{x}, #{y})`
     el
   }
 
   /* Paints data from the given ImageData object onto the canvas. Only paints pixels from the defined rectangle. This method is not affected by the canvas transformation matrix. */
   fun putImageDataRect (
-    el : Dom.Element,
+    el : Dom.Canvas,
     imageData : ImageData,
     x : Number,
     y : Number,
@@ -999,7 +1000,7 @@ module Canvas {
     rectY : Number,
     rectWidth : Number,
     rectHeight : Number
-  ) : Dom.Element {
+  ) : Dom.Canvas {
     `#{el}.getContext('2d').putImageData(#{imageData}, #{x}, #{y}, #{rectX}, #{rectY}, #{rectWidth}, #{rectHeight})`
     el
   }
@@ -1012,12 +1013,12 @@ module Canvas {
   The starting point is the latest point in the current path, which can be changed using `moveTo()` before creating the quadratic Bézier curve.
   */
   fun quadraticCurveTo (
-    el : Dom.Element,
+    el : Dom.Canvas,
     cpx : Number,
     cpy : Number,
     x : Number,
     y : Number
-  ) : Dom.Element {
+  ) : Dom.Canvas {
     `#{el}.getContext('2d').quadraticCurveTo(#{cpx}, #{cpy}, #{x}, #{y})`
     el
   }
@@ -1028,12 +1029,12 @@ module Canvas {
   Like other methods that modify the current path, this method does not directly render anything. To draw the rectangle onto a canvas, you can use the `fill()` or `stroke()` methods.
   */
   fun rect (
-    el : Dom.Element,
+    el : Dom.Canvas,
     x : Number,
     y : Number,
     width : number,
     height : number
-  ) : Dom.Element {
+  ) : Dom.Canvas {
     `#{el}.getContext('2d').rect(#{x}, #{y}, #{width}, #{height})`
     el
   }
@@ -1043,25 +1044,25 @@ module Canvas {
 
   Resetting clears the backing buffer, drawing state stack, any defined paths, and styles. This includes the current transformation matrix, compositing properties, clipping region, dash list, line styles, text styles, shadows, image smoothing, filters, and so on.
   */
-  fun reset (el : Dom.Element) : Dom.Element {
+  fun reset (el : Dom.Canvas) : Dom.Canvas {
     `#{el}.getContext('2d').reset()`
     el
   }
 
   /* Resets the current transform to the identity matrix. */
-  fun resetTransform (el : Dom.Element) : Dom.Element {
+  fun resetTransform (el : Dom.Canvas) : Dom.Canvas {
     `#{el}.getContext('2d').resetTransform()`
     el
   }
 
   /* Restores the most recently saved canvas state by popping the top entry in the drawing state stack. If there is no saved state, this method does nothing. */
-  fun restore (el : Dom.Element) : Dom.Element {
+  fun restore (el : Dom.Canvas) : Dom.Canvas {
     `#{el}.getContext('2d').restore()`
     el
   }
 
   /* Adds a rotation to the transformation matrix. */
-  fun rotate (el : Dom.Element, angle : Number) : Dom.Element {
+  fun rotate (el : Dom.Canvas, angle : Number) : Dom.Canvas {
     `#{el}.getContext('2d').rotate(#{angle})`
     el
   }
@@ -1074,19 +1075,19 @@ module Canvas {
   Like other methods that modify the current path, this method does not directly render anything. To draw the rounded rectangle onto a canvas, you can use the fill() or stroke() methods.
   */
   fun roundRect (
-    el : Dom.Element,
+    el : Dom.Canvas,
     x : Number,
     y : Number,
     width : Number,
     height : Number,
     radii : Array(Number)
-  ) : Dom.Element {
+  ) : Dom.Canvas {
     `#{el}.getContext('2d').roundRect(#{x}, #{y}, #{width}, #{height}, #{radii})`
     el
   }
 
   /* Saves the entire state of the canvas by pushing the current state onto a stack. */
-  fun save (el : Dom.Element) : Dom.Element {
+  fun save (el : Dom.Canvas) : Dom.Canvas {
     `#{el}.getContext('2d').save()`
     el
   }
@@ -1100,19 +1101,19 @@ module Canvas {
 
   Similarly, a scaling factor of `2.0` increases the unit size so that one unit becomes two pixels; shapes are thus drawn at twice the normal size.
   */
-  fun scale (el : Dom.Element, x : Number, y : Number) : Dom.Element {
+  fun scale (el : Dom.Canvas, x : Number, y : Number) : Dom.Canvas {
     `#{el}.getContext('2d').scale(#{x}, #{y})`
     el
   }
 
   /* Specifies the current text direction used to draw text. */
-  fun setDirection (el : Dom.Element, direction : CanvasDirection) : Dom.Element {
+  fun setDirection (el : Dom.Canvas, direction : CanvasDirection) : Dom.Canvas {
     `#{el}.getContext('2d').direction = #{directionToStr(direction)}`
     el
   }
 
   /* Specifies the color, gradient, or pattern to use inside shapes. The default style is `#000` (black). */
-  fun setFillStyle (el : Dom.Element, fillStyle : CanvasFillStyle) : Dom.Element {
+  fun setFillStyle (el : Dom.Canvas, fillStyle : CanvasFillStyle) : Dom.Canvas {
     case fillStyle {
       CanvasFillStyle::String(value) =>
         `#{el}.getContext('2d').fillStyle = #{value}`
@@ -1128,13 +1129,13 @@ module Canvas {
   }
 
   /* Provides filter effects such as blurring and grayscaling. It is similar to the CSS filter property and accepts the same values. */
-  fun setFilter (el : Dom.Element, filter : String) : Dom.Element {
+  fun setFilter (el : Dom.Canvas, filter : String) : Dom.Canvas {
     `#{el}.getContext('2d').filter = #{filter}`
     el
   }
 
   /* Specifies the current text style to use when drawing text. This string uses the same syntax as the [CSS font](https://developer.mozilla.org/en-US/docs/Web/CSS/font) specifier. */
-  fun setFont (el : Dom.Element, font : String) : Dom.Element {
+  fun setFont (el : Dom.Canvas, font : String) : Dom.Canvas {
     `#{el}.getContext('2d').font = #{font}`
     el
   }
@@ -1146,13 +1147,13 @@ module Canvas {
 
   The property corresponds to the font-kerning CSS property.
   */
-  fun setFontKerning (el : Dom.Element, fontKerning : CanvasFontKerning) : Dom.Element {
+  fun setFontKerning (el : Dom.Canvas, fontKerning : CanvasFontKerning) : Dom.Canvas {
     `#{el}.getContext('2d').fontKerning = #{fontKerningToStr(fontKerning)}`
     el
   }
 
   /* Specifies the alpha (transparency) value that is applied to shapes and images before they are drawn onto the canvas. */
-  fun setGlobalAlpha (el : Dom.Element, globalAlpha : Number) : Dom.Element {
+  fun setGlobalAlpha (el : Dom.Canvas, globalAlpha : Number) : Dom.Canvas {
     `#{el}.getContext('2d').globalAlpha = #{globalAlpha}`
     el
   }
@@ -1163,9 +1164,9 @@ module Canvas {
   See also [Compositing and clipping](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Compositing) in the [Canvas Tutorial](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial).
   */
   fun setGlobalCompositeOperation (
-    el : Dom.Element,
+    el : Dom.Canvas,
     globalCompositeOperation : CanvasGlobalCompositeOperation
-  ) : Dom.Element {
+  ) : Dom.Canvas {
     `#{el}.getContext('2d').globalCompositeOperation = #{globalCompositeOperationToStr(globalCompositeOperation)}`
     el
   }
@@ -1175,16 +1176,16 @@ module Canvas {
 
   This property is useful for games and other apps that use pixel art. When enlarging images, the default resizing algorithm will blur the pixels. Set this property to false to retain the pixels' sharpness.
   */
-  fun setImageSmoothingEnabled (el : Dom.Element, imageSmoothingEnabled : Bool) : Dom.Element {
+  fun setImageSmoothingEnabled (el : Dom.Canvas, imageSmoothingEnabled : Bool) : Dom.Canvas {
     `#{el}.getContext('2d').imageSmoothingEnabled = #{imageSmoothingEnabled}`
     el
   }
 
   /* Sets the image smoothing quality */
   fun setImageSmoothingQuality (
-    el : Dom.Element,
+    el : Dom.Canvas,
     imageSmoothingQuality : CanvasImageSmoothingQuality
-  ) : Dom.Element {
+  ) : Dom.Canvas {
     `#{el}.getContext('2d').imageSmoothingQuality = #{imageSmoothingToStr(imageSmoothingQuality)}`
     el
   }
@@ -1194,7 +1195,7 @@ module Canvas {
 
   This corresponds to the CSS letter-spacing property.
   */
-  fun setLetterSpacing (el : Dom.Element, letterSpacing : Number) : Dom.Element {
+  fun setLetterSpacing (el : Dom.Canvas, letterSpacing : Number) : Dom.Canvas {
     let ls =
       "#{letterSpacing}px"
 
@@ -1203,7 +1204,7 @@ module Canvas {
   }
 
   /* Determines the shape used to draw the end points of lines. */
-  fun setLineCap (el : Dom.Element, lineCap : CanvasLineCap) : Dom.Element {
+  fun setLineCap (el : Dom.Canvas, lineCap : CanvasLineCap) : Dom.Canvas {
     `#{el}.getContext('2d').lineCap = #{lineCapToStr(lineCap)}`
     el
   }
@@ -1219,13 +1220,13 @@ module Canvas {
 
   If the array is empty, the line dash list is cleared and line strokes return to being solid.
   */
-  fun setLineDash (el : Dom.Element, segments : Array(Number)) : Dom.Element {
+  fun setLineDash (el : Dom.Canvas, segments : Array(Number)) : Dom.Canvas {
     `#{el}.getContext('2d').setLineDash(#{segments})`
     el
   }
 
   /* Sets the line dash offset, or "phase." */
-  fun setLineDashOffset (el : Dom.Element, lineDashOffset : Number) : Dom.Element {
+  fun setLineDashOffset (el : Dom.Canvas, lineDashOffset : Number) : Dom.Canvas {
     `#{el}.getContext('2d').lineDashOffset = #{lineDashOffset}`
     el
   }
@@ -1235,25 +1236,25 @@ module Canvas {
 
   This property has no effect wherever two connected segments have the same direction, because no joining area will be added in this case. Degenerate segments with a length of zero (i.e., with all endpoints and control points at the exact same position) are also ignored.
   */
-  fun setLineJoin (el : Dom.Element, lineJoin : CanvasLineJoin) : Dom.Element {
+  fun setLineJoin (el : Dom.Canvas, lineJoin : CanvasLineJoin) : Dom.Canvas {
     `#{el}.getContext('2d').lineJoin = #{lineJoinToStr(lineJoin)}`
     el
   }
 
   /* Sets the thickness of lines. */
-  fun setLineWidth (el : Dom.Element, lineWidth : Number) : Dom.Element {
+  fun setLineWidth (el : Dom.Canvas, lineWidth : Number) : Dom.Canvas {
     `#{el}.getContext('2d').lineWidth = #{lineWidth}`
     el
   }
 
   /* Sets the miter limit ratio, in coordinate space units. Zero, negative, Infinity, and NaN values are ignored. The default value is `10.0`. */
-  fun setMiterLimit (el : Dom.Element, miterLimit : Number) : Dom.Element {
+  fun setMiterLimit (el : Dom.Canvas, miterLimit : Number) : Dom.Canvas {
     `#{el}.getContext('2d').miterLimit = #{miterLimit}`
     el
   }
 
   /* Specifies the amount of blur applied to shadows. The default is `0` (no blur). */
-  fun setShadowBlur (el : Dom.Element, shadowBlur : Number) : Dom.Element {
+  fun setShadowBlur (el : Dom.Canvas, shadowBlur : Number) : Dom.Canvas {
     `#{el}.getContext('2d').shadowBlur = #{shadowBlur}`
     el
   }
@@ -1263,7 +1264,7 @@ module Canvas {
 
   Be aware that the shadow's rendered opacity will be affected by the opacity of the `fillStyle` color when filling, and of the `strokeStyle` color when stroking.
   */
-  fun setShadowColor (el : Dom.Element, shadowColor : String) : Dom.Element {
+  fun setShadowColor (el : Dom.Canvas, shadowColor : String) : Dom.Canvas {
     `#{el}.getContext('2d').shadowColor = #{shadowColor}`
     el
   }
@@ -1273,7 +1274,7 @@ module Canvas {
 
   Positive values are to the right, and negative to the left. The default value is `0` (no horizontal offset). `Infinity` and `NaN` values are ignored.
   */
-  fun setShadowOffsetX (el : Dom.Element, shadowOffsetX : Number) {
+  fun setShadowOffsetX (el : Dom.Canvas, shadowOffsetX : Number) {
     `#{el}.getContext('2d').shadowOffsetX = #{shadowOffsetX}`
     el
   }
@@ -1283,13 +1284,13 @@ module Canvas {
 
   Positive values are down, and negative are up. The default value is `0` (no vertical offset). `Infinity` and `NaN` values are ignored.
   */
-  fun setShadowOffsetY (el : Dom.Element, shadowOffsetY : Number) {
+  fun setShadowOffsetY (el : Dom.Canvas, shadowOffsetY : Number) {
     `#{el}.getContext('2d').shadowOffsetY = #{shadowOffsetY}`
     el
   }
 
   /* Specifies the color, gradient, or pattern to use for the strokes (outlines) around shapes. The default is `#000` (black). */
-  fun setStrokeStyle (el : Dom.Element, strokeStyle : CanvasFillStyle) {
+  fun setStrokeStyle (el : Dom.Canvas, strokeStyle : CanvasFillStyle) {
     case strokeStyle {
       CanvasFillStyle::String(value) =>
         `#{el}.getContext('2d').strokeStyle = #{value}`
@@ -1309,13 +1310,13 @@ module Canvas {
 
   The alignment is relative to the x value of the fillText() method. For example, if textAlign is "center", then the text's left edge will be at x - (textWidth / 2).
   */
-  fun setTextAlign (el : Dom.Element, textAlign : CanvasTextAlign) {
+  fun setTextAlign (el : Dom.Canvas, textAlign : CanvasTextAlign) {
     `#{el}.getContext('2d').textAlign = #{textAlignToStr(textAlign)}`
     el
   }
 
   /* Specifies the current text baseline used when drawing text. */
-  fun setTextBaseline (el : Dom.Element, textBaseline : CanvasTextBaseline) {
+  fun setTextBaseline (el : Dom.Canvas, textBaseline : CanvasTextBaseline) {
     `#{el}.getContext('2d').textBaseline = #{textBaselineToStr(textBaseline)}`
     el
   }
@@ -1326,14 +1327,14 @@ module Canvas {
   This lets you scale, rotate, translate (move), and skew the context.
   */
   fun setTransform (
-    el : Dom.Element,
+    el : Dom.Canvas,
     a : Number,
     b : Number,
     c : Number,
     d : Number,
     e : Number,
     f : Number
-  ) : Dom.Element {
+  ) : Dom.Canvas {
     `#{el}.getContext('2d').setTransform(#{a}, #{b}, #{c}, #{d}, #{e}, #{f})`
     el
   }
@@ -1343,7 +1344,7 @@ module Canvas {
 
   This lets you scale, rotate, translate (move), and skew the context.
   */
-  fun setTransformMatrix (el : Dom.Element, transform : DOMMatrix2D) : Dom.Element {
+  fun setTransformMatrix (el : Dom.Canvas, transform : DOMMatrix2D) : Dom.Canvas {
     `#{el}.getContext('2d').setTransform(#{transform})`
     el
   }
@@ -1353,7 +1354,7 @@ module Canvas {
 
   This corresponds to the CSS word-spacing property.
   */
-  fun setWordSpacing (el : Dom.Element, wordSpacing : Number) {
+  fun setWordSpacing (el : Dom.Canvas, wordSpacing : Number) {
     let ws =
       "#{wordSpacing}px"
 
@@ -1369,9 +1370,9 @@ module Canvas {
   The stroke is drawn using the non-zero winding rule, which means that path intersections will still get filled.
   */
   fun stroke (
-    el : Dom.Element,
+    el : Dom.Canvas,
     path : Maybe(Path2D) = Maybe::Nothing
-  ) : Dom.Element {
+  ) : Dom.Canvas {
     case path {
       Maybe::Just(p) =>
         `#{el}.getContext('2d').stroke(#{p})`
@@ -1389,12 +1390,12 @@ module Canvas {
   This method draws directly to the canvas without modifying the current path, so any subsequent `fill()` or `stroke()` calls will have no effect on it.
   */
   fun strokeRect (
-    el : Dom.Element,
+    el : Dom.Canvas,
     x : Number,
     y : Number,
     width : Number,
     height : Number
-  ) : Dom.Element {
+  ) : Dom.Canvas {
     `#{el}.getContext('2d').strokeRect(#{x}, #{y}, #{width}, #{height})`
     el
   }
@@ -1407,12 +1408,12 @@ module Canvas {
   This method draws directly to the canvas without modifying the current path, so any subsequent `fill()` or `stroke()` calls will have no effect on it.
   */
   fun strokeText (
-    el : Dom.Element,
+    el : Dom.Canvas,
     text : String,
     x : Number,
     y : Number,
     maxWidth : Number = 0
-  ) : Dom.Element {
+  ) : Dom.Canvas {
     `#{el}.getContext('2d').strokeText(#{text}, #{x}, #{y}, #{maxWidth} > 0 ? #{maxWidth} : undefined)`
     el
   }
@@ -1511,20 +1512,20 @@ module Canvas {
   This lets you scale, rotate, translate (move), and skew the context.
   */
   fun transform (
-    el : Dom.Element,
+    el : Dom.Canvas,
     a : Number,
     b : Number,
     c : Number,
     d : Number,
     e : Number,
     f : Number
-  ) : Dom.Element {
+  ) : Dom.Canvas {
     `#{el}.getContext('2d').transform(#{a}, #{b}, #{c}, #{d}, #{e}, #{f})`
     el
   }
 
   /* Adds a translation transformation to the current matrix. */
-  fun translate (el : Dom.Element, x : Number, y : Number) : Dom.Element {
+  fun translate (el : Dom.Canvas, x : Number, y : Number) : Dom.Canvas {
     `#{el}.getContext('2d').translate(#{x}, #{y})`
     el
   }

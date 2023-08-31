@@ -4,7 +4,7 @@ component FillPath {
       @format {
         let draw =
           () {
-            case canvas {
+            case Dom.Canvas.fromDomElement(canvas) {
               Maybe::Just(el) =>
                 {
                   // Create path

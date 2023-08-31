@@ -4,11 +4,13 @@ component ClipPath {
       @format {
         let draw =
           () {
-            case canvas {
+            case Dom.Canvas.fromDomElement(canvas) {
               Maybe::Just(el) =>
                 {
                   let dims =
-                    Dom.getDimensions(el)
+                    el
+                    |> Dom.Canvas.toDomElement
+                    |> Dom.getDimensions
 
                   // Create clipping path
                   let region =

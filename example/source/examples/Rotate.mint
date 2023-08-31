@@ -4,7 +4,7 @@ component Rotate {
       @format {
         let draw =
           () {
-            case canvas {
+            case Dom.Canvas.fromDomElement(canvas) {
               Maybe::Just(el) =>
                 {
                   // Point of transform origin

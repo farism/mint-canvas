@@ -8,7 +8,7 @@ component IsPointInPath {
 
         let draw =
           () {
-            case canvas {
+            case Dom.Canvas.fromDomElement(canvas) {
               Maybe::Just(el) =>
                 {
                   el
@@ -26,11 +26,13 @@ component IsPointInPath {
         // Listen for mouse moves
         let onMouseMove =
           (e : Html.Event) {
-            case canvas {
+            case Dom.Canvas.fromDomElement(canvas) {
               Maybe::Just(el) =>
                 {
                   let dims =
-                    Dom.getDimensions(el)
+                    el
+                    |> Dom.Canvas.toDomElement
+                    |> Dom.getDimensions
 
                   let x =
                     e.clientX - dims.left

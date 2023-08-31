@@ -4,7 +4,7 @@ component RoundRect {
       @format {
         let draw =
           () {
-            case canvas {
+            case Dom.Canvas.fromDomElement(canvas) {
               Maybe::Just(el) =>
                 {
                   // Rounded rectangle with zero radius (specified as a number)

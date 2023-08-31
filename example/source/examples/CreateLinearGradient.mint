@@ -4,7 +4,7 @@ component CreateLinearGradient {
       @format {
         let draw =
           () {
-            case canvas {
+            case Dom.Canvas.fromDomElement(canvas) {
               Maybe::Just(el) =>
                 {
                   // Add five color stops
