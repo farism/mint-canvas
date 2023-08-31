@@ -60,6 +60,7 @@ module Path2D {
     path
   }
 
+  /* Creates a new Path2D */
   fun create : Path2D {
     `new Path2D()` as Path2D
   }
@@ -78,6 +79,16 @@ module Path2D {
   ) : Path2D {
     `#{path}.ellipse(#{x}, #{y}, #{radiusX}, #{radiusY}, #{rotation}, #{startAngle}, #{endAngle}, #{counterclockwise})`
     path
+  }
+
+  /* Create a new Path2D from an existing Path2D */
+  fun fromPath (path : Path2D) : Path2D {
+    `new Path2D(#{path})` as Path2D
+  }
+
+  /* Create a new Path2D from an SVG Path string */
+  fun fromSVGString (svgPath : String) : Path2D {
+    `new Path2D(#{svgPath})` as Path2D
   }
 
   /* Connects the last point in the subpath to the (x, y) coordinates with a straight line. */

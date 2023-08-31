@@ -4,7 +4,7 @@ var Mint=function(){"use strict";var t,e,n,r,o,i,a={},s=[],u=/acit|ex(?:s|g|n|p|
   const mint = Mint(_enums)
 
   const _normalizeEvent = (event) => {
-    return EH.sl(mint.normalizeEvent(event))
+    return EI.sn(mint.normalizeEvent(event))
   }
 
   const _R = mint.createRecord
@@ -158,10 +158,10 @@ var Mint=function(){"use strict";var t,e,n,r,o,i,a={},s=[],u=/acit|ex(?:s|g|n|p|
   }
 
   const _s = (item, callback) => {
-    if (item instanceof AN) {
+    if (item instanceof AO) {
       return item
-    } else if (item instanceof AM) {
-      return new AM(callback(item._0))
+    } else if (item instanceof AN) {
+      return new AN(callback(item._0))
     } else {
       return callback(item)
     }
@@ -169,47 +169,47 @@ var Mint=function(){"use strict";var t,e,n,r,o,i,a={},s=[],u=/acit|ex(?:s|g|n|p|
 
   class DoError extends Error {}
 
-  class AM extends _E{constructor(_0){super();this._0 = _0;this.length = 1}};class AN extends _E{constructor(){super();this.length = 0}};class FG extends _E{constructor(_0){super();this._0 = _0;this.length = 1}};class FH extends _E{constructor(_0){super();this._0 = _0;this.length = 1}};class EX extends _E{constructor(){super();this.length = 0}};class BG extends _E{constructor(){super();this.length = 0}};class EY extends _E{constructor(){super();this.length = 0}};class EZ extends _E{constructor(){super();this.length = 0}};class DE extends _E{constructor(){super();this.length = 0}};class FA extends _E{constructor(){super();this.length = 0}};class CU extends _E{constructor(){super();this.length = 0}};class BQ extends _E{constructor(){super();this.length = 0}};class EL extends _E{constructor(){super();this.length = 0}};class EM extends _E{constructor(){super();this.length = 0}};class EN extends _E{constructor(){super();this.length = 0}};class EO extends _E{constructor(){super();this.length = 0}};class EP extends _E{constructor(){super();this.length = 0}};class EQ extends _E{constructor(){super();this.length = 0}};class ER extends _E{constructor(){super();this.length = 0}};class ES extends _E{constructor(){super();this.length = 0}};class ET extends _E{constructor(){super();this.length = 0}};class EU extends _E{constructor(){super();this.length = 0}};class DZ extends _E{constructor(){super();this.length = 0}};class BU extends _E{constructor(){super();this.length = 0}};class BV extends _E{constructor(){super();this.length = 0}};class BW extends _E{constructor(){super();this.length = 0}};class BX extends _E{constructor(){super();this.length = 0}};class BY extends _E{constructor(){super();this.length = 0}};class BZ extends _E{constructor(){super();this.length = 0}};class BB extends _E{constructor(){super();this.length = 0}};class BD extends _E{constructor(){super();this.length = 0}};class BC extends _E{constructor(){super();this.length = 0}};class FE extends _E{constructor(){super();this.length = 0}};class FF extends _E{constructor(){super();this.length = 0}};class EI extends _E{constructor(){super();this.length = 0}};class DV extends _E{constructor(){super();this.length = 0}};class EJ extends _E{constructor(){super();this.length = 0}};class CH extends _E{constructor(){super();this.length = 0}};class EV extends _E{constructor(){super();this.length = 0}};class EW extends _E{constructor(){super();this.length = 0}};class EK extends _E{constructor(){super();this.length = 0}};class BL extends _E{constructor(){super();this.length = 0}};class BM extends _E{constructor(){super();this.length = 0}};class CJ extends _E{constructor(){super();this.length = 0}};class FB extends _E{constructor(){super();this.length = 0}};class FC extends _E{constructor(){super();this.length = 0}};class FD extends _E{constructor(){super();this.length = 0}};class AL extends _E{constructor(_0){super();this._0 = _0;this.length = 1}};class CD extends _E{constructor(_0){super();this._0 = _0;this.length = 1}};class CK extends _E{constructor(_0){super();this._0 = _0;this.length = 1}};const B = _R({hostname:["hostname",Decoder.string],protocol:["protocol",Decoder.string],origin:["origin",Decoder.string],search:["search",Decoder.string],path:["path",Decoder.string],hash:["hash",Decoder.string],host:["host",Decoder.string],port:["port",Decoder.string]});const C = _R({});const D = _R({});const E = _R({});const F = _R({});const G = _R({});const H = _R({});const I = _R({});const J = _R({});const K = _R({});const L = _R({});const M = _R({});const N = _R({});const O = _R({});const P = _R({});const Q = _R({});const R = _R({});const S = _R({});const T = _R({});const V = _R({});const W = _R({});const U = _R({height:["height",Decoder.number],bottom:["bottom",Decoder.number],width:["width",Decoder.number],right:["right",Decoder.number],left:["left",Decoder.number],top:["top",Decoder.number],x:["x",Decoder.number],y:["y",Decoder.number]});const X = _R({});const Y = _R({value:["value",Decoder.string],key:["key",Decoder.string]});const Z = _R({});const AA = _R({});const AB = _R({});const AC = _R({});const AD = _R({caseInsensitive:["caseInsensitive",Decoder.boolean],multiline:["multiline",Decoder.boolean],unicode:["unicode",Decoder.boolean],global:["global",Decoder.boolean],sticky:["sticky",Decoder.boolean]});const AE = _R({submatches:["submatches",Decoder.array(Decoder.string),Encoder.array()],match:["match",Decoder.string],index:["index",Decoder.number]});const EG=new(class extends _M{rr(rs){return ((() => {
+  class AN extends _E{constructor(_0){super();this._0 = _0;this.length = 1}};class AO extends _E{constructor(){super();this.length = 0}};class FH extends _E{constructor(_0){super();this._0 = _0;this.length = 1}};class FI extends _E{constructor(_0){super();this._0 = _0;this.length = 1}};class EY extends _E{constructor(){super();this.length = 0}};class BH extends _E{constructor(){super();this.length = 0}};class EZ extends _E{constructor(){super();this.length = 0}};class FA extends _E{constructor(){super();this.length = 0}};class DF extends _E{constructor(){super();this.length = 0}};class FB extends _E{constructor(){super();this.length = 0}};class CV extends _E{constructor(){super();this.length = 0}};class BR extends _E{constructor(){super();this.length = 0}};class EM extends _E{constructor(){super();this.length = 0}};class EN extends _E{constructor(){super();this.length = 0}};class EO extends _E{constructor(){super();this.length = 0}};class EP extends _E{constructor(){super();this.length = 0}};class EQ extends _E{constructor(){super();this.length = 0}};class ER extends _E{constructor(){super();this.length = 0}};class ES extends _E{constructor(){super();this.length = 0}};class ET extends _E{constructor(){super();this.length = 0}};class EU extends _E{constructor(){super();this.length = 0}};class EV extends _E{constructor(){super();this.length = 0}};class EA extends _E{constructor(){super();this.length = 0}};class BV extends _E{constructor(){super();this.length = 0}};class BW extends _E{constructor(){super();this.length = 0}};class BX extends _E{constructor(){super();this.length = 0}};class BY extends _E{constructor(){super();this.length = 0}};class BZ extends _E{constructor(){super();this.length = 0}};class CA extends _E{constructor(){super();this.length = 0}};class BC extends _E{constructor(){super();this.length = 0}};class BE extends _E{constructor(){super();this.length = 0}};class BD extends _E{constructor(){super();this.length = 0}};class FF extends _E{constructor(){super();this.length = 0}};class FG extends _E{constructor(){super();this.length = 0}};class EJ extends _E{constructor(){super();this.length = 0}};class DW extends _E{constructor(){super();this.length = 0}};class EK extends _E{constructor(){super();this.length = 0}};class CI extends _E{constructor(){super();this.length = 0}};class EW extends _E{constructor(){super();this.length = 0}};class EX extends _E{constructor(){super();this.length = 0}};class EL extends _E{constructor(){super();this.length = 0}};class BM extends _E{constructor(){super();this.length = 0}};class BN extends _E{constructor(){super();this.length = 0}};class CK extends _E{constructor(){super();this.length = 0}};class FC extends _E{constructor(){super();this.length = 0}};class FD extends _E{constructor(){super();this.length = 0}};class FE extends _E{constructor(){super();this.length = 0}};class AM extends _E{constructor(_0){super();this._0 = _0;this.length = 1}};class CE extends _E{constructor(_0){super();this._0 = _0;this.length = 1}};class CL extends _E{constructor(_0){super();this._0 = _0;this.length = 1}};const B = _R({hostname:["hostname",Decoder.string],protocol:["protocol",Decoder.string],origin:["origin",Decoder.string],search:["search",Decoder.string],path:["path",Decoder.string],hash:["hash",Decoder.string],host:["host",Decoder.string],port:["port",Decoder.string]});const C = _R({});const D = _R({});const E = _R({});const F = _R({});const G = _R({});const H = _R({});const I = _R({});const J = _R({});const K = _R({});const L = _R({});const M = _R({});const N = _R({});const O = _R({});const P = _R({});const Q = _R({});const R = _R({});const S = _R({});const T = _R({});const V = _R({});const W = _R({});const U = _R({height:["height",Decoder.number],bottom:["bottom",Decoder.number],width:["width",Decoder.number],right:["right",Decoder.number],left:["left",Decoder.number],top:["top",Decoder.number],x:["x",Decoder.number],y:["y",Decoder.number]});const X = _R({});const Y = _R({value:["value",Decoder.string],key:["key",Decoder.string]});const Z = _R({});const AA = _R({});const AB = _R({});const AC = _R({});const AD = _R({caseInsensitive:["caseInsensitive",Decoder.boolean],multiline:["multiline",Decoder.boolean],unicode:["unicode",Decoder.boolean],global:["global",Decoder.boolean],sticky:["sticky",Decoder.boolean]});const AE = _R({submatches:["submatches",Decoder.array(Decoder.string),Encoder.array()],match:["match",Decoder.string],index:["index",Decoder.number]});const EH=new(class extends _M{rt(ru){return ((() => {
       if (!this._a) {
         this._a = document.createElement('a')
       }
 
-      this._a.href = rs
+      this._a.href = ru
 
       return new B({hostname:(this._a.hostname || ""),protocol:(this._a.protocol || ""),origin:(this._a.origin || ""),path:(this._a.pathname || ""),search:(this._a.search || ""),hash:(this._a.hash || ""),host:(this._a.host || ""),port:(this._a.port || "")})
-    })())}});const AH=new(class extends _M{o(rt){return (rt.length)}l(ru,rv){return (ru.split(rv))}});const EE=new(class extends _M{rg(rw){return (rw)}rp(rx){return (rx)}rk(ry,rz){return AG.sa((()=>{const _0 = [];const _1 = ry;let _i = -1;for(let [sc,sb] of _1){_i++;const _2 = _compare(sc, rz)
-if (!_2) { continue };_0.push(sb)};return _0})())}});const ED=new(class extends _M{sd(){return (window.location.href)}re(se){const sg=ED.sf();const sh=EG.rr(se);return (_compare(sg.hostname, sh.hostname) && _compare(sg.protocol, sh.protocol) && _compare(sg.origin, sh.origin) && _compare(sg.path, sh.path) && _compare(sg.host, sh.host) && _compare(sg.port, sh.port))}sf(){return EG.rr(ED.sd())}});const EF=new(class extends _M{rn(){return (false)}});const CS=new(class extends _M{jp(si){return (si.toString())}});const DA=new(class extends _M{lj(sj,sk){return (Math.pow(sj, sk))}});const EH=new(class extends _M{sl(sm){return new X({bubbles:(sm.bubbles),cancelable:(sm.cancelable),currentTarget:(sm.currentTarget),defaultPrevented:(sm.defaultPrevented),dataTransfer:(sm.dataTransfer),clipboardData:(sm.clipboardData),eventPhase:(sm.eventPhase),isTrusted:(sm.isTrusted),target:(sm.target),timeStamp:(sm.timeStamp),type:(sm.type),data:(sm.data),altKey:(sm.altKey),charCode:(sm.charCode),ctrlKey:(sm.ctrlKey),key:(sm.key),keyCode:(sm.keyCode),locale:(sm.locale),location:(sm.location),metaKey:(sm.metaKey),repeat:(sm.repeat),shiftKey:(sm.shiftKey),which:(sm.which),button:(sm.button),buttons:(sm.buttons),clientX:(sm.clientX),clientY:(sm.clientY),pageX:(sm.pageX),pageY:(sm.pageY),screenX:(sm.screenX),screenY:(sm.screenY),detail:(sm.detail),deltaMode:(sm.deltaMode),deltaX:(sm.deltaX),deltaY:(sm.deltaY),deltaZ:(sm.deltaZ),animationName:(sm.animationName),pseudoElement:(sm.pseudoElement),propertyName:(sm.propertyName),elapsedTime:(sm.elapsedTime),event:sm})}});const BO=new(class extends _M{eq(sn){return ((() => {
-      const rect = sn.getBoundingClientRect()
+    })())}});const AH=new(class extends _M{o(rv){return (rv.length)}l(rw,rx){return (rw.split(rx))}});const EF=new(class extends _M{ri(ry){return (ry)}rr(rz){return (rz)}rm(sa,sb){return AG.sc((()=>{const _0 = [];const _1 = sa;let _i = -1;for(let [se,sd] of _1){_i++;const _2 = _compare(se, sb)
+if (!_2) { continue };_0.push(sd)};return _0})())}});const EE=new(class extends _M{sf(){return (window.location.href)}rg(sg){const si=EE.sh();const sj=EH.rt(sg);return (_compare(si.hostname, sj.hostname) && _compare(si.protocol, sj.protocol) && _compare(si.origin, sj.origin) && _compare(si.path, sj.path) && _compare(si.host, sj.host) && _compare(si.port, sj.port))}sh(){return EH.rt(EE.sf())}});const EG=new(class extends _M{rp(){return (false)}});const CT=new(class extends _M{jr(sk){return (sk.toString())}});const DB=new(class extends _M{ll(sl,sm){return (Math.pow(sl, sm))}});const EI=new(class extends _M{sn(so){return new X({bubbles:(so.bubbles),cancelable:(so.cancelable),currentTarget:(so.currentTarget),defaultPrevented:(so.defaultPrevented),dataTransfer:(so.dataTransfer),clipboardData:(so.clipboardData),eventPhase:(so.eventPhase),isTrusted:(so.isTrusted),target:(so.target),timeStamp:(so.timeStamp),type:(so.type),data:(so.data),altKey:(so.altKey),charCode:(so.charCode),ctrlKey:(so.ctrlKey),key:(so.key),keyCode:(so.keyCode),locale:(so.locale),location:(so.location),metaKey:(so.metaKey),repeat:(so.repeat),shiftKey:(so.shiftKey),which:(so.which),button:(so.button),buttons:(so.buttons),clientX:(so.clientX),clientY:(so.clientY),pageX:(so.pageX),pageY:(so.pageY),screenX:(so.screenX),screenY:(so.screenY),detail:(so.detail),deltaMode:(so.deltaMode),deltaX:(so.deltaX),deltaY:(so.deltaY),deltaZ:(so.deltaZ),animationName:(so.animationName),pseudoElement:(so.pseudoElement),propertyName:(so.propertyName),elapsedTime:(so.elapsedTime),event:so})}});const BP=new(class extends _M{er(sp){return ((() => {
+      const rect = sp.getBoundingClientRect()
 
       return new U({bottom:(rect.bottom),height:(rect.height),width:(rect.width),right:(rect.right),left:(rect.left),top:(rect.top),x:(rect.x),y:(rect.y)})
-    })())}it(so,sp,sq){return (so.setAttribute(sp, sq) && element)}hd(sr,ss,st){return ((() => {
-      sr.style[ss] = st
-      return sr
-    })())}});const AO=new(class extends _M{x(su){return (new Promise((resolve) => {
+    })())}iv(sq,sr,ss){return (sq.setAttribute(sr, ss) && element)}hf(st,su,sv){return ((() => {
+      st.style[su] = sv
+      return st
+    })())}});const AP=new(class extends _M{y(sw){return (new Promise((resolve) => {
       setTimeout(() => {
         resolve(null)
-      }, su)
-    }))}});const AI=new(class extends _M{p(sv){return (sv.toString())}});const AG=new(class extends _M{h(sw,sx){return ((() => {
-      for (let item of sw) {
-        if (_compare(sx, item)) {
+      }, sw)
+    }))}});const AI=new(class extends _M{p(sx){return (sx.toString())}});const AG=new(class extends _M{h(sy,sz){return ((() => {
+      for (let item of sy) {
+        if (_compare(sz, item)) {
           return true
         }
       }
 
       return false
-    })())}sa(sy){return _at(sy, 0)}c(sz){return _compare(AG.q(sz), 0)}e(ta,tb){return (()=>{const _0 = [];const _1 = ta;let _i = -1;for(let tc of _1){_i++;const td = _i;_0.push(tb(tc, td))};return _0})()}bs(te,tf){return (Array.from({ length: (tf + 1) - te }).map((v, $0) => $0 + te))}q(tg){return (tg.length)}});const CC=new(class extends _M{gl(th,ti,tj){(th.addColorStop(ti, tj));return th}});const BP=new(class extends _M{jt(tk,tl,tm,tn,to,tp,tq = false){(tk.arc(tl, tm, tn, to, tp, tq));return tk}gc(tr){(tr.closePath());return tr}eu(){return (new Path2D())}gd(ts,tt,tu){(ts.lineTo(tt, tu));return ts}ge(tv,tw,tx){(tv.moveTo(tw, tx));return tv}et(ty,tz,ua,ub,uc){(ty.rect(tz, ua, ub, uc));return ty}});const CG=new(class extends _M{ha(ud){return (ud)}});const CX=new(class extends _M{ks(ue){return (ue.width)}});const AK=new(class extends _M{ay(uf,ug,uh,ui,uj,uk,ul = false){(uf.getContext('2d').arc(ug, uh, ui, uj, uk, ul));return uf}av(um,un,uo,up,uq,ur){(um.getContext('2d').arcTo(un, uo, up, uq, ur));return um}ao(us){(us.getContext('2d').beginPath());return us}ni(ut,uu,uv,uw,ux,uy,uz){(ut.getContext('2d').bezierCurveTo(uu, uv, uw, ux, uy, uz));return ut}kg(va,vb,vc,vd,ve){(va.getContext('2d').clearRect(vb, vc, vd, ve));return va}jc(vf,vg = new CU()){(vf.getContext('2d').clip(AK.vh(vg)));return vf}ew(vi,vj,vk = new CU()){(vi.getContext('2d').clip(vj, AK.vh(vk)));return vi}dy(vl){(vl.getContext('2d').closePath());return vl}gm(vm,vn,vo,vp){return (vm.getContext('2d').createConicGradient(vn, vo, vp))}bp(vq,vr,vs,vt = `srgb`){return (vq.getContext('2d').createImageData(vr, vs, { colorSpace: vt }))}qa(vu,vv,vw,vx,vy){return (vu.getContext('2d').createLinearGradient(vv, vw, vx, vy))}ho(vz,wa,wb){const wd=AK.wc(wb);return ((() => {
-      const $pattern = vz.getContext('2d').createPattern(wa, wd)
+    })())}sc(ta){return _at(ta, 0)}c(tb){return _compare(AG.q(tb), 0)}e(tc,td){return (()=>{const _0 = [];const _1 = tc;let _i = -1;for(let te of _1){_i++;const tf = _i;_0.push(td(te, tf))};return _0})()}bt(tg,th){return (Array.from({ length: (th + 1) - tg }).map((v, $0) => $0 + tg))}q(ti){return (ti.length)}});const CD=new(class extends _M{gn(tj,tk,tl){(tj.addColorStop(tk, tl));return tj}});const AK=new(class extends _M{s(tm){return _match(tm,[[_PE(AN,[_PV]),((tn)=>{return (()=>{const to=((() => tn instanceof HTMLCanvasElement)());return (to ? (new AN(tn)) : new AO())})()})],[null,(()=>{return new AO()})]])}es(tp){return (tp)}});const BQ=new(class extends _M{jv(tq,tr,ts,tt,tu,tv,tw = false){(tq.arc(tr, ts, tt, tu, tv, tw));return tq}ge(tx){(tx.closePath());return tx}ew(){return (new Path2D())}gf(ty,tz,ua){(ty.lineTo(tz, ua));return ty}gg(ub,uc,ud){(ub.moveTo(uc, ud));return ub}ev(ue,uf,ug,uh,ui){(ue.rect(uf, ug, uh, ui));return ue}});const CH=new(class extends _M{hc(uj){return (uj)}});const CY=new(class extends _M{ku(uk){return (uk.width)}});const AL=new(class extends _M{az(ul,um,un,uo,up,uq,ur = false){(ul.getContext('2d').arc(um, un, uo, up, uq, ur));return ul}aw(us,ut,uu,uv,uw,ux){(us.getContext('2d').arcTo(ut, uu, uv, uw, ux));return us}ap(uy){(uy.getContext('2d').beginPath());return uy}nk(uz,va,vb,vc,vd,ve,vf){(uz.getContext('2d').bezierCurveTo(va, vb, vc, vd, ve, vf));return uz}ki(vg,vh,vi,vj,vk){(vg.getContext('2d').clearRect(vh, vi, vj, vk));return vg}je(vl,vm = new CV()){(vl.getContext('2d').clip(AL.vn(vm)));return vl}ey(vo,vp,vq = new CV()){(vo.getContext('2d').clip(vp, AL.vn(vq)));return vo}dz(vr){(vr.getContext('2d').closePath());return vr}go(vs,vt,vu,vv){return (vs.getContext('2d').createConicGradient(vt, vu, vv))}bq(vw,vx,vy,vz = `srgb`){return (vw.getContext('2d').createImageData(vx, vy, { colorSpace: vz }))}qc(wa,wb,wc,wd,we){return (wa.getContext('2d').createLinearGradient(wb, wc, wd, we))}hq(wf,wg,wh){const wj=AL.wi(wh);return ((() => {
+      const $pattern = wf.getContext('2d').createPattern(wg, wj)
 
       if ($pattern !== null) {
-        return new AM(($pattern))
+        return new AN(($pattern))
       } else {
-        return new AN()
+        return new AO()
       }
-    })())}lp(we,wf,wg,wh,wi,wj,wk){return (we.getContext('2d').createRadialGradient(wf, wg, wh, wi, wj, wk))}wl(wm){return _match(wm,[[_PE(EI,[]),(()=>{return `ltr`})],[_PE(DV,[]),(()=>{return `rtl`})],[_PE(EJ,[]),(()=>{return `inherit`})]])}he(wn,wo,wp,wq,wr = 0,ws = 0,wt = 0,wu = 0,wv = 0,ww = 0){(!_compare(wt, 0) || !_compare(wu, 0) || !_compare(wv, 0) || !_compare(ww, 0) ? (wn.getContext('2d').drawImage(wo, wp, wq, wr, ws, wt, wu, wv, ww)) : (!_compare(wr, 0) || !_compare(ws, 0) ? (wn.getContext('2d').drawImage(wo, wp, wq, wr, ws)) : (wn.getContext('2d').drawImage(wo, wp, wq))));return wn}ch(wx,wy,wz,xa,xb,xc,xd,xe,xf = false){(wx.getContext('2d').ellipse(wy, wz, xa, xb, xc, xd, xe, xf));return wx}ax(xg,xh = new CU()){(xg.getContext('2d').fill(AK.vh(xh)));return xg}gf(xi,xj,xk = new CU()){(xi.getContext('2d').fill(xj, AK.vh(xk)));return xi}af(xl,xm,xn,xo,xp){(xl.getContext('2d').fillRect(xm, xn, xo, xp));return xl}vh(xq){return _match(xq,[[_PE(CU,[]),(()=>{return `nonzero`})],[_PE(BQ,[]),(()=>{return `evenodd`})]])}da(xr,xs,xt,xu,xv = -1){(xr.getContext('2d').fillText(xs, xt, xu, xv === -1 ? undefined : xv ));return xr}xw(xx){return _match(xx,[[_PE(EK,[]),(()=>{return `auto`})],[_PE(BL,[]),(()=>{return `normal`})],[_PE(BM,[]),(()=>{return `none`})]])}xy(xz){return _match(xz,[[_PE(EL,[]),(()=>{return `source-over`})],[_PE(EM,[]),(()=>{return `source-atop`})],[_PE(EN,[]),(()=>{return `source-in`})],[_PE(EO,[]),(()=>{return `source-out`})],[_PE(EP,[]),(()=>{return `destination-over`})],[_PE(EQ,[]),(()=>{return `destination-atop`})],[_PE(ER,[]),(()=>{return `destination-in`})],[_PE(ES,[]),(()=>{return `destination-out`})],[_PE(ET,[]),(()=>{return `lighter`})],[_PE(EU,[]),(()=>{return `copy`})],[_PE(DZ,[]),(()=>{return `xor`})]])}ya(yb){return _match(yb,[[_PE(CH,[]),(()=>{return `low`})],[_PE(EV,[]),(()=>{return `medium`})],[_PE(EW,[]),(()=>{return `high`})]])}kd(yc,yd,ye,yf = new CU(),yg = new AN()){return _match(yg,[[_PE(AM,[_PV]),((yh)=>{return (yc.getContext('2d').isPointInPath(yh, yd, ye, AK.vh(yf)))})],[_PE(AN,[]),(()=>{return (yc.getContext('2d').isPointInPath(yd, ye, AK.vh(yf)))})]])}jm(yi,yj,yk,yl = new AN()){return _match(yl,[[_PE(AM,[_PV]),((ym)=>{return (yi.getContext('2d').isPointInStroke(yj, yk, ym))})],[_PE(AN,[]),(()=>{return (yi.getContext('2d').isPointInStroke(yj, yk))})]])}yn(yo){return _match(yo,[[_PE(EX,[]),(()=>{return `butt`})],[_PE(BG,[]),(()=>{return `round`})],[_PE(EY,[]),(()=>{return `square`})]])}yp(yq){return _match(yq,[[_PE(EZ,[]),(()=>{return `bevel`})],[_PE(DE,[]),(()=>{return `round`})],[_PE(FA,[]),(()=>{return `miter`})]])}am(yr,ys,yt){(yr.getContext('2d').lineTo(ys, yt));return yr}kt(yu,yv){return (yu.getContext('2d').measureText(yv))}an(yw,yx,yy){(yw.getContext('2d').moveTo(yx, yy));return yw}wc(yz){return _match(yz,[[_PE(CJ,[]),(()=>{return `repeat`})],[_PE(FB,[]),(()=>{return `repeat-x`})],[_PE(FC,[]),(()=>{return `repeat-y`})],[_PE(FD,[]),(()=>{return `no-repeat`})]])}bw(za,zb,zc,zd){(za.getContext('2d').putImageData(zb, zc, zd));return za}ij(ze,zf,zg,zh,zi){(ze.getContext('2d').quadraticCurveTo(zf, zg, zh, zi));return ze}gt(zj,zk,zl,zm,zn){(zj.getContext('2d').rect(zk, zl, zm, zn));return zj}fj(zo){(zo.getContext('2d').reset());return zo}lb(zp){(zp.getContext('2d').resetTransform());return zp}kn(zq){(zq.getContext('2d').restore());return zq}op(zr,zs){(zr.getContext('2d').rotate(zs));return zr}pj(zt,zu,zv,zw,zx,zy){(zt.getContext('2d').roundRect(zu, zv, zw, zx, zy));return zt}kl(zz){(zz.getContext('2d').save());return zz}mh(aaa,aab,aac){(aaa.getContext('2d').scale(aab, aac));return aaa}pu(aad,aae){(aad.getContext('2d').direction = AK.wl(aae));return aad}ag(aaf,aag){_match(aag,[[_PE(AL,[_PV]),((aah)=>{return (aaf.getContext('2d').fillStyle = aah)})],[_PE(CD,[_PV]),((aai)=>{return (aaf.getContext('2d').fillStyle = aai)})],[_PE(CK,[_PV]),((aaj)=>{return (aaf.getContext('2d').fillStyle = aaj)})]]);return aaf}fb(aak,aal){(aak.getContext('2d').filter = aal);return aak}cz(aam,aan){(aam.getContext('2d').font = aan);return aam}el(aao,aap){(aao.getContext('2d').fontKerning = AK.xw(aap));return aao}bd(aaq,aar){(aaq.getContext('2d').globalAlpha = aar);return aaq}qm(aas,aat){(aas.getContext('2d').globalCompositeOperation = AK.xy(aat));return aas}oz(aau,aav){(aau.getContext('2d').imageSmoothingEnabled = aav);return aau}hf(aaw,aax){(aaw.getContext('2d').imageSmoothingQuality = AK.ya(aax));return aaw}mz(aay,aaz){const aba=`${aaz}px`;(aay.getContext('2d').letterSpacing = aba);return aay}dm(abb,abc){(abb.getContext('2d').lineCap = AK.yn(abc));return abb}bj(abd,abe){(abd.getContext('2d').setLineDash(abe));return abd}nu(abf,abg){(abf.getContext('2d').lineDashOffset = abg);return abf}mb(abh,abi){(abh.getContext('2d').lineJoin = AK.yp(abi));return abh}aw(abj,abk){(abj.getContext('2d').lineWidth = abk);return abj}ab(abl,abm){(abl.getContext('2d').shadowBlur = abm);return abl}ad(abn,abo){(abn.getContext('2d').shadowColor = abo);return abn}ac(abp,abq){(abp.getContext('2d').shadowOffsetX = abq);return abp}ee(abr,abs){(abr.getContext('2d').shadowOffsetY = abs);return abr}u(abt,abu){_match(abu,[[_PE(AL,[_PV]),((abv)=>{return (abt.getContext('2d').strokeStyle = abv)})],[_PE(CD,[_PV]),((abw)=>{return (abt.getContext('2d').strokeStyle = abw)})],[_PE(CK,[_PV]),((abx)=>{return (abt.getContext('2d').strokeStyle = abx)})]]);return abt}db(aby,abz){(aby.getContext('2d').textAlign = AK.aca(abz));return aby}fu(acb,acc){(acb.getContext('2d').textBaseline = AK.fw(acc));return acb}cb(acd,ace,acf,acg,ach,aci,acj){(acd.getContext('2d').setTransform(ace, acf, acg, ach, aci, acj));return acd}hx(ack,acl){const acm=`${acl}px`;(ack.getContext('2d').wordSpacing = acm);return ack}al(acn,aco = new AN()){_match(aco,[[_PE(AM,[_PV]),((acp)=>{return (acn.getContext('2d').stroke(acp))})],[_PE(AN,[]),(()=>{return (acn.getContext('2d').stroke())})]]);return acn}t(acq,acr,acs,act,acu){(acq.getContext('2d').strokeRect(acr, acs, act, acu));return acq}dg(acv,acw,acx,acy,acz = 0){(acv.getContext('2d').strokeText(acw, acx, acy, acz > 0 ? acz : undefined));return acv}aca(ada){return _match(ada,[[_PE(BB,[]),(()=>{return `left`})],[_PE(BD,[]),(()=>{return `right`})],[_PE(BC,[]),(()=>{return `center`})],[_PE(FE,[]),(()=>{return `start`})],[_PE(FF,[]),(()=>{return `end`})]])}fw(adb){return _match(adb,[[_PE(BX,[]),(()=>{return `alphabetic`})],[_PE(BZ,[]),(()=>{return `bottom`})],[_PE(BV,[]),(()=>{return `hanging`})],[_PE(BY,[]),(()=>{return `ideographic`})],[_PE(BW,[]),(()=>{return `middle`})],[_PE(BU,[]),(()=>{return `top`})]])}ic(adc,add,ade,adf,adg,adh,adi){(adc.getContext('2d').transform(add, ade, adf, adg, adh, adi));return adc}ms(adj,adk,adl){(adj.getContext('2d').translate(adk, adl));return adj}});const AV=new(class extends _M{bt(adm,adn,ado){return (adm.data[adn] = ado)}});_program.addRoutes([{handler:(()=>{``}),decoders:[],mapping:[],path:`/`},{handler:((adr)=>{EC.adp(adr)}),decoders:[Decoder.string],mapping:['method'],path:`/:method`}]);class AF extends _C{constructor(props){super(props);this._d({d:[null,[]],n:[null,`mint`],m:[null,``]});this.state = new Record({f:[],r:true})}$b(b){const _={[`--a-a`]:`calc(` + this.a + `ch + 10px)`};(b ? Object.assign(_, {[`--b-a`]:`#F9F9F9`}) : null);(b ? Object.assign(_, {[`--b-b`]:`1.6`,[`--b-c`]:`1`}) : Object.assign(_, {[`--b-c`]:`var(--unhighlighted-opacity)`}));(b ? Object.assign(_, {[`--a-b`]:`#DDD`}) : Object.assign(_, {[`--a-b`]:`var(--title-border)`}));return _}$c(){const _={};(AG.c(this.d) ? Object.assign(_, {[`--c-a`]:`1`}) : Object.assign(_, {[`--c-b`]:`#EEE`,[`--c-a`]:`0.5`}));return _}get j(){return (_compare(this.n, `plain`) ? AH.l(this.m, `\n`) : AH.l((hljs.highlight(this.n, this.m, true).value), `\n`))}get a(){return AH.o(AI.p(AG.q(this.f)))}get f(){return this.state.f;}get r(){return this.state.r;}componentDidUpdate(){const k=this.j;return (!_compare(k, this.f) ? new Promise(((_resolve)=>{this.setState(_u(this.state, new Record({f:k})), _resolve)
+    })())}lr(wk,wl,wm,wn,wo,wp,wq){return (wk.getContext('2d').createRadialGradient(wl, wm, wn, wo, wp, wq))}wr(ws){return _match(ws,[[_PE(EJ,[]),(()=>{return `ltr`})],[_PE(DW,[]),(()=>{return `rtl`})],[_PE(EK,[]),(()=>{return `inherit`})]])}hg(wt,wu,wv,ww,wx = 0,wy = 0,wz = 0,xa = 0,xb = 0,xc = 0){(!_compare(wz, 0) || !_compare(xa, 0) || !_compare(xb, 0) || !_compare(xc, 0) ? (wt.getContext('2d').drawImage(wu, wv, ww, wx, wy, wz, xa, xb, xc)) : (!_compare(wx, 0) || !_compare(wy, 0) ? (wt.getContext('2d').drawImage(wu, wv, ww, wx, wy)) : (wt.getContext('2d').drawImage(wu, wv, ww))));return wt}ci(xd,xe,xf,xg,xh,xi,xj,xk,xl = false){(xd.getContext('2d').ellipse(xe, xf, xg, xh, xi, xj, xk, xl));return xd}ay(xm,xn = new CV()){(xm.getContext('2d').fill(AL.vn(xn)));return xm}gh(xo,xp,xq = new CV()){(xo.getContext('2d').fill(xp, AL.vn(xq)));return xo}ag(xr,xs,xt,xu,xv){(xr.getContext('2d').fillRect(xs, xt, xu, xv));return xr}vn(xw){return _match(xw,[[_PE(CV,[]),(()=>{return `nonzero`})],[_PE(BR,[]),(()=>{return `evenodd`})]])}db(xx,xy,xz,ya,yb = -1){(xx.getContext('2d').fillText(xy, xz, ya, yb === -1 ? undefined : yb ));return xx}yc(yd){return _match(yd,[[_PE(EL,[]),(()=>{return `auto`})],[_PE(BM,[]),(()=>{return `normal`})],[_PE(BN,[]),(()=>{return `none`})]])}ye(yf){return _match(yf,[[_PE(EM,[]),(()=>{return `source-over`})],[_PE(EN,[]),(()=>{return `source-atop`})],[_PE(EO,[]),(()=>{return `source-in`})],[_PE(EP,[]),(()=>{return `source-out`})],[_PE(EQ,[]),(()=>{return `destination-over`})],[_PE(ER,[]),(()=>{return `destination-atop`})],[_PE(ES,[]),(()=>{return `destination-in`})],[_PE(ET,[]),(()=>{return `destination-out`})],[_PE(EU,[]),(()=>{return `lighter`})],[_PE(EV,[]),(()=>{return `copy`})],[_PE(EA,[]),(()=>{return `xor`})]])}yg(yh){return _match(yh,[[_PE(CI,[]),(()=>{return `low`})],[_PE(EW,[]),(()=>{return `medium`})],[_PE(EX,[]),(()=>{return `high`})]])}kf(yi,yj,yk,yl = new CV(),ym = new AO()){return _match(ym,[[_PE(AN,[_PV]),((yn)=>{return (yi.getContext('2d').isPointInPath(yn, yj, yk, AL.vn(yl)))})],[_PE(AO,[]),(()=>{return (yi.getContext('2d').isPointInPath(yj, yk, AL.vn(yl)))})]])}jo(yo,yp,yq,yr = new AO()){return _match(yr,[[_PE(AN,[_PV]),((ys)=>{return (yo.getContext('2d').isPointInStroke(yp, yq, ys))})],[_PE(AO,[]),(()=>{return (yo.getContext('2d').isPointInStroke(yp, yq))})]])}yt(yu){return _match(yu,[[_PE(EY,[]),(()=>{return `butt`})],[_PE(BH,[]),(()=>{return `round`})],[_PE(EZ,[]),(()=>{return `square`})]])}yv(yw){return _match(yw,[[_PE(FA,[]),(()=>{return `bevel`})],[_PE(DF,[]),(()=>{return `round`})],[_PE(FB,[]),(()=>{return `miter`})]])}an(yx,yy,yz){(yx.getContext('2d').lineTo(yy, yz));return yx}kv(za,zb){return (za.getContext('2d').measureText(zb))}ao(zc,zd,ze){(zc.getContext('2d').moveTo(zd, ze));return zc}wi(zf){return _match(zf,[[_PE(CK,[]),(()=>{return `repeat`})],[_PE(FC,[]),(()=>{return `repeat-x`})],[_PE(FD,[]),(()=>{return `repeat-y`})],[_PE(FE,[]),(()=>{return `no-repeat`})]])}bx(zg,zh,zi,zj){(zg.getContext('2d').putImageData(zh, zi, zj));return zg}il(zk,zl,zm,zn,zo){(zk.getContext('2d').quadraticCurveTo(zl, zm, zn, zo));return zk}gv(zp,zq,zr,zs,zt){(zp.getContext('2d').rect(zq, zr, zs, zt));return zp}fl(zu){(zu.getContext('2d').reset());return zu}ld(zv){(zv.getContext('2d').resetTransform());return zv}kp(zw){(zw.getContext('2d').restore());return zw}or(zx,zy){(zx.getContext('2d').rotate(zy));return zx}pl(zz,aaa,aab,aac,aad,aae){(zz.getContext('2d').roundRect(aaa, aab, aac, aad, aae));return zz}kn(aaf){(aaf.getContext('2d').save());return aaf}mj(aag,aah,aai){(aag.getContext('2d').scale(aah, aai));return aag}pw(aaj,aak){(aaj.getContext('2d').direction = AL.wr(aak));return aaj}ah(aal,aam){_match(aam,[[_PE(AM,[_PV]),((aan)=>{return (aal.getContext('2d').fillStyle = aan)})],[_PE(CE,[_PV]),((aao)=>{return (aal.getContext('2d').fillStyle = aao)})],[_PE(CL,[_PV]),((aap)=>{return (aal.getContext('2d').fillStyle = aap)})]]);return aal}fd(aaq,aar){(aaq.getContext('2d').filter = aar);return aaq}da(aas,aat){(aas.getContext('2d').font = aat);return aas}em(aau,aav){(aau.getContext('2d').fontKerning = AL.yc(aav));return aau}be(aaw,aax){(aaw.getContext('2d').globalAlpha = aax);return aaw}qo(aay,aaz){(aay.getContext('2d').globalCompositeOperation = AL.ye(aaz));return aay}pb(aba,abb){(aba.getContext('2d').imageSmoothingEnabled = abb);return aba}hh(abc,abd){(abc.getContext('2d').imageSmoothingQuality = AL.yg(abd));return abc}nb(abe,abf){const abg=`${abf}px`;(abe.getContext('2d').letterSpacing = abg);return abe}dn(abh,abi){(abh.getContext('2d').lineCap = AL.yt(abi));return abh}bk(abj,abk){(abj.getContext('2d').setLineDash(abk));return abj}nw(abl,abm){(abl.getContext('2d').lineDashOffset = abm);return abl}md(abn,abo){(abn.getContext('2d').lineJoin = AL.yv(abo));return abn}ax(abp,abq){(abp.getContext('2d').lineWidth = abq);return abp}ac(abr,abs){(abr.getContext('2d').shadowBlur = abs);return abr}ae(abt,abu){(abt.getContext('2d').shadowColor = abu);return abt}ad(abv,abw){(abv.getContext('2d').shadowOffsetX = abw);return abv}ef(abx,aby){(abx.getContext('2d').shadowOffsetY = aby);return abx}v(abz,aca){_match(aca,[[_PE(AM,[_PV]),((acb)=>{return (abz.getContext('2d').strokeStyle = acb)})],[_PE(CE,[_PV]),((acc)=>{return (abz.getContext('2d').strokeStyle = acc)})],[_PE(CL,[_PV]),((acd)=>{return (abz.getContext('2d').strokeStyle = acd)})]]);return abz}dc(ace,acf){(ace.getContext('2d').textAlign = AL.acg(acf));return ace}fw(ach,aci){(ach.getContext('2d').textBaseline = AL.fy(aci));return ach}cc(acj,ack,acl,acm,acn,aco,acp){(acj.getContext('2d').setTransform(ack, acl, acm, acn, aco, acp));return acj}hz(acq,acr){const acs=`${acr}px`;(acq.getContext('2d').wordSpacing = acs);return acq}am(act,acu = new AO()){_match(acu,[[_PE(AN,[_PV]),((acv)=>{return (act.getContext('2d').stroke(acv))})],[_PE(AO,[]),(()=>{return (act.getContext('2d').stroke())})]]);return act}u(acw,acx,acy,acz,ada){(acw.getContext('2d').strokeRect(acx, acy, acz, ada));return acw}dh(adb,adc,add,ade,adf = 0){(adb.getContext('2d').strokeText(adc, add, ade, adf > 0 ? adf : undefined));return adb}acg(adg){return _match(adg,[[_PE(BC,[]),(()=>{return `left`})],[_PE(BE,[]),(()=>{return `right`})],[_PE(BD,[]),(()=>{return `center`})],[_PE(FF,[]),(()=>{return `start`})],[_PE(FG,[]),(()=>{return `end`})]])}fy(adh){return _match(adh,[[_PE(BY,[]),(()=>{return `alphabetic`})],[_PE(CA,[]),(()=>{return `bottom`})],[_PE(BW,[]),(()=>{return `hanging`})],[_PE(BZ,[]),(()=>{return `ideographic`})],[_PE(BX,[]),(()=>{return `middle`})],[_PE(BV,[]),(()=>{return `top`})]])}ie(adi,adj,adk,adl,adm,adn,ado){(adi.getContext('2d').transform(adj, adk, adl, adm, adn, ado));return adi}mu(adp,adq,adr){(adp.getContext('2d').translate(adq, adr));return adp}});const AW=new(class extends _M{bu(ads,adt,adu){return (ads.data[adt] = adu)}});_program.addRoutes([{handler:(()=>{``}),decoders:[],mapping:[],path:`/`},{handler:((adx)=>{ED.adv(adx)}),decoders:[Decoder.string],mapping:['method'],path:`/:method`}]);class AF extends _C{constructor(props){super(props);this._d({d:[null,[]],n:[null,`mint`],m:[null,``]});this.state = new Record({f:[],r:true})}$b(b){const _={[`--a-a`]:`calc(` + this.a + `ch + 10px)`};(b ? Object.assign(_, {[`--b-a`]:`#F9F9F9`}) : null);(b ? Object.assign(_, {[`--b-b`]:`1.6`,[`--b-c`]:`1`}) : Object.assign(_, {[`--b-c`]:`var(--unhighlighted-opacity)`}));(b ? Object.assign(_, {[`--a-b`]:`#DDD`}) : Object.assign(_, {[`--a-b`]:`var(--title-border)`}));return _}$c(){const _={};(AG.c(this.d) ? Object.assign(_, {[`--c-a`]:`1`}) : Object.assign(_, {[`--c-b`]:`#EEE`,[`--c-a`]:`0.5`}));return _}get j(){return (_compare(this.n, `plain`) ? AH.l(this.m, `\n`) : AH.l((hljs.highlight(this.n, this.m, true).value), `\n`))}get a(){return AH.o(AI.p(AG.q(this.f)))}get f(){return this.state.f;}get r(){return this.state.r;}componentDidUpdate(){const k=this.j;return (!_compare(k, this.f) ? new Promise(((_resolve)=>{this.setState(_u(this.state, new Record({f:k})), _resolve)
 })) : (null))}componentDidMount(){return new Promise(((_resolve)=>{this.setState(_u(this.state, new Record({f:this.j})), _resolve)
-}))}render(){return _h("div", {className:`a`}, [_h("pre", {className:`c`,style:_style([this.$c()])}, [AG.e(this.f, ((g, i)=>{return _h("div", {"dangerouslySetInnerHTML":({__html: g}),className:`b`,style:_style([this.$b(AG.h(this.d, i))])})}))])])}};;class AJ extends _C{get s(){return (this._canvas ? new AM(this._canvas) : new AN);}render(){const [y,z] = [(()=>{const w=(()=>{return _match(this.s,[[_PE(AM,[_PV]),((v)=>{return (()=>{AK.t(AK.u(v, new AL(`green`)), 20, 10, 160, 100);return ``})()})],[_PE(AN,[]),(()=>{return ``})]])});(async()=>{await AO.x(0);return w()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
+}))}render(){return _h("div", {className:`a`}, [_h("pre", {className:`c`,style:_style([this.$c()])}, [AG.e(this.f, ((g, i)=>{return _h("div", {"dangerouslySetInnerHTML":({__html: g}),className:`b`,style:_style([this.$b(AG.h(this.d, i))])})}))])])}};;class AJ extends _C{get t(){return (this._canvas ? new AN(this._canvas) : new AO);}render(){const [z,aa] = [(()=>{const x=(()=>{return _match(AK.s(this.t),[[_PE(AN,[_PV]),((w)=>{return (()=>{AL.u(AL.v(w, new AM(`green`)), 20, 10, 160, 100);return ``})()})],[_PE(AO,[]),(()=>{return ``})]])});(async()=>{await AP.y(0);return x()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
   () {
-    case canvas {
+    case Dom.Canvas.fromDomElement(canvas) {
       Maybe::Just(el) =>
         {
           el
@@ -229,9 +229,9 @@ if (!_2) { continue };_0.push(sb)};return _0})())}});const ED=new(class extends 
   draw()
 }
 
-<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [y]),_h(AF, {m:z})])}};;class AP extends _C{get aa(){return (this._canvas ? new AM(this._canvas) : new AN);}render(){const [ai,aj] = [(()=>{const ah=(()=>{return _match(this.aa,[[_PE(AM,[_PV]),((ae)=>{return (()=>{AK.ab(AK.ac(AK.ad(ae, `red`), 25), 10);AK.af(AK.ag(ae, new AL(`blue`)), 20, 20, 150, 100);return ``})()})],[_PE(AN,[]),(()=>{return ``})]])});(async()=>{await AO.x(0);return ah()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
+<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [z]),_h(AF, {m:aa})])}};;class AQ extends _C{get ab(){return (this._canvas ? new AN(this._canvas) : new AO);}render(){const [aj,ak] = [(()=>{const ai=(()=>{return _match(AK.s(this.ab),[[_PE(AN,[_PV]),((af)=>{return (()=>{AL.ac(AL.ad(AL.ae(af, `red`), 25), 10);AL.ag(AL.ah(af, new AM(`blue`)), 20, 20, 150, 100);return ``})()})],[_PE(AO,[]),(()=>{return ``})]])});(async()=>{await AP.y(0);return ai()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
   () {
-    case canvas {
+    case Dom.Canvas.fromDomElement(canvas) {
       Maybe::Just(el) =>
         {
           // Shadow
@@ -258,9 +258,9 @@ if (!_2) { continue };_0.push(sb)};return _0})())}});const ED=new(class extends 
   draw()
 }
 
-<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [ai]),_h(AF, {m:aj})])}};;class AQ extends _C{get ak(){return (this._canvas ? new AM(this._canvas) : new AN);}render(){const [ar,as] = [(()=>{const aq=(()=>{return _match(this.ak,[[_PE(AM,[_PV]),((ap)=>{return (()=>{AK.al(AK.am(AK.an(AK.ao(ap), 30, 50), 150, 100));return ``})()})],[_PE(AN,[]),(()=>{return ``})]])});(async()=>{await AO.x(0);return aq()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
+<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [aj]),_h(AF, {m:ak})])}};;class AR extends _C{get al(){return (this._canvas ? new AN(this._canvas) : new AO);}render(){const [as,at] = [(()=>{const ar=(()=>{return _match(AK.s(this.al),[[_PE(AN,[_PV]),((aq)=>{return (()=>{AL.am(AL.an(AL.ao(AL.ap(aq), 30, 50), 150, 100));return ``})()})],[_PE(AO,[]),(()=>{return ``})]])});(async()=>{await AP.y(0);return ar()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
   () {
-    case canvas {
+    case Dom.Canvas.fromDomElement(canvas) {
       Maybe::Just(el) =>
         {
           el
@@ -282,9 +282,9 @@ if (!_2) { continue };_0.push(sb)};return _0})())}});const ED=new(class extends 
   draw()
 }
 
-<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [ar]),_h(AF, {m:as})])}};;class AR extends _C{get at(){return (this._canvas ? new AM(this._canvas) : new AN);}render(){const [ba,bb] = [(()=>{const az=(()=>{return _match(this.at,[[_PE(AM,[_PV]),((au)=>{return (()=>{AK.al(AK.am(AK.am(AK.an(AK.u(AK.ao(au), new AL(`gray`)), 200, 20), 200, 130), 50, 20));AK.al(AK.av(AK.an(AK.aw(AK.u(AK.ao(au), new AL(`black`)), 5), 200, 20), 200, 130, 50, 20, 40));AK.ax(AK.ay(AK.ag(AK.ao(au), new AL(`blue`)), 200, 20, 5, 0, 2 * (Math.PI)));AK.ax(AK.ay(AK.ay(AK.ag(AK.ao(au), new AL(`red`)), 200, 130, 5, 0, 2 * (Math.PI)), 50, 20, 5, 0, 2 * (Math.PI)));return ``})()})],[_PE(AN,[]),(()=>{return ``})]])});(async()=>{await AO.x(0);return az()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
+<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [as]),_h(AF, {m:at})])}};;class AS extends _C{get au(){return (this._canvas ? new AN(this._canvas) : new AO);}render(){const [bb,bc] = [(()=>{const ba=(()=>{return _match(AK.s(this.au),[[_PE(AN,[_PV]),((av)=>{return (()=>{AL.am(AL.an(AL.an(AL.ao(AL.v(AL.ap(av), new AM(`gray`)), 200, 20), 200, 130), 50, 20));AL.am(AL.aw(AL.ao(AL.ax(AL.v(AL.ap(av), new AM(`black`)), 5), 200, 20), 200, 130, 50, 20, 40));AL.ay(AL.az(AL.ah(AL.ap(av), new AM(`blue`)), 200, 20, 5, 0, 2 * (Math.PI)));AL.ay(AL.az(AL.az(AL.ah(AL.ap(av), new AM(`red`)), 200, 130, 5, 0, 2 * (Math.PI)), 50, 20, 5, 0, 2 * (Math.PI)));return ``})()})],[_PE(AO,[]),(()=>{return ``})]])});(async()=>{await AP.y(0);return ba()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
   () {
-    case canvas {
+    case Dom.Canvas.fromDomElement(canvas) {
       Maybe::Just(el) =>
         {
           // Tangential lines
@@ -333,9 +333,9 @@ if (!_2) { continue };_0.push(sb)};return _0})())}});const ED=new(class extends 
   draw()
 }
 
-<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [ba]),_h(AF, {m:bb})])}};;class AS extends _C{get bc(){return (this._canvas ? new AM(this._canvas) : new AN);}render(){const [bg,bh] = [(()=>{const bf=(()=>{return _match(this.bc,[[_PE(AM,[_PV]),((be)=>{return (()=>{AK.bd(be, 0.5);AK.af(AK.ag(be, new AL(`blue`)), 10, 10, 100, 100);AK.af(AK.ag(be, new AL(`red`)), 50, 50, 100, 100);return ``})()})],[_PE(AN,[]),(()=>{return ``})]])});(async()=>{await AO.x(0);return bf()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
+<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [bb]),_h(AF, {m:bc})])}};;class AT extends _C{get bd(){return (this._canvas ? new AN(this._canvas) : new AO);}render(){const [bh,bi] = [(()=>{const bg=(()=>{return _match(AK.s(this.bd),[[_PE(AN,[_PV]),((bf)=>{return (()=>{AL.be(bf, 0.5);AL.ag(AL.ah(bf, new AM(`blue`)), 10, 10, 100, 100);AL.ag(AL.ah(bf, new AM(`red`)), 50, 50, 100, 100);return ``})()})],[_PE(AO,[]),(()=>{return ``})]])});(async()=>{await AP.y(0);return bg()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
   () {
-    case canvas {
+    case Dom.Canvas.fromDomElement(canvas) {
       Maybe::Just(el) =>
         {
           el
@@ -362,9 +362,9 @@ if (!_2) { continue };_0.push(sb)};return _0})())}});const ED=new(class extends 
   draw()
 }
 
-<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [bg]),_h(AF, {m:bh})])}};;class AT extends _C{get bi(){return (this._canvas ? new AM(this._canvas) : new AN);}render(){const [bm,bn] = [(()=>{const bl=(()=>{return _match(this.bi,[[_PE(AM,[_PV]),((bk)=>{return (()=>{AK.al(AK.am(AK.an(AK.bj(AK.ao(bk), [5, 15]), 0, 50), 300, 50));AK.al(AK.am(AK.an(AK.bj(AK.ao(bk), []), 0, 100), 300, 100));return ``})()})],[_PE(AN,[]),(()=>{return ``})]])});(async()=>{await AO.x(0);return bl()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
+<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [bh]),_h(AF, {m:bi})])}};;class AU extends _C{get bj(){return (this._canvas ? new AN(this._canvas) : new AO);}render(){const [bn,bo] = [(()=>{const bm=(()=>{return _match(AK.s(this.bj),[[_PE(AN,[_PV]),((bl)=>{return (()=>{AL.am(AL.an(AL.ao(AL.bk(AL.ap(bl), [5, 15]), 0, 50), 300, 50));AL.am(AL.an(AL.ao(AL.bk(AL.ap(bl), []), 0, 100), 300, 100));return ``})()})],[_PE(AO,[]),(()=>{return ``})]])});(async()=>{await AP.y(0);return bm()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
   () {
-    case canvas {
+    case Dom.Canvas.fromDomElement(canvas) {
       Maybe::Just(el) =>
         {
           // Dashed line
@@ -396,9 +396,9 @@ if (!_2) { continue };_0.push(sb)};return _0})())}});const ED=new(class extends 
   draw()
 }
 
-<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [bm]),_h(AF, {m:bn})])}};;class AU extends _C{get bo(){return (this._canvas ? new AM(this._canvas) : new AN);}render(){const [by,bz] = [(()=>{const bx=(()=>{return _match(this.bo,[[_PE(AM,[_PV]),((bq)=>{return (()=>{const br=AK.bp(bq, 100, 100);AG.e(AG.bs(0, 100 * 100 - 1), ((bv, bu)=>{AV.bt(br, bu * 4, 190);AV.bt(br, bu * 4 + 1, 0);AV.bt(br, bu * 4 + 2, 210);AV.bt(br, bu * 4 + 3, 255);return bv}));AK.bw(bq, br, 20, 20);return ``})()})],[_PE(AN,[]),(()=>{return ``})]])});(async()=>{await AO.x(0);return bx()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
+<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [bn]),_h(AF, {m:bo})])}};;class AV extends _C{get bp(){return (this._canvas ? new AN(this._canvas) : new AO);}render(){const [bz,ca] = [(()=>{const by=(()=>{return _match(AK.s(this.bp),[[_PE(AN,[_PV]),((br)=>{return (()=>{const bs=AL.bq(br, 100, 100);AG.e(AG.bt(0, 100 * 100 - 1), ((bw, bv)=>{AW.bu(bs, bv * 4, 190);AW.bu(bs, bv * 4 + 1, 0);AW.bu(bs, bv * 4 + 2, 210);AW.bu(bs, bv * 4 + 3, 255);return bw}));AL.bx(br, bs, 20, 20);return ``})()})],[_PE(AO,[]),(()=>{return ``})]])});(async()=>{await AP.y(0);return by()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
   () {
-    case canvas {
+    case Dom.Canvas.fromDomElement(canvas) {
       Maybe::Just(el) =>
         {
           let imageData =
@@ -430,9 +430,9 @@ if (!_2) { continue };_0.push(sb)};return _0})())}});const ED=new(class extends 
   draw()
 }
 
-<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [by]),_h(AF, {m:bz})])}};;class AW extends _C{get ca(){return (this._canvas ? new AM(this._canvas) : new AN);}render(){const [ce,cf] = [(()=>{const cd=(()=>{return _match(this.ca,[[_PE(AM,[_PV]),((cc)=>{return (()=>{AK.af(AK.cb(cc, 1, 0.2, 0.8, 1, 0, 0), 0, 0, 100, 100);return ``})()})],[_PE(AN,[]),(()=>{return ``})]])});(async()=>{await AO.x(0);return cd()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
+<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [bz]),_h(AF, {m:ca})])}};;class AX extends _C{get cb(){return (this._canvas ? new AN(this._canvas) : new AO);}render(){const [cf,cg] = [(()=>{const ce=(()=>{return _match(AK.s(this.cb),[[_PE(AN,[_PV]),((cd)=>{return (()=>{AL.ag(AL.cc(cd, 1, 0.2, 0.8, 1, 0, 0), 0, 0, 100, 100);return ``})()})],[_PE(AO,[]),(()=>{return ``})]])});(async()=>{await AP.y(0);return ce()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
   () {
-    case canvas {
+    case Dom.Canvas.fromDomElement(canvas) {
       Maybe::Just(el) =>
         {
           el
@@ -452,9 +452,9 @@ if (!_2) { continue };_0.push(sb)};return _0})())}});const ED=new(class extends 
   draw()
 }
 
-<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [ce]),_h(AF, {m:cf})])}};;class AX extends _C{get cg(){return (this._canvas ? new AM(this._canvas) : new AN);}render(){const [ck,cl] = [(()=>{const cj=(()=>{return _match(this.cg,[[_PE(AM,[_PV]),((ci)=>{return (()=>{AK.ax(AK.ch(ci, 100, 100, 50, 75, 3.14 * 2, 0, 0));AK.al(AK.ch(AK.ao(ci), 100, 100, 50, 75, (Math.PI) / 4, 0, 2 * (Math.PI)));AK.al(AK.am(AK.an(AK.bj(AK.ao(ci), [5, 5]), 0, 200), 200, 0));return ``})()})],[_PE(AN,[]),(()=>{return ``})]])});(async()=>{await AO.x(0);return cj()})();return _h("canvas", {"width":`200`,"height":`200`,ref:(element) => { this._canvas = element }})})(), `let draw =
+<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [cf]),_h(AF, {m:cg})])}};;class AY extends _C{get ch(){return (this._canvas ? new AN(this._canvas) : new AO);}render(){const [cl,cm] = [(()=>{const ck=(()=>{return _match(AK.s(this.ch),[[_PE(AN,[_PV]),((cj)=>{return (()=>{AL.ay(AL.ci(cj, 100, 100, 50, 75, 3.14 * 2, 0, 0));AL.am(AL.ci(AL.ap(cj), 100, 100, 50, 75, (Math.PI) / 4, 0, 2 * (Math.PI)));AL.am(AL.an(AL.ao(AL.bk(AL.ap(cj), [5, 5]), 0, 200), 200, 0));return ``})()})],[_PE(AO,[]),(()=>{return ``})]])});(async()=>{await AP.y(0);return ck()})();return _h("canvas", {"width":`200`,"height":`200`,ref:(element) => { this._canvas = element }})})(), `let draw =
   () {
-    case canvas {
+    case Dom.Canvas.fromDomElement(canvas) {
       Maybe::Just(el) =>
         {
           el
@@ -489,9 +489,9 @@ if (!_2) { continue };_0.push(sb)};return _0})())}});const ED=new(class extends 
 
 <canvas as canvas
   width="200"
-  height="200"/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [ck]),_h(AF, {m:cl})])}};;class AY extends _C{get cm(){return (this._canvas ? new AM(this._canvas) : new AN);}render(){const [cp,cq] = [(()=>{const co=(()=>{return _match(this.cm,[[_PE(AM,[_PV]),((cn)=>{return (()=>{AK.af(AK.ag(cn, new AL(`green`)), 10, 10, 150, 100);return ``})()})],[_PE(AN,[]),(()=>{return ``})]])});(async()=>{await AO.x(0);return co()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
+  height="200"/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [cl]),_h(AF, {m:cm})])}};;class AZ extends _C{get cn(){return (this._canvas ? new AN(this._canvas) : new AO);}render(){const [cq,cr] = [(()=>{const cp=(()=>{return _match(AK.s(this.cn),[[_PE(AN,[_PV]),((co)=>{return (()=>{AL.ag(AL.ah(co, new AM(`green`)), 10, 10, 150, 100);return ``})()})],[_PE(AO,[]),(()=>{return ``})]])});(async()=>{await AP.y(0);return cp()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
   () {
-    case canvas {
+    case Dom.Canvas.fromDomElement(canvas) {
       Maybe::Just(el) =>
         {
           el
@@ -511,9 +511,9 @@ if (!_2) { continue };_0.push(sb)};return _0})())}});const ED=new(class extends 
   draw()
 }
 
-<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [cp]),_h(AF, {m:cq})])}};;class AZ extends _C{get cr(){return (this._canvas ? new AM(this._canvas) : new AN);}render(){const [cu,cv] = [(()=>{const ct=(()=>{return _match(this.cr,[[_PE(AM,[_PV]),((cs)=>{return (()=>{AK.ab(AK.ad(cs, `red`), 15);AK.af(AK.ag(cs, new AL(`blue`)), 20, 20, 150, 100);return ``})()})],[_PE(AN,[]),(()=>{return ``})]])});(async()=>{await AO.x(0);return ct()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
+<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [cq]),_h(AF, {m:cr})])}};;class BA extends _C{get cs(){return (this._canvas ? new AN(this._canvas) : new AO);}render(){const [cv,cw] = [(()=>{const cu=(()=>{return _match(AK.s(this.cs),[[_PE(AN,[_PV]),((ct)=>{return (()=>{AL.ac(AL.ae(ct, `red`), 15);AL.ag(AL.ah(ct, new AM(`blue`)), 20, 20, 150, 100);return ``})()})],[_PE(AO,[]),(()=>{return ``})]])});(async()=>{await AP.y(0);return cu()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
   () {
-    case canvas {
+    case Dom.Canvas.fromDomElement(canvas) {
       Maybe::Just(el) =>
         {
           // Shadow
@@ -539,9 +539,9 @@ if (!_2) { continue };_0.push(sb)};return _0})())}});const ED=new(class extends 
   draw()
 }
 
-<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [cu]),_h(AF, {m:cv})])}};;class BA extends _C{get cw(){return (this._canvas ? new AM(this._canvas) : new AN);}render(){const [dd,de] = [(()=>{const dc=(()=>{return _match(this.cw,[[_PE(AM,[_PV]),((cy)=>{return (()=>{const cx=175;AK.al(AK.am(AK.an(AK.ao(cy), cx, 0), cx, 150));AK.cz(cy, `30px serif`);AK.da(AK.db(cy, new BB()), `left-aligned`, cx, 40);AK.da(AK.db(cy, new BC()), `center-aligned`, cx, 85);AK.da(AK.db(cy, new BD()), `right-aligned`, cx, 130);return ``})()})],[_PE(AN,[]),(()=>{return ``})]])});(async()=>{await AO.x(0);return dc()})();return _h("canvas", {"width":`350`,ref:(element) => { this._canvas = element }})})(), `let draw =
+<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [cv]),_h(AF, {m:cw})])}};;class BB extends _C{get cx(){return (this._canvas ? new AN(this._canvas) : new AO);}render(){const [de,df] = [(()=>{const dd=(()=>{return _match(AK.s(this.cx),[[_PE(AN,[_PV]),((cz)=>{return (()=>{const cy=175;AL.am(AL.an(AL.ao(AL.ap(cz), cy, 0), cy, 150));AL.da(cz, `30px serif`);AL.db(AL.dc(cz, new BC()), `left-aligned`, cy, 40);AL.db(AL.dc(cz, new BD()), `center-aligned`, cy, 85);AL.db(AL.dc(cz, new BE()), `right-aligned`, cy, 130);return ``})()})],[_PE(AO,[]),(()=>{return ``})]])});(async()=>{await AP.y(0);return dd()})();return _h("canvas", {"width":`350`,ref:(element) => { this._canvas = element }})})(), `let draw =
   () {
-    case canvas {
+    case Dom.Canvas.fromDomElement(canvas) {
       Maybe::Just(el) =>
         {
           let x =
@@ -581,9 +581,9 @@ if (!_2) { continue };_0.push(sb)};return _0})())}});const ED=new(class extends 
   draw()
 }
 
-<canvas as canvas width="350"/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [dd]),_h(AF, {m:de})])}};;class BE extends _C{get df(){return (this._canvas ? new AM(this._canvas) : new AN);}render(){const [dj,dk] = [(()=>{const di=(()=>{return _match(this.df,[[_PE(AM,[_PV]),((dh)=>{return (()=>{AK.dg(AK.cz(dh, `bold 48px serif`), `Hello world`, 50, 100);return ``})()})],[_PE(AN,[]),(()=>{return ``})]])});(async()=>{await AO.x(0);return di()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
+<canvas as canvas width="350"/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [de]),_h(AF, {m:df})])}};;class BF extends _C{get dg(){return (this._canvas ? new AN(this._canvas) : new AO);}render(){const [dk,dl] = [(()=>{const dj=(()=>{return _match(AK.s(this.dg),[[_PE(AN,[_PV]),((di)=>{return (()=>{AL.dh(AL.da(di, `bold 48px serif`), `Hello world`, 50, 100);return ``})()})],[_PE(AO,[]),(()=>{return ``})]])});(async()=>{await AP.y(0);return dj()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
   () {
-    case canvas {
+    case Dom.Canvas.fromDomElement(canvas) {
       Maybe::Just(el) =>
         {
           el
@@ -603,9 +603,9 @@ if (!_2) { continue };_0.push(sb)};return _0})())}});const ED=new(class extends 
   draw()
 }
 
-<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [dj]),_h(AF, {m:dk})])}};;class BF extends _C{get dl(){return (this._canvas ? new AM(this._canvas) : new AN);}render(){const [dq,dr] = [(()=>{const dp=(()=>{return _match(this.dl,[[_PE(AM,[_PV]),((dn)=>{return (()=>{AK.al(AK.am(AK.dm(AK.aw(AK.an(AK.ao(dn), 20, 20), 15), new BG()), 100, 100));return ``})()})],[_PE(AN,[]),(()=>{return ``})]])});(async()=>{await AO.x(0);return dp()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
+<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [dk]),_h(AF, {m:dl})])}};;class BG extends _C{get dm(){return (this._canvas ? new AN(this._canvas) : new AO);}render(){const [dr,ds] = [(()=>{const dq=(()=>{return _match(AK.s(this.dm),[[_PE(AN,[_PV]),((dp)=>{return (()=>{AL.am(AL.an(AL.dn(AL.ax(AL.ao(AL.ap(dp), 20, 20), 15), new BH()), 100, 100));return ``})()})],[_PE(AO,[]),(()=>{return ``})]])});(async()=>{await AP.y(0);return dq()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
   () {
-    case canvas {
+    case Dom.Canvas.fromDomElement(canvas) {
       Maybe::Just(el) =>
         {
           el
@@ -629,9 +629,9 @@ if (!_2) { continue };_0.push(sb)};return _0})())}});const ED=new(class extends 
   draw()
 }
 
-<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [dq]),_h(AF, {m:dr})])}};;class BH extends _C{get ds(){return (this._canvas ? new AM(this._canvas) : new AN);}render(){const [dv,dw] = [(()=>{const du=(()=>{return _match(this.ds,[[_PE(AM,[_PV]),((dt)=>{return (()=>{AK.af(AK.ag(dt, new AL(`blue`)), 10, 10, 100, 100);return ``})()})],[_PE(AN,[]),(()=>{return ``})]])});(async()=>{await AO.x(0);return du()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
+<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [dr]),_h(AF, {m:ds})])}};;class BI extends _C{get dt(){return (this._canvas ? new AN(this._canvas) : new AO);}render(){const [dw,dx] = [(()=>{const dv=(()=>{return _match(AK.s(this.dt),[[_PE(AN,[_PV]),((du)=>{return (()=>{AL.ag(AL.ah(du, new AM(`blue`)), 10, 10, 100, 100);return ``})()})],[_PE(AO,[]),(()=>{return ``})]])});(async()=>{await AP.y(0);return dv()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
   () {
-    case canvas {
+    case Dom.Canvas.fromDomElement(canvas) {
       Maybe::Just(el) =>
         {
           el
@@ -651,9 +651,9 @@ if (!_2) { continue };_0.push(sb)};return _0})())}});const ED=new(class extends 
   draw()
 }
 
-<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [dv]),_h(AF, {m:dw})])}};;class BI extends _C{get dx(){return (this._canvas ? new AM(this._canvas) : new AN);}render(){const [eb,ec] = [(()=>{const ea=(()=>{return _match(this.dx,[[_PE(AM,[_PV]),((dz)=>{return (()=>{AK.al(AK.dy(AK.am(AK.am(AK.an(AK.ao(dz), 20, 140), 120, 10), 220, 140)));return ``})()})],[_PE(AN,[]),(()=>{return ``})]])});(async()=>{await AO.x(0);return ea()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
+<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [dw]),_h(AF, {m:dx})])}};;class BJ extends _C{get dy(){return (this._canvas ? new AN(this._canvas) : new AO);}render(){const [ec,ed] = [(()=>{const eb=(()=>{return _match(AK.s(this.dy),[[_PE(AN,[_PV]),((ea)=>{return (()=>{AL.am(AL.dz(AL.an(AL.an(AL.ao(AL.ap(ea), 20, 140), 120, 10), 220, 140)));return ``})()})],[_PE(AO,[]),(()=>{return ``})]])});(async()=>{await AP.y(0);return eb()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
   () {
-    case canvas {
+    case Dom.Canvas.fromDomElement(canvas) {
       Maybe::Just(el) =>
         {
           el
@@ -677,9 +677,9 @@ if (!_2) { continue };_0.push(sb)};return _0})())}});const ED=new(class extends 
   draw()
 }
 
-<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [eb]),_h(AF, {m:ec})])}};;class BJ extends _C{get ed(){return (this._canvas ? new AM(this._canvas) : new AN);}render(){const [eh,ei] = [(()=>{const eg=(()=>{return _match(this.ed,[[_PE(AM,[_PV]),((ef)=>{return (()=>{AK.ab(AK.ee(AK.ad(ef, `red`), 25), 10);AK.af(AK.ag(ef, new AL(`blue`)), 20, 20, 150, 80);return ``})()})],[_PE(AN,[]),(()=>{return ``})]])});(async()=>{await AO.x(0);return eg()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
+<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [ec]),_h(AF, {m:ed})])}};;class BK extends _C{get ee(){return (this._canvas ? new AN(this._canvas) : new AO);}render(){const [ei,ej] = [(()=>{const eh=(()=>{return _match(AK.s(this.ee),[[_PE(AN,[_PV]),((eg)=>{return (()=>{AL.ac(AL.ef(AL.ae(eg, `red`), 25), 10);AL.ag(AL.ah(eg, new AM(`blue`)), 20, 20, 150, 80);return ``})()})],[_PE(AO,[]),(()=>{return ``})]])});(async()=>{await AP.y(0);return eh()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
   () {
-    case canvas {
+    case Dom.Canvas.fromDomElement(canvas) {
       Maybe::Just(el) =>
         {
           // Shadow
@@ -706,9 +706,9 @@ if (!_2) { continue };_0.push(sb)};return _0})())}});const ED=new(class extends 
   draw()
 }
 
-<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [eh]),_h(AF, {m:ei})])}};;class BK extends _C{get ej(){return (this._canvas ? new AM(this._canvas) : new AN);}render(){const [en,eo] = [(()=>{const em=(()=>{return _match(this.ej,[[_PE(AM,[_PV]),((ek)=>{return (()=>{AK.cz(ek, `30px serif`);AK.da(ek, `AVA Ta We (default: auto)`, 5, 30);AK.da(AK.el(ek, new BL()), `AVA Ta We (normal)`, 5, 70);AK.da(AK.el(ek, new BM()), `AVA Ta We none`, 5, 110);return ``})()})],[_PE(AN,[]),(()=>{return ``})]])});(async()=>{await AO.x(0);return em()})();return _h("canvas", {"width":`400`,ref:(element) => { this._canvas = element }})})(), `let draw =
+<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [ei]),_h(AF, {m:ej})])}};;class BL extends _C{get ek(){return (this._canvas ? new AN(this._canvas) : new AO);}render(){const [eo,ep] = [(()=>{const en=(()=>{return _match(AK.s(this.ek),[[_PE(AN,[_PV]),((el)=>{return (()=>{AL.da(el, `30px serif`);AL.db(el, `AVA Ta We (default: auto)`, 5, 30);AL.db(AL.em(el, new BM()), `AVA Ta We (normal)`, 5, 70);AL.db(AL.em(el, new BN()), `AVA Ta We none`, 5, 110);return ``})()})],[_PE(AO,[]),(()=>{return ``})]])});(async()=>{await AP.y(0);return en()})();return _h("canvas", {"width":`400`,ref:(element) => { this._canvas = element }})})(), `let draw =
   () {
-    case canvas {
+    case Dom.Canvas.fromDomElement(canvas) {
       Maybe::Just(el) =>
         {
           el
@@ -741,13 +741,15 @@ if (!_2) { continue };_0.push(sb)};return _0})())}});const ED=new(class extends 
   draw()
 }
 
-<canvas as canvas width="400"/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [en]),_h(AF, {m:eo})])}};;class BN extends _C{get ep(){return (this._canvas ? new AM(this._canvas) : new AN);}render(){const [ey,ez] = [(()=>{const ex=(()=>{return _match(this.ep,[[_PE(AM,[_PV]),((er)=>{return (()=>{const es=BO.eq(er);const ev=BP.et(BP.et(BP.eu(), 80, 10, 20, 130), 40, 50, 100, 50);AK.ew(er, ev, new BQ());AK.af(AK.ag(er, new AL(`blue`)), 0, 0, es.width, es.height);return ``})()})],[_PE(AN,[]),(()=>{return ``})]])});(async()=>{await AO.x(0);return ex()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
+<canvas as canvas width="400"/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [eo]),_h(AF, {m:ep})])}};;class BO extends _C{get eq(){return (this._canvas ? new AN(this._canvas) : new AO);}render(){const [fa,fb] = [(()=>{const ez=(()=>{return _match(AK.s(this.eq),[[_PE(AN,[_PV]),((et)=>{return (()=>{const eu=BP.er(AK.es(et));const ex=BQ.ev(BQ.ev(BQ.ew(), 80, 10, 20, 130), 40, 50, 100, 50);AL.ey(et, ex, new BR());AL.ag(AL.ah(et, new AM(`blue`)), 0, 0, eu.width, eu.height);return ``})()})],[_PE(AO,[]),(()=>{return ``})]])});(async()=>{await AP.y(0);return ez()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
   () {
-    case canvas {
+    case Dom.Canvas.fromDomElement(canvas) {
       Maybe::Just(el) =>
         {
           let dims =
-            Dom.getDimensions(el)
+            el
+            |> Dom.Canvas.toDomElement
+            |> Dom.getDimensions
 
           // Create clipping path
           let region =
@@ -777,9 +779,9 @@ if (!_2) { continue };_0.push(sb)};return _0})())}});const ED=new(class extends 
   draw()
 }
 
-<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [ey]),_h(AF, {m:ez})])}};;class BR extends _C{get fa(){return (this._canvas ? new AM(this._canvas) : new AN);}render(){const [fe,ff] = [(()=>{const fd=(()=>{return _match(this.fa,[[_PE(AM,[_PV]),((fc)=>{return (()=>{AK.da(AK.cz(AK.fb(fc, `blur(4px)`), `48px serif`), `Hello world`, 50, 100);return ``})()})],[_PE(AN,[]),(()=>{return ``})]])});(async()=>{await AO.x(0);return fd()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
+<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [fa]),_h(AF, {m:fb})])}};;class BS extends _C{get fc(){return (this._canvas ? new AN(this._canvas) : new AO);}render(){const [fg,fh] = [(()=>{const ff=(()=>{return _match(AK.s(this.fc),[[_PE(AN,[_PV]),((fe)=>{return (()=>{AL.db(AL.da(AL.fd(fe, `blur(4px)`), `48px serif`), `Hello world`, 50, 100);return ``})()})],[_PE(AO,[]),(()=>{return ``})]])});(async()=>{await AP.y(0);return ff()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
   () {
-    case canvas {
+    case Dom.Canvas.fromDomElement(canvas) {
       Maybe::Just(el) =>
         {
           el
@@ -800,9 +802,9 @@ if (!_2) { continue };_0.push(sb)};return _0})())}});const ED=new(class extends 
   draw()
 }
 
-<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [fe]),_h(AF, {m:ff})])}};;class BS extends _C{get fg(){return (this._canvas ? new AM(this._canvas) : new AN);}render(){const [fn,fo] = [(()=>{const fi=(()=>{return _match(this.fg,[[_PE(AM,[_PV]),((fh)=>{return (()=>{AK.da(AK.cz(fh, `25px sans-serif`), `Click reset button to reset`, 0, 50);return ``})()})],[_PE(AN,[]),(()=>{return ``})]])});const fl=(()=>{return _match(this.fg,[[_PE(AM,[_PV]),((fk)=>{return (()=>{AK.fj(fk);return ``})()})],[_PE(AN,[]),(()=>{return ``})]])});(async()=>{await AO.x(0);return fi()})();return _h("div", {}, [_h("button", {"onClick":(event => (((fm)=>{return fl()}))(_normalizeEvent(event)))}, [`reset`]),_h("canvas", {ref:(element) => { this._canvas = element }})])})(), `let draw =
+<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [fg]),_h(AF, {m:fh})])}};;class BT extends _C{get fi(){return (this._canvas ? new AN(this._canvas) : new AO);}render(){const [fp,fq] = [(()=>{const fk=(()=>{return _match(AK.s(this.fi),[[_PE(AN,[_PV]),((fj)=>{return (()=>{AL.db(AL.da(fj, `25px sans-serif`), `Click reset button to reset`, 0, 50);return ``})()})],[_PE(AO,[]),(()=>{return ``})]])});const fn=(()=>{return _match(AK.s(this.fi),[[_PE(AN,[_PV]),((fm)=>{return (()=>{AL.fl(fm);return ``})()})],[_PE(AO,[]),(()=>{return ``})]])});(async()=>{await AP.y(0);return fk()})();return _h("div", {}, [_h("button", {"onClick":(event => (((fo)=>{return fn()}))(_normalizeEvent(event)))}, [`reset`]),_h("canvas", {ref:(element) => { this._canvas = element }})])})(), `let draw =
   () {
-    case canvas {
+    case Dom.Canvas.fromDomElement(canvas) {
       Maybe::Just(el) =>
         {
           el
@@ -819,7 +821,7 @@ if (!_2) { continue };_0.push(sb)};return _0})())}});const ED=new(class extends 
 
 let reset =
   () {
-    case canvas {
+    case Dom.Canvas.fromDomElement(canvas) {
       Maybe::Just(el) =>
         {
           el
@@ -844,9 +846,9 @@ let reset =
   </button>
 
   <canvas as canvas/>
-</div>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [fn]),_h(AF, {m:fo})])}};;class BT extends _C{get fp(){return (this._canvas ? new AM(this._canvas) : new AN);}render(){const [fy,fz] = [(()=>{const fx=(()=>{return _match(this.fp,[[_PE(AM,[_PV]),((fr)=>{return (()=>{const fq=[new BU(), new BV(), new BW(), new BX(), new BY(), new BZ()];AK.u(AK.cz(fr, `36px serif`), new AL(`red`));AG.e(fq, ((fv, fs)=>{const ft=75 + fs * 75;return AK.da(AK.al(AK.am(AK.an(AK.ao(AK.fu(fr, fv)), 0, ft + 0.5), 550, ft + 0.5)), `Abcdefghijklmnop (${AK.fw(fv)})`, 0, ft)}));return ``})()})],[_PE(AN,[]),(()=>{return ``})]])});(async()=>{await AO.x(0);return fx()})();return _h("canvas", {"width":`550`,"height":`500`,ref:(element) => { this._canvas = element }})})(), `let draw =
+</div>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [fp]),_h(AF, {m:fq})])}};;class BU extends _C{get fr(){return (this._canvas ? new AN(this._canvas) : new AO);}render(){const [ga,gb] = [(()=>{const fz=(()=>{return _match(AK.s(this.fr),[[_PE(AN,[_PV]),((ft)=>{return (()=>{const fs=[new BV(), new BW(), new BX(), new BY(), new BZ(), new CA()];AL.v(AL.da(ft, `36px serif`), new AM(`red`));AG.e(fs, ((fx, fu)=>{const fv=75 + fu * 75;return AL.db(AL.am(AL.an(AL.ao(AL.ap(AL.fw(ft, fx)), 0, fv + 0.5), 550, fv + 0.5)), `Abcdefghijklmnop (${AL.fy(fx)})`, 0, fv)}));return ``})()})],[_PE(AO,[]),(()=>{return ``})]])});(async()=>{await AP.y(0);return fz()})();return _h("canvas", {"width":`550`,"height":`500`,ref:(element) => { this._canvas = element }})})(), `let draw =
   () {
-    case canvas {
+    case Dom.Canvas.fromDomElement(canvas) {
       Maybe::Just(el) =>
         {
           let baselines =
@@ -893,9 +895,9 @@ let reset =
 
 <canvas as canvas
   width="550"
-  height="500"/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [fy]),_h(AF, {m:fz})])}};;class CA extends _C{get ga(){return (this._canvas ? new AM(this._canvas) : new AN);}render(){const [gi,gj] = [(()=>{const gh=(()=>{return _match(this.ga,[[_PE(AM,[_PV]),((gg)=>{return (()=>{const gb=BP.eu();BP.gc(BP.gd(BP.gd(BP.gd(BP.gd(BP.gd(BP.ge(gb, 30, 90), 110, 20), 240, 130), 60, 130), 190, 20), 270, 90));AK.gf(AK.ag(gg, new AL(`green`)), gb, new BQ());return ``})()})],[_PE(AN,[]),(()=>{return ``})]])});(async()=>{await AO.x(0);return gh()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
+  height="500"/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [ga]),_h(AF, {m:gb})])}};;class CB extends _C{get gc(){return (this._canvas ? new AN(this._canvas) : new AO);}render(){const [gk,gl] = [(()=>{const gj=(()=>{return _match(AK.s(this.gc),[[_PE(AN,[_PV]),((gi)=>{return (()=>{const gd=BQ.ew();BQ.ge(BQ.gf(BQ.gf(BQ.gf(BQ.gf(BQ.gf(BQ.gg(gd, 30, 90), 110, 20), 240, 130), 60, 130), 190, 20), 270, 90));AL.gh(AL.ah(gi, new AM(`green`)), gd, new BR());return ``})()})],[_PE(AO,[]),(()=>{return ``})]])});(async()=>{await AP.y(0);return gj()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
   () {
-    case canvas {
+    case Dom.Canvas.fromDomElement(canvas) {
       Maybe::Just(el) =>
         {
           // Create path
@@ -929,9 +931,9 @@ let reset =
   draw()
 }
 
-<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [gi]),_h(AF, {m:gj})])}};;class CB extends _C{get gk(){return (this._canvas ? new AM(this._canvas) : new AN);}render(){const [gq,gr] = [(()=>{const gp=(()=>{return _match(this.gk,[[_PE(AM,[_PV]),((gn)=>{return (()=>{const go=CC.gl(CC.gl(CC.gl(CC.gl(CC.gl(AK.gm(gn, 0, 100, 100), 0, `red`), 0.25, `orange`), 0.5, `yellow`), 0.75, `green`), 1, `blue`);AK.af(AK.ag(gn, new CD(go)), 20, 20, 200, 200);return ``})()})],[_PE(AN,[]),(()=>{return ``})]])});(async()=>{await AO.x(0);return gp()})();return _h("canvas", {"width":`240`,"height":`240`,ref:(element) => { this._canvas = element }})})(), `let draw =
+<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [gk]),_h(AF, {m:gl})])}};;class CC extends _C{get gm(){return (this._canvas ? new AN(this._canvas) : new AO);}render(){const [gs,gt] = [(()=>{const gr=(()=>{return _match(AK.s(this.gm),[[_PE(AN,[_PV]),((gp)=>{return (()=>{const gq=CD.gn(CD.gn(CD.gn(CD.gn(CD.gn(AL.go(gp, 0, 100, 100), 0, `red`), 0.25, `orange`), 0.5, `yellow`), 0.75, `green`), 1, `blue`);AL.ag(AL.ah(gp, new CE(gq)), 20, 20, 200, 200);return ``})()})],[_PE(AO,[]),(()=>{return ``})]])});(async()=>{await AP.y(0);return gr()})();return _h("canvas", {"width":`240`,"height":`240`,ref:(element) => { this._canvas = element }})})(), `let draw =
   () {
-    case canvas {
+    case Dom.Canvas.fromDomElement(canvas) {
       Maybe::Just(el) =>
         {
           // Add five color stops
@@ -963,9 +965,9 @@ let reset =
 
 <canvas as canvas
   width="240"
-  height="240"/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [gq]),_h(AF, {m:gr})])}};;class CE extends _C{get gs(){return (this._canvas ? new AM(this._canvas) : new AN);}render(){const [gw,gx] = [(()=>{const gv=(()=>{return _match(this.gs,[[_PE(AM,[_PV]),((gu)=>{return (()=>{AK.ax(AK.gt(gu, 10, 10, 150, 100));return ``})()})],[_PE(AN,[]),(()=>{return ``})]])});(async()=>{await AO.x(0);return gv()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
+  height="240"/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [gs]),_h(AF, {m:gt})])}};;class CF extends _C{get gu(){return (this._canvas ? new AN(this._canvas) : new AO);}render(){const [gy,gz] = [(()=>{const gx=(()=>{return _match(AK.s(this.gu),[[_PE(AN,[_PV]),((gw)=>{return (()=>{AL.ay(AL.gv(gw, 10, 10, 150, 100));return ``})()})],[_PE(AO,[]),(()=>{return ``})]])});(async()=>{await AP.y(0);return gx()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
   () {
-    case canvas {
+    case Dom.Canvas.fromDomElement(canvas) {
       Maybe::Just(el) =>
         {
           el
@@ -985,9 +987,9 @@ let reset =
   draw()
 }
 
-<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [gw]),_h(AF, {m:gx})])}};;class CF extends _C{get gz(){return (this._image ? new AM(this._image) : new AN);}get gy(){return (this._canvas ? new AM(this._canvas) : new AN);}render(){const [hi,hj] = [(()=>{const hh=(()=>{return _match(this.gy,[[_PE(AM,[_PV]),((hg)=>{return _match(this.gz,[[_PE(AM,[_PV]),((hb)=>{return (()=>{const hc=CG.ha(hb);BO.hd(hb, `display`, `none`);AK.he(AK.hf(hg, new CH()), hc, 0, 0, 300, 150);return ``})()})],[_PE(AN,[]),(()=>{return ``})]])})],[_PE(AN,[]),(()=>{return ``})]])});return _h(React.Fragment, {}, [_h("img", {"src":`/assets/canvas_createpattern_b99d5d2815a4c038e9721778fb4910ff.png`,"onLoad":(event => (hh)(_normalizeEvent(event))),ref:(element) => { this._image = element }}),_h("canvas", {ref:(element) => { this._canvas = element }})])})(), `let draw =
+<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [gy]),_h(AF, {m:gz})])}};;class CG extends _C{get hb(){return (this._image ? new AN(this._image) : new AO);}get ha(){return (this._canvas ? new AN(this._canvas) : new AO);}render(){const [hk,hl] = [(()=>{const hj=(()=>{return _match(AK.s(this.ha),[[_PE(AN,[_PV]),((hi)=>{return _match(this.hb,[[_PE(AN,[_PV]),((hd)=>{return (()=>{const he=CH.hc(hd);BP.hf(hd, `display`, `none`);AL.hg(AL.hh(hi, new CI()), he, 0, 0, 300, 150);return ``})()})],[_PE(AO,[]),(()=>{return ``})]])})],[_PE(AO,[]),(()=>{return ``})]])});return _h(React.Fragment, {}, [_h("img", {"src":`/assets/canvas_createpattern_b99d5d2815a4c038e9721778fb4910ff.png`,"onLoad":(event => (hj)(_normalizeEvent(event))),ref:(element) => { this._image = element }}),_h("canvas", {ref:(element) => { this._canvas = element }})])})(), `let draw =
   () {
-    case canvas {
+    case Dom.Canvas.fromDomElement(canvas) {
       Maybe::Just(canvasEl) =>
         case image {
           Maybe::Just(imageEl) =>
@@ -1019,9 +1021,9 @@ let reset =
     onLoad={draw}/>
 
   <canvas as canvas/>
-</>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [hi]),_h(AF, {m:hj})])}};;class CI extends _C{get hl(){return (this._image ? new AM(this._image) : new AN);}get hk(){return (this._canvas ? new AM(this._canvas) : new AN);}render(){const [ht,hu] = [(()=>{const hs=(()=>{return _match(this.hk,[[_PE(AM,[_PV]),((hp)=>{return _match(this.hl,[[_PE(AM,[_PV]),((hm)=>{return (()=>{const hn=CG.ha(hm);const hq=AK.ho(hp, hn, new CJ());BO.hd(hm, `display`, `none`);_match(hq,[[_PE(AM,[_PV]),((hr)=>{return (()=>{AK.af(AK.ag(hp, new CK(hr)), 0, 0, 300, 300);return ``})()})],[_PE(AN,[]),(()=>{return ``})]]);return ``})()})],[_PE(AN,[]),(()=>{return ``})]])})],[_PE(AN,[]),(()=>{return ``})]])});return _h(React.Fragment, {}, [_h("img", {"src":`/assets/canvas_createpattern_b99d5d2815a4c038e9721778fb4910ff.png`,"onLoad":(event => (hs)(_normalizeEvent(event))),ref:(element) => { this._image = element }}),_h("canvas", {"width":`300`,"height":`300`,ref:(element) => { this._canvas = element }})])})(), `let draw =
+</>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [hk]),_h(AF, {m:hl})])}};;class CJ extends _C{get hn(){return (this._image ? new AN(this._image) : new AO);}get hm(){return (this._canvas ? new AN(this._canvas) : new AO);}render(){const [hv,hw] = [(()=>{const hu=(()=>{return _match(AK.s(this.hm),[[_PE(AN,[_PV]),((hr)=>{return _match(this.hn,[[_PE(AN,[_PV]),((ho)=>{return (()=>{const hp=CH.hc(ho);const hs=AL.hq(hr, hp, new CK());BP.hf(ho, `display`, `none`);_match(hs,[[_PE(AN,[_PV]),((ht)=>{return (()=>{AL.ag(AL.ah(hr, new CL(ht)), 0, 0, 300, 300);return ``})()})],[_PE(AO,[]),(()=>{return ``})]]);return ``})()})],[_PE(AO,[]),(()=>{return ``})]])})],[_PE(AO,[]),(()=>{return ``})]])});return _h(React.Fragment, {}, [_h("img", {"src":`/assets/canvas_createpattern_b99d5d2815a4c038e9721778fb4910ff.png`,"onLoad":(event => (hu)(_normalizeEvent(event))),ref:(element) => { this._image = element }}),_h("canvas", {"width":`300`,"height":`300`,ref:(element) => { this._canvas = element }})])})(), `let draw =
   () {
-    case canvas {
+    case Dom.Canvas.fromDomElement(canvas) {
       Maybe::Just(canvasEl) =>
         case image {
           Maybe::Just(imageEl) =>
@@ -1068,9 +1070,9 @@ let reset =
   <canvas as canvas
     width="300"
     height="300"/>
-</>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [ht]),_h(AF, {m:hu})])}};;class CL extends _C{get hv(){return (this._canvas ? new AM(this._canvas) : new AN);}render(){const [hz,ia] = [(()=>{const hy=(()=>{return _match(this.hv,[[_PE(AM,[_PV]),((hw)=>{return (()=>{AK.cz(hw, `30px serif`);AK.da(hw, `Hello world (default: 0px)`, 10, 40);AK.da(AK.hx(hw, 10), `Hello world (10px)`, 10, 90);AK.da(AK.hx(hw, 30), `Hello world (30px)`, 10, 140);return ``})()})],[_PE(AN,[]),(()=>{return ``})]])});(async()=>{await AO.x(0);return hy()})();return _h("canvas", {"width":`700`,ref:(element) => { this._canvas = element }})})(), `let draw =
+</>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [hv]),_h(AF, {m:hw})])}};;class CM extends _C{get hx(){return (this._canvas ? new AN(this._canvas) : new AO);}render(){const [ib,ic] = [(()=>{const ia=(()=>{return _match(AK.s(this.hx),[[_PE(AN,[_PV]),((hy)=>{return (()=>{AL.da(hy, `30px serif`);AL.db(hy, `Hello world (default: 0px)`, 10, 40);AL.db(AL.hz(hy, 10), `Hello world (10px)`, 10, 90);AL.db(AL.hz(hy, 30), `Hello world (30px)`, 10, 140);return ``})()})],[_PE(AO,[]),(()=>{return ``})]])});(async()=>{await AP.y(0);return ia()})();return _h("canvas", {"width":`700`,ref:(element) => { this._canvas = element }})})(), `let draw =
   () {
-    case canvas {
+    case Dom.Canvas.fromDomElement(canvas) {
       Maybe::Just(el) =>
         {
           el
@@ -1103,9 +1105,9 @@ let reset =
   draw()
 }
 
-<canvas as canvas width="700"/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [hz]),_h(AF, {m:ia})])}};;class CM extends _C{get ib(){return (this._canvas ? new AM(this._canvas) : new AN);}render(){const [ig,ih] = [(()=>{const ie=(()=>{return _match(this.ib,[[_PE(AM,[_PV]),((id)=>{return (()=>{AK.af(AK.ic(id, 1, 0.2, 0.8, 1, 0, 0), 0, 0, 100, 100);return ``})()})],[_PE(AN,[]),(()=>{return ``})]])});(async()=>{await AO.x(0);return ie()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
+<canvas as canvas width="700"/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [ib]),_h(AF, {m:ic})])}};;class CN extends _C{get id(){return (this._canvas ? new AN(this._canvas) : new AO);}render(){const [ii,ij] = [(()=>{const ih=(()=>{return _match(AK.s(this.id),[[_PE(AN,[_PV]),((ig)=>{return (()=>{AL.ag(AL.ie(ig, 1, 0.2, 0.8, 1, 0, 0), 0, 0, 100, 100);return ``})()})],[_PE(AO,[]),(()=>{return ``})]])});(async()=>{await AP.y(0);return ih()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
   () {
-    case canvas {
+    case Dom.Canvas.fromDomElement(canvas) {
       Maybe::Just(el) =>
         {
           el
@@ -1125,9 +1127,9 @@ let reset =
   draw()
 }
 
-<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [ig]),_h(AF, {m:ih})])}};;class CN extends _C{get ii(){return (this._canvas ? new AM(this._canvas) : new AN);}render(){const [im,io] = [(()=>{const il=(()=>{return _match(this.ii,[[_PE(AM,[_PV]),((ik)=>{return (()=>{AK.al(AK.ij(AK.an(AK.ao(ik), 50, 20), 230, 30, 50, 100));AK.ax(AK.ay(AK.ay(AK.ao(AK.ag(ik, new AL(`blue`))), 50, 20, 5, 0, 2 * (Math.PI)), 50, 100, 5, 0, 2 * (Math.PI)));AK.ax(AK.ay(AK.ao(AK.ag(ik, new AL(`red`))), 230, 30, 5, 0, 2 * (Math.PI)));return ``})()})],[_PE(AN,[]),(()=>{return ``})]])});(async()=>{await AO.x(0);return il()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
+<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [ii]),_h(AF, {m:ij})])}};;class CO extends _C{get ik(){return (this._canvas ? new AN(this._canvas) : new AO);}render(){const [ip,iq] = [(()=>{const io=(()=>{return _match(AK.s(this.ik),[[_PE(AN,[_PV]),((im)=>{return (()=>{AL.am(AL.il(AL.ao(AL.ap(im), 50, 20), 230, 30, 50, 100));AL.ay(AL.az(AL.az(AL.ap(AL.ah(im, new AM(`blue`))), 50, 20, 5, 0, 2 * (Math.PI)), 50, 100, 5, 0, 2 * (Math.PI)));AL.ay(AL.az(AL.ap(AL.ah(im, new AM(`red`))), 230, 30, 5, 0, 2 * (Math.PI)));return ``})()})],[_PE(AO,[]),(()=>{return ``})]])});(async()=>{await AP.y(0);return io()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
   () {
-    case canvas {
+    case Dom.Canvas.fromDomElement(canvas) {
       Maybe::Just(el) =>
         {
           // Quadratic Bézier curve
@@ -1165,9 +1167,9 @@ let reset =
   draw()
 }
 
-<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [im]),_h(AF, {m:io})])}};;class CO extends _C{get iq(){return (this._image ? new AM(this._image) : new AN);}get ip(){return (this._canvas ? new AM(this._canvas) : new AN);}render(){const [ix,iy] = [(()=>{const iw=(()=>{return _match(this.ip,[[_PE(AM,[_PV]),((iu)=>{return _match(this.iq,[[_PE(AM,[_PV]),((ir)=>{return (()=>{const is=BO.eq(ir);BO.it(iu, `width`, `${is.width}`);BO.it(iu, `height`, `${is.width}`);BO.hd(ir, `display`, `none`);const iv=CG.ha(ir);AK.he(iu, iv, 0, 0);return ``})()})],[null,(()=>{return ``})]])})],[null,(()=>{return ``})]])});return _h(React.Fragment, {}, [_h("img", {"src":`/assets/rhino_a195bee0a7ab0dea23d28fba649dc033.jpg`,"onLoad":(event => (iw)(_normalizeEvent(event))),ref:(element) => { this._image = element }}),_h("canvas", {ref:(element) => { this._canvas = element }})])})(), `let draw =
+<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [ip]),_h(AF, {m:iq})])}};;class CP extends _C{get is(){return (this._image ? new AN(this._image) : new AO);}get ir(){return (this._canvas ? new AN(this._canvas) : new AO);}render(){const [iz,ja] = [(()=>{const iy=(()=>{return _match(AK.s(this.ir),[[_PE(AN,[_PV]),((iw)=>{return _match(this.is,[[_PE(AN,[_PV]),((it)=>{return (()=>{const iu=BP.er(it);BP.hf(it, `display`, `none`);BP.iv(BP.iv(AK.es(iw), `width`, `${iu.width}`), `height`, `${iu.width}`);const ix=CH.hc(it);AL.hg(iw, ix, 0, 0);return ``})()})],[null,(()=>{return ``})]])})],[null,(()=>{return ``})]])});return _h(React.Fragment, {}, [_h("img", {"src":`/assets/rhino_a195bee0a7ab0dea23d28fba649dc033.jpg`,"onLoad":(event => (iy)(_normalizeEvent(event))),ref:(element) => { this._image = element }}),_h("canvas", {ref:(element) => { this._canvas = element }})])})(), `let draw =
   () {
-    case canvas {
+    case Dom.Canvas.fromDomElement(canvas) {
       Maybe::Just(el) =>
         case image {
           Maybe::Just(img) =>
@@ -1176,9 +1178,12 @@ let reset =
                 Dom.getDimensions(img)
 
               // resize canvas to display full image
-              Dom.setAttribute(el, "width", "#{dims.width}")
-              Dom.setAttribute(el, "height", "#{dims.width}")
               Dom.setStyle(img, "display", "none")
+
+              el
+              |> Dom.Canvas.toDomElement
+              |> Dom.setAttribute("width", "#{dims.width}")
+              |> Dom.setAttribute("height", "#{dims.width}")
 
               let imageData =
                 CanvasImageSource.fromImage(img)
@@ -1204,13 +1209,15 @@ let reset =
     onLoad={draw}/>
 
   <canvas as canvas/>
-</>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [ix]),_h(AF, {m:iy})])}};;class CP extends _C{get iz(){return (this._canvas ? new AM(this._canvas) : new AN);}render(){const [je,jf] = [(()=>{const jd=(()=>{return _match(this.iz,[[_PE(AM,[_PV]),((ja)=>{return (()=>{const jb=BO.eq(ja);AK.jc(AK.ay(AK.ao(ja), 100, 75, 50, 0, (Math.PI) * 2));AK.af(AK.ag(AK.af(AK.ag(ja, new AL(`blue`)), 0, 0, jb.width, jb.height), new AL(`orange`)), 0, 0, 100, 100);return ``})()})],[_PE(AN,[]),(()=>{return ``})]])});(async()=>{await AO.x(0);return jd()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
+</>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [iz]),_h(AF, {m:ja})])}};;class CQ extends _C{get jb(){return (this._canvas ? new AN(this._canvas) : new AO);}render(){const [jg,jh] = [(()=>{const jf=(()=>{return _match(AK.s(this.jb),[[_PE(AN,[_PV]),((jc)=>{return (()=>{const jd=BP.er(AK.es(jc));AL.je(AL.az(AL.ap(jc), 100, 75, 50, 0, (Math.PI) * 2));AL.ag(AL.ah(AL.ag(AL.ah(jc, new AM(`blue`)), 0, 0, jd.width, jd.height), new AM(`orange`)), 0, 0, 100, 100);return ``})()})],[_PE(AO,[]),(()=>{return ``})]])});(async()=>{await AP.y(0);return jf()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
   () {
-    case canvas {
+    case Dom.Canvas.fromDomElement(canvas) {
       Maybe::Just(el) =>
         {
           let dims =
-            Dom.getDimensions(el)
+            el
+            |> Dom.Canvas.toDomElement
+            |> Dom.getDimensions
 
           // Create circular clipping region
           el
@@ -1238,9 +1245,9 @@ let reset =
   draw()
 }
 
-<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [je]),_h(AF, {m:jf})])}};;class CQ extends _C{get jg(){return (this._canvas ? new AM(this._canvas) : new AN);}render(){const [jj,jk] = [(()=>{const ji=(()=>{return _match(this.jg,[[_PE(AM,[_PV]),((jh)=>{return (()=>{AK.ee(AK.ac(AK.ad(jh, `red`), 10), 10);AK.af(jh, 20, 20, 100, 100);AK.t(AK.aw(jh, 6), 170, 20, 100, 100);return ``})()})],[_PE(AN,[]),(()=>{return ``})]])});(async()=>{await AO.x(0);return ji()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
+<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [jg]),_h(AF, {m:jh})])}};;class CR extends _C{get ji(){return (this._canvas ? new AN(this._canvas) : new AO);}render(){const [jl,jm] = [(()=>{const jk=(()=>{return _match(AK.s(this.ji),[[_PE(AN,[_PV]),((jj)=>{return (()=>{AL.ef(AL.ad(AL.ae(jj, `red`), 10), 10);AL.ag(jj, 20, 20, 100, 100);AL.u(AL.ax(jj, 6), 170, 20, 100, 100);return ``})()})],[_PE(AO,[]),(()=>{return ``})]])});(async()=>{await AP.y(0);return jk()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
   () {
-    case canvas {
+    case Dom.Canvas.fromDomElement(canvas) {
       Maybe::Just(el) =>
         {
           // Shadow
@@ -1271,9 +1278,9 @@ let reset =
   draw()
 }
 
-<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [jj]),_h(AF, {m:jk})])}};;class CR extends _C{get jl(){return (this._canvas ? new AM(this._canvas) : new AN);}render(){const [jr,js] = [(()=>{const jq=(()=>{return _match(this.jl,[[_PE(AM,[_PV]),((jn)=>{return (()=>{const jo=AK.jm(AK.al(AK.gt(jn, 10, 10, 100, 100)), 50, 10);AK.da(jn, `(50, 10) is in stroke: ${CS.jp(jo)}`, 150, 50);return ``})()})],[_PE(AN,[]),(()=>{return ``})]])});(async()=>{await AO.x(0);return jq()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
+<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [jl]),_h(AF, {m:jm})])}};;class CS extends _C{get jn(){return (this._canvas ? new AN(this._canvas) : new AO);}render(){const [jt,ju] = [(()=>{const js=(()=>{return _match(AK.s(this.jn),[[_PE(AN,[_PV]),((jp)=>{return (()=>{const jq=AL.jo(AL.am(AL.gv(jp, 10, 10, 100, 100)), 50, 10);AL.db(jp, `(50, 10) is in stroke: ${CT.jr(jq)}`, 150, 50);return ``})()})],[_PE(AO,[]),(()=>{return ``})]])});(async()=>{await AP.y(0);return js()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
   () {
-    case canvas {
+    case Dom.Canvas.fromDomElement(canvas) {
       Maybe::Just(el) =>
         {
           let isInStroke =
@@ -1298,13 +1305,13 @@ let reset =
   draw()
 }
 
-<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [jr]),_h(AF, {m:js})])}};;class CT extends _C{get jv(){return (this._canvas ? new AM(this._canvas) : new AN);}render(){const [ki,kj] = [(()=>{const ju=BP.jt(BP.eu(), 150, 75, 50, 0, 2 * (Math.PI));const jx=(()=>{return _match(this.jv,[[_PE(AM,[_PV]),((jw)=>{return (()=>{AK.gf(AK.ag(jw, new AL(`red`)), ju);return ``})()})],[_PE(AN,[]),(()=>{return ``})]])});const kh=((ka)=>{return _match(this.jv,[[_PE(AM,[_PV]),((jy)=>{return (()=>{const jz=BO.eq(jy);const kb=ka.clientX - jz.left;const kc=ka.clientY - jz.top;const ke=AK.kd(jy, kb, kc, new CU(), new AM(ju));const kf=new AL((ke ? `green` : `red`));AK.gf(AK.kg(AK.ag(jy, kf), 0, 0, jz.width, jz.height), ju);return ``})()})],[_PE(AN,[]),(()=>{return ``})]])});(async()=>{await AO.x(0);return jx()})();return _h("canvas", {"onMouseMove":(event => (kh)(_normalizeEvent(event))),ref:(element) => { this._canvas = element }})})(), `let circle =
+<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [jt]),_h(AF, {m:ju})])}};;class CU extends _C{get jx(){return (this._canvas ? new AN(this._canvas) : new AO);}render(){const [kk,kl] = [(()=>{const jw=BQ.jv(BQ.ew(), 150, 75, 50, 0, 2 * (Math.PI));const jz=(()=>{return _match(AK.s(this.jx),[[_PE(AN,[_PV]),((jy)=>{return (()=>{AL.gh(AL.ah(jy, new AM(`red`)), jw);return ``})()})],[_PE(AO,[]),(()=>{return ``})]])});const kj=((kc)=>{return _match(AK.s(this.jx),[[_PE(AN,[_PV]),((ka)=>{return (()=>{const kb=BP.er(AK.es(ka));const kd=kc.clientX - kb.left;const ke=kc.clientY - kb.top;const kg=AL.kf(ka, kd, ke, new CV(), new AN(jw));const kh=new AM((kg ? `green` : `red`));AL.gh(AL.ki(AL.ah(ka, kh), 0, 0, kb.width, kb.height), jw);return ``})()})],[_PE(AO,[]),(()=>{return ``})]])});(async()=>{await AP.y(0);return jz()})();return _h("canvas", {"onMouseMove":(event => (kj)(_normalizeEvent(event))),ref:(element) => { this._canvas = element }})})(), `let circle =
   Path2D.create()
   |> Path2D.arc(150, 75, 50, 0, 2 * \`Math.PI\`)
 
 let draw =
   () {
-    case canvas {
+    case Dom.Canvas.fromDomElement(canvas) {
       Maybe::Just(el) =>
         {
           el
@@ -1322,11 +1329,13 @@ let draw =
 // Listen for mouse moves
 let onMouseMove =
   (e : Html.Event) {
-    case canvas {
+    case Dom.Canvas.fromDomElement(canvas) {
       Maybe::Just(el) =>
         {
           let dims =
-            Dom.getDimensions(el)
+            el
+            |> Dom.Canvas.toDomElement
+            |> Dom.getDimensions
 
           let x =
             e.clientX - dims.left
@@ -1365,9 +1374,9 @@ let onMouseMove =
   draw()
 }
 
-<canvas as canvas onMouseMove={onMouseMove}/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [ki]),_h(AF, {m:kj})])}};;class CV extends _C{get kk(){return (this._canvas ? new AM(this._canvas) : new AN);}render(){const [kp,kq] = [(()=>{const ko=(()=>{return _match(this.kk,[[_PE(AM,[_PV]),((km)=>{return (()=>{AK.kl(km);AK.af(AK.ag(km, new AL(`green`)), 10, 10, 100, 100);AK.af(AK.kn(km), 150, 40, 100, 100);return ``})()})],[_PE(AN,[]),(()=>{return ``})]])});(async()=>{await AO.x(0);return ko()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
+<canvas as canvas onMouseMove={onMouseMove}/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [kk]),_h(AF, {m:kl})])}};;class CW extends _C{get km(){return (this._canvas ? new AN(this._canvas) : new AO);}render(){const [kr,ks] = [(()=>{const kq=(()=>{return _match(AK.s(this.km),[[_PE(AN,[_PV]),((ko)=>{return (()=>{AL.kn(ko);AL.ag(AL.ah(ko, new AM(`green`)), 10, 10, 100, 100);AL.ag(AL.kp(ko), 150, 40, 100, 100);return ``})()})],[_PE(AO,[]),(()=>{return ``})]])});(async()=>{await AP.y(0);return kq()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
   () {
-    case canvas {
+    case Dom.Canvas.fromDomElement(canvas) {
       Maybe::Just(el) =>
         {
           // Save the current state
@@ -1397,9 +1406,9 @@ let onMouseMove =
   draw()
 }
 
-<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [kp]),_h(AF, {m:kq})])}};;class CW extends _C{get kr(){return (this._canvas ? new AM(this._canvas) : new AN);}render(){const [kx,ky] = [(()=>{const kw=(()=>{return _match(this.kr,[[_PE(AM,[_PV]),((ku)=>{return (()=>{const kv=CX.ks(AK.kt(ku, `Hello world`));AK.da(AK.cz(ku, `24px serif`), `width: ${kv}`, 0, 50);return ``})()})],[_PE(AN,[]),(()=>{return ``})]])});(async()=>{await AO.x(0);return kw()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
+<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [kr]),_h(AF, {m:ks})])}};;class CX extends _C{get kt(){return (this._canvas ? new AN(this._canvas) : new AO);}render(){const [kz,la] = [(()=>{const ky=(()=>{return _match(AK.s(this.kt),[[_PE(AN,[_PV]),((kw)=>{return (()=>{const kx=CY.ku(AL.kv(kw, `Hello world`));AL.db(AL.da(kw, `24px serif`), `width: ${kx}`, 0, 50);return ``})()})],[_PE(AO,[]),(()=>{return ``})]])});(async()=>{await AP.y(0);return ky()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
   () {
-    case canvas {
+    case Dom.Canvas.fromDomElement(canvas) {
       Maybe::Just(el) =>
         {
           let width =
@@ -1424,9 +1433,9 @@ let onMouseMove =
   draw()
 }
 
-<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [kx]),_h(AF, {m:ky})])}};;class CY extends _C{get kz(){return (this._canvas ? new AM(this._canvas) : new AN);}render(){const [ld,le] = [(()=>{const lc=(()=>{return _match(this.kz,[[_PE(AM,[_PV]),((la)=>{return (()=>{AK.af(AK.af(AK.ag(AK.ic(la, 1, 0, 1.7, 1, 0, 0), new AL(`gray`)), 40, 40, 50, 20), 40, 90, 50, 20);AK.af(AK.af(AK.ag(AK.lb(la), new AL(`red`)), 40, 40, 50, 20), 40, 90, 50, 20);return ``})()})],[_PE(AN,[]),(()=>{return ``})]])});(async()=>{await AO.x(0);return lc()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
+<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [kz]),_h(AF, {m:la})])}};;class CZ extends _C{get lb(){return (this._canvas ? new AN(this._canvas) : new AO);}render(){const [lf,lg] = [(()=>{const le=(()=>{return _match(AK.s(this.lb),[[_PE(AN,[_PV]),((lc)=>{return (()=>{AL.ag(AL.ag(AL.ah(AL.ie(lc, 1, 0, 1.7, 1, 0, 0), new AM(`gray`)), 40, 40, 50, 20), 40, 90, 50, 20);AL.ag(AL.ag(AL.ah(AL.ld(lc), new AM(`red`)), 40, 40, 50, 20), 40, 90, 50, 20);return ``})()})],[_PE(AO,[]),(()=>{return ``})]])});(async()=>{await AP.y(0);return le()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
   () {
-    case canvas {
+    case Dom.Canvas.fromDomElement(canvas) {
       Maybe::Just(el) =>
         {
           // Skewed rectangles
@@ -1456,9 +1465,9 @@ let onMouseMove =
   draw()
 }
 
-<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [ld]),_h(AF, {m:le})])}};;class CZ extends _C{get lf(){return (this._canvas ? new AM(this._canvas) : new AN);}render(){const [lm,ln] = [(()=>{const ll=(()=>{return _match(this.lf,[[_PE(AM,[_PV]),((lg)=>{return (()=>{AK.kg(lg, 0, 0, 150, 150);AK.t(AK.aw(AK.u(lg, new AL(`#09f`)), 2), -5, 50, 160, 50);AK.aw(AK.u(lg, new AL(`#000`)), 10);AK.an(AK.ao(lg), 0, 100);AG.e(AG.bs(0, 24), ((lk, lh)=>{const li=(_compare(lh % 2, 0) ? 25 : -25);AK.am(lg, DA.lj(lh, 1.5) * 2, 75 + li);return lk}));AK.al(lg);return ``})()})],[_PE(AN,[]),(()=>{return ``})]])});(async()=>{await AO.x(0);return ll()})();return _h("canvas", {"width":`150`,"height":`150`,ref:(element) => { this._canvas = element }})})(), `let draw =
+<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [lf]),_h(AF, {m:lg})])}};;class DA extends _C{get lh(){return (this._canvas ? new AN(this._canvas) : new AO);}render(){const [lo,lp] = [(()=>{const ln=(()=>{return _match(AK.s(this.lh),[[_PE(AN,[_PV]),((li)=>{return (()=>{AL.ki(li, 0, 0, 150, 150);AL.u(AL.ax(AL.v(li, new AM(`#09f`)), 2), -5, 50, 160, 50);AL.ax(AL.v(li, new AM(`#000`)), 10);AL.ao(AL.ap(li), 0, 100);AG.e(AG.bt(0, 24), ((lm, lj)=>{const lk=(_compare(lj % 2, 0) ? 25 : -25);AL.an(li, DB.ll(lj, 1.5) * 2, 75 + lk);return lm}));AL.am(li);return ``})()})],[_PE(AO,[]),(()=>{return ``})]])});(async()=>{await AP.y(0);return ln()})();return _h("canvas", {"width":`150`,"height":`150`,ref:(element) => { this._canvas = element }})})(), `let draw =
   () {
-    case canvas {
+    case Dom.Canvas.fromDomElement(canvas) {
       Maybe::Just(el) =>
         {
           // Clear canvas
@@ -1513,9 +1522,9 @@ let onMouseMove =
 
 <canvas as canvas
   width="150"
-  height="150"/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [lm]),_h(AF, {m:ln})])}};;class DB extends _C{get lo(){return (this._canvas ? new AM(this._canvas) : new AN);}render(){const [lt,lu] = [(()=>{const ls=(()=>{return _match(this.lo,[[_PE(AM,[_PV]),((lq)=>{return (()=>{const lr=CC.gl(CC.gl(CC.gl(AK.lp(lq, 110, 90, 30, 100, 100, 70), 0, `pink`), 0.9, `white`), 1, `green`);AK.af(AK.ag(lq, new CD(lr)), 20, 20, 160, 160);return ``})()})],[_PE(AN,[]),(()=>{return ``})]])});(async()=>{await AO.x(0);return ls()})();return _h("canvas", {"width":`200`,"height":`200`,ref:(element) => { this._canvas = element }})})(), `let draw =
+  height="150"/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [lo]),_h(AF, {m:lp})])}};;class DC extends _C{get lq(){return (this._canvas ? new AN(this._canvas) : new AO);}render(){const [lv,lw] = [(()=>{const lu=(()=>{return _match(AK.s(this.lq),[[_PE(AN,[_PV]),((ls)=>{return (()=>{const lt=CD.gn(CD.gn(CD.gn(AL.lr(ls, 110, 90, 30, 100, 100, 70), 0, `pink`), 0.9, `white`), 1, `green`);AL.ag(AL.ah(ls, new CE(lt)), 20, 20, 160, 160);return ``})()})],[_PE(AO,[]),(()=>{return ``})]])});(async()=>{await AP.y(0);return lu()})();return _h("canvas", {"width":`200`,"height":`200`,ref:(element) => { this._canvas = element }})})(), `let draw =
   () {
-    case canvas {
+    case Dom.Canvas.fromDomElement(canvas) {
       Maybe::Just(el) =>
         {
           // Add five color stops
@@ -1545,9 +1554,9 @@ let onMouseMove =
 
 <canvas as canvas
   width="200"
-  height="200"/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [lt]),_h(AF, {m:lu})])}};;class DC extends _C{get lv(){return (this._canvas ? new AM(this._canvas) : new AN);}render(){const [ly,lz] = [(()=>{const lx=(()=>{return _match(this.lv,[[_PE(AM,[_PV]),((lw)=>{return (()=>{AK.dg(AK.cz(lw, `50px serif`), `Hello world`, 50, 90);return ``})()})],[_PE(AN,[]),(()=>{return ``})]])});(async()=>{await AO.x(0);return lx()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
+  height="200"/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [lv]),_h(AF, {m:lw})])}};;class DD extends _C{get lx(){return (this._canvas ? new AN(this._canvas) : new AO);}render(){const [ma,mb] = [(()=>{const lz=(()=>{return _match(AK.s(this.lx),[[_PE(AN,[_PV]),((ly)=>{return (()=>{AL.dh(AL.da(ly, `50px serif`), `Hello world`, 50, 90);return ``})()})],[_PE(AO,[]),(()=>{return ``})]])});(async()=>{await AP.y(0);return lz()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
   () {
-    case canvas {
+    case Dom.Canvas.fromDomElement(canvas) {
       Maybe::Just(el) =>
         {
           el
@@ -1567,9 +1576,9 @@ let onMouseMove =
   draw()
 }
 
-<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [ly]),_h(AF, {m:lz})])}};;class DD extends _C{get ma(){return (this._canvas ? new AM(this._canvas) : new AN);}render(){const [me,mf] = [(()=>{const md=(()=>{return _match(this.ma,[[_PE(AM,[_PV]),((mc)=>{return (()=>{AK.al(AK.am(AK.am(AK.am(AK.an(AK.ao(AK.mb(AK.aw(mc, 20), new DE())), 20, 20), 190, 100), 280, 20), 280, 150));return ``})()})],[_PE(AN,[]),(()=>{return ``})]])});(async()=>{await AO.x(0);return md()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
+<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [ma]),_h(AF, {m:mb})])}};;class DE extends _C{get mc(){return (this._canvas ? new AN(this._canvas) : new AO);}render(){const [mg,mh] = [(()=>{const mf=(()=>{return _match(AK.s(this.mc),[[_PE(AN,[_PV]),((me)=>{return (()=>{AL.am(AL.an(AL.an(AL.an(AL.ao(AL.ap(AL.md(AL.ax(me, 20), new DF())), 20, 20), 190, 100), 280, 20), 280, 150));return ``})()})],[_PE(AO,[]),(()=>{return ``})]])});(async()=>{await AP.y(0);return mf()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
   () {
-    case canvas {
+    case Dom.Canvas.fromDomElement(canvas) {
       Maybe::Just(el) =>
         {
           el
@@ -1595,9 +1604,9 @@ let onMouseMove =
   draw()
 }
 
-<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [me]),_h(AF, {m:mf})])}};;class DF extends _C{get mg(){return (this._canvas ? new AM(this._canvas) : new AN);}render(){const [mk,ml] = [(()=>{const mj=(()=>{return _match(this.mg,[[_PE(AM,[_PV]),((mi)=>{return (()=>{AK.af(AK.ag(AK.mh(mi, 9, 3), new AL(`red`)), 10, 10, 8, 20);AK.cb(mi, 1, 0, 0, 1, 0, 0);AK.af(AK.ag(mi, new AL(`gray`)), 10, 10, 8, 20);return ``})()})],[_PE(AN,[]),(()=>{return ``})]])});(async()=>{await AO.x(0);return mj()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
+<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [mg]),_h(AF, {m:mh})])}};;class DG extends _C{get mi(){return (this._canvas ? new AN(this._canvas) : new AO);}render(){const [mm,mn] = [(()=>{const ml=(()=>{return _match(AK.s(this.mi),[[_PE(AN,[_PV]),((mk)=>{return (()=>{AL.ag(AL.ah(AL.mj(mk, 9, 3), new AM(`red`)), 10, 10, 8, 20);AL.cc(mk, 1, 0, 0, 1, 0, 0);AL.ag(AL.ah(mk, new AM(`gray`)), 10, 10, 8, 20);return ``})()})],[_PE(AO,[]),(()=>{return ``})]])});(async()=>{await AP.y(0);return ml()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
   () {
-    case canvas {
+    case Dom.Canvas.fromDomElement(canvas) {
       Maybe::Just(el) =>
         {
           // Scaled rectangle
@@ -1628,9 +1637,9 @@ let onMouseMove =
   draw()
 }
 
-<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [mk]),_h(AF, {m:ml})])}};;class DG extends _C{get mm(){return (this._canvas ? new AM(this._canvas) : new AN);}render(){const [mp,mq] = [(()=>{const mo=(()=>{return _match(this.mm,[[_PE(AM,[_PV]),((mn)=>{return (()=>{AK.al(AK.am(AK.an(AK.u(AK.ao(mn), new AL(`blue`)), 20, 20), 200, 20));AK.al(AK.am(AK.an(AK.u(AK.ao(mn), new AL(`green`)), 20, 20), 120, 120));return ``})()})],[_PE(AN,[]),(()=>{return ``})]])});(async()=>{await AO.x(0);return mo()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
+<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [mm]),_h(AF, {m:mn})])}};;class DH extends _C{get mo(){return (this._canvas ? new AN(this._canvas) : new AO);}render(){const [mr,ms] = [(()=>{const mq=(()=>{return _match(AK.s(this.mo),[[_PE(AN,[_PV]),((mp)=>{return (()=>{AL.am(AL.an(AL.ao(AL.v(AL.ap(mp), new AM(`blue`)), 20, 20), 200, 20));AL.am(AL.an(AL.ao(AL.v(AL.ap(mp), new AM(`green`)), 20, 20), 120, 120));return ``})()})],[_PE(AO,[]),(()=>{return ``})]])});(async()=>{await AP.y(0);return mq()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
   () {
-    case canvas {
+    case Dom.Canvas.fromDomElement(canvas) {
       Maybe::Just(el) =>
         {
           // Tangential lines
@@ -1662,9 +1671,9 @@ let onMouseMove =
   draw()
 }
 
-<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [mp]),_h(AF, {m:mq})])}};;class DH extends _C{get mr(){return (this._canvas ? new AM(this._canvas) : new AN);}render(){const [mv,mw] = [(()=>{const mu=(()=>{return _match(this.mr,[[_PE(AM,[_PV]),((mt)=>{return (()=>{AK.af(AK.ag(AK.ms(mt, 110, 30), new AL(`red`)), 0, 0, 80, 80);AK.cb(mt, 1, 0, 0, 1, 0, 0);AK.af(AK.ag(mt, new AL(`gray`)), 0, 0, 80, 80);return ``})()})],[_PE(AN,[]),(()=>{return ``})]])});(async()=>{await AO.x(0);return mu()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
+<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [mr]),_h(AF, {m:ms})])}};;class DI extends _C{get mt(){return (this._canvas ? new AN(this._canvas) : new AO);}render(){const [mx,my] = [(()=>{const mw=(()=>{return _match(AK.s(this.mt),[[_PE(AN,[_PV]),((mv)=>{return (()=>{AL.ag(AL.ah(AL.mu(mv, 110, 30), new AM(`red`)), 0, 0, 80, 80);AL.cc(mv, 1, 0, 0, 1, 0, 0);AL.ag(AL.ah(mv, new AM(`gray`)), 0, 0, 80, 80);return ``})()})],[_PE(AO,[]),(()=>{return ``})]])});(async()=>{await AP.y(0);return mw()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
   () {
-    case canvas {
+    case Dom.Canvas.fromDomElement(canvas) {
       Maybe::Just(el) =>
         {
           // Moved square
@@ -1695,9 +1704,9 @@ let onMouseMove =
   draw()
 }
 
-<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [mv]),_h(AF, {m:mw})])}};;class DI extends _C{get mx(){return (this._canvas ? new AM(this._canvas) : new AN);}render(){const [nb,nc] = [(()=>{const na=(()=>{return _match(this.mx,[[_PE(AM,[_PV]),((my)=>{return (()=>{AK.cz(my, `30px serif`);AK.da(my, `Hello world (default: 0px)`, 10, 40);AK.da(AK.mz(my, 10), `Hello world (10px)`, 10, 90);AK.da(AK.mz(my, 20), `Hello world (20px)`, 10, 140);return ``})()})],[_PE(AN,[]),(()=>{return ``})]])});(async()=>{await AO.x(0);return na()})();return _h("canvas", {"width":`700`,ref:(element) => { this._canvas = element }})})(), `let draw =
+<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [mx]),_h(AF, {m:my})])}};;class DJ extends _C{get mz(){return (this._canvas ? new AN(this._canvas) : new AO);}render(){const [nd,ne] = [(()=>{const nc=(()=>{return _match(AK.s(this.mz),[[_PE(AN,[_PV]),((na)=>{return (()=>{AL.da(na, `30px serif`);AL.db(na, `Hello world (default: 0px)`, 10, 40);AL.db(AL.nb(na, 10), `Hello world (10px)`, 10, 90);AL.db(AL.nb(na, 20), `Hello world (20px)`, 10, 140);return ``})()})],[_PE(AO,[]),(()=>{return ``})]])});(async()=>{await AP.y(0);return nc()})();return _h("canvas", {"width":`700`,ref:(element) => { this._canvas = element }})})(), `let draw =
   () {
-    case canvas {
+    case Dom.Canvas.fromDomElement(canvas) {
       Maybe::Just(el) =>
         {
           el
@@ -1730,9 +1739,9 @@ let onMouseMove =
   draw()
 }
 
-<canvas as canvas width="700"/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [nb]),_h(AF, {m:nc})])}};;class DJ extends _C{get nd(){return (this._canvas ? new AM(this._canvas) : new AN);}render(){const [nl,nm] = [(()=>{const nk=(()=>{return _match(this.nd,[[_PE(AM,[_PV]),((nj)=>{return (()=>{const ne=[50, 20];const nf=[230, 30];const ng=[150, 80];const nh=[250, 100];AK.al(AK.ni(AK.an(AK.ao(nj), ne[0], ne[1]), nf[0], nf[1], ng[0], ng[1], nh[0], nh[1]));AK.ax(AK.ay(AK.ay(AK.ao(AK.ag(nj, new AL(`blue`))), ne[0], ne[1], 5, 0, 2 * (Math.PI)), nh[0], nh[1], 5, 0, 2 * (Math.PI)));AK.ax(AK.ay(AK.ay(AK.ao(AK.ag(nj, new AL(`red`))), nf[0], nf[1], 5, 0, 2 * (Math.PI)), ng[0], ng[1], 5, 0, 2 * (Math.PI)));return ``})()})],[_PE(AN,[]),(()=>{return ``})]])});(async()=>{await AO.x(0);return nk()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
+<canvas as canvas width="700"/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [nd]),_h(AF, {m:ne})])}};;class DK extends _C{get nf(){return (this._canvas ? new AN(this._canvas) : new AO);}render(){const [nn,no] = [(()=>{const nm=(()=>{return _match(AK.s(this.nf),[[_PE(AN,[_PV]),((nl)=>{return (()=>{const ng=[50, 20];const nh=[230, 30];const ni=[150, 80];const nj=[250, 100];AL.am(AL.nk(AL.ao(AL.ap(nl), ng[0], ng[1]), nh[0], nh[1], ni[0], ni[1], nj[0], nj[1]));AL.ay(AL.az(AL.az(AL.ap(AL.ah(nl, new AM(`blue`))), ng[0], ng[1], 5, 0, 2 * (Math.PI)), nj[0], nj[1], 5, 0, 2 * (Math.PI)));AL.ay(AL.az(AL.az(AL.ap(AL.ah(nl, new AM(`red`))), nh[0], nh[1], 5, 0, 2 * (Math.PI)), ni[0], ni[1], 5, 0, 2 * (Math.PI)));return ``})()})],[_PE(AO,[]),(()=>{return ``})]])});(async()=>{await AP.y(0);return nm()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
   () {
-    case canvas {
+    case Dom.Canvas.fromDomElement(canvas) {
       Maybe::Just(el) =>
         {
           let start =
@@ -1780,9 +1789,9 @@ let onMouseMove =
   draw()
 }
 
-<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [nl]),_h(AF, {m:nm})])}};;class DK extends _C{get nn(){return (this._canvas ? new AM(this._canvas) : new AN);}render(){const [nq,nr] = [(()=>{const np=(()=>{return _match(this.nn,[[_PE(AM,[_PV]),((no)=>{return (()=>{AK.da(AK.cz(no, `50px serif`), `Hello world`, 50, 90);return ``})()})],[_PE(AN,[]),(()=>{return ``})]])});(async()=>{await AO.x(0);return np()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
+<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [nn]),_h(AF, {m:no})])}};;class DL extends _C{get np(){return (this._canvas ? new AN(this._canvas) : new AO);}render(){const [ns,nt] = [(()=>{const nr=(()=>{return _match(AK.s(this.np),[[_PE(AN,[_PV]),((nq)=>{return (()=>{AL.db(AL.da(nq, `50px serif`), `Hello world`, 50, 90);return ``})()})],[_PE(AO,[]),(()=>{return ``})]])});(async()=>{await AP.y(0);return nr()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
   () {
-    case canvas {
+    case Dom.Canvas.fromDomElement(canvas) {
       Maybe::Just(el) =>
         {
           el
@@ -1802,9 +1811,9 @@ let onMouseMove =
   draw()
 }
 
-<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [nq]),_h(AF, {m:nr})])}};;class DL extends _C{get ns(){return (this._canvas ? new AM(this._canvas) : new AN);}render(){const [nw,nx] = [(()=>{const nv=(()=>{return _match(this.ns,[[_PE(AM,[_PV]),((nt)=>{return (()=>{AK.bj(nt, [4, 16]);AK.al(AK.am(AK.an(AK.ao(nt), 0, 50), 300, 50));AK.al(AK.am(AK.an(AK.nu(AK.u(AK.ao(nt), new AL(`red`)), 4), 0, 100), 300, 100));return ``})()})],[_PE(AN,[]),(()=>{return ``})]])});(async()=>{await AO.x(0);return nv()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
+<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [ns]),_h(AF, {m:nt})])}};;class DM extends _C{get nu(){return (this._canvas ? new AN(this._canvas) : new AO);}render(){const [ny,nz] = [(()=>{const nx=(()=>{return _match(AK.s(this.nu),[[_PE(AN,[_PV]),((nv)=>{return (()=>{AL.bk(nv, [4, 16]);AL.am(AL.an(AL.ao(AL.ap(nv), 0, 50), 300, 50));AL.am(AL.an(AL.ao(AL.nw(AL.v(AL.ap(nv), new AM(`red`)), 4), 0, 100), 300, 100));return ``})()})],[_PE(AO,[]),(()=>{return ``})]])});(async()=>{await AP.y(0);return nx()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
   () {
-    case canvas {
+    case Dom.Canvas.fromDomElement(canvas) {
       Maybe::Just(el) =>
         {
           el
@@ -1839,9 +1848,9 @@ let onMouseMove =
   draw()
 }
 
-<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [nw]),_h(AF, {m:nx})])}};;class DM extends _C{get ny(){return (this._canvas ? new AM(this._canvas) : new AN);}render(){const [ob,oc] = [(()=>{const oa=(()=>{return _match(this.ny,[[_PE(AM,[_PV]),((nz)=>{return (()=>{AK.al(AK.gt(nz, 10, 10, 150, 100));return ``})()})],[_PE(AN,[]),(()=>{return ``})]])});(async()=>{await AO.x(0);return oa()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
+<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [ny]),_h(AF, {m:nz})])}};;class DN extends _C{get oa(){return (this._canvas ? new AN(this._canvas) : new AO);}render(){const [od,oe] = [(()=>{const oc=(()=>{return _match(AK.s(this.oa),[[_PE(AN,[_PV]),((ob)=>{return (()=>{AL.am(AL.gv(ob, 10, 10, 150, 100));return ``})()})],[_PE(AO,[]),(()=>{return ``})]])});(async()=>{await AP.y(0);return oc()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
   () {
-    case canvas {
+    case Dom.Canvas.fromDomElement(canvas) {
       Maybe::Just(el) =>
         {
           el
@@ -1861,9 +1870,9 @@ let onMouseMove =
   draw()
 }
 
-<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [ob]),_h(AF, {m:oc})])}};;class DN extends _C{get od(){return (this._canvas ? new AM(this._canvas) : new AN);}render(){const [og,oh] = [(()=>{const of=(()=>{return _match(this.od,[[_PE(AM,[_PV]),((oe)=>{return (()=>{AK.al(AK.gt(AK.am(AK.an(AK.ao(AK.aw(oe, 15)), 20, 20), 130, 130), 40, 40, 70, 70));return ``})()})],[_PE(AN,[]),(()=>{return ``})]])});(async()=>{await AO.x(0);return of()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
+<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [od]),_h(AF, {m:oe})])}};;class DO extends _C{get of(){return (this._canvas ? new AN(this._canvas) : new AO);}render(){const [oi,oj] = [(()=>{const oh=(()=>{return _match(AK.s(this.of),[[_PE(AN,[_PV]),((og)=>{return (()=>{AL.am(AL.gv(AL.an(AL.ao(AL.ap(AL.ax(og, 15)), 20, 20), 130, 130), 40, 40, 70, 70));return ``})()})],[_PE(AO,[]),(()=>{return ``})]])});(async()=>{await AP.y(0);return oh()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
   () {
-    case canvas {
+    case Dom.Canvas.fromDomElement(canvas) {
       Maybe::Just(el) =>
         {
           el
@@ -1887,9 +1896,9 @@ let onMouseMove =
   draw()
 }
 
-<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [og]),_h(AF, {m:oh})])}};;class DO extends _C{get oi(){return (this._canvas ? new AM(this._canvas) : new AN);}render(){const [ol,om] = [(()=>{const ok=(()=>{return _match(this.oi,[[_PE(AM,[_PV]),((oj)=>{return (()=>{AK.al(AK.ay(AK.ao(oj), 150, 75, 50, 0, 2 * (Math.PI)));return ``})()})],[_PE(AN,[]),(()=>{return ``})]])});(async()=>{await AO.x(0);return ok()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
+<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [oi]),_h(AF, {m:oj})])}};;class DP extends _C{get ok(){return (this._canvas ? new AN(this._canvas) : new AO);}render(){const [on,oo] = [(()=>{const om=(()=>{return _match(AK.s(this.ok),[[_PE(AN,[_PV]),((ol)=>{return (()=>{AL.am(AL.az(AL.ap(ol), 150, 75, 50, 0, 2 * (Math.PI)));return ``})()})],[_PE(AO,[]),(()=>{return ``})]])});(async()=>{await AP.y(0);return om()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
   () {
-    case canvas {
+    case Dom.Canvas.fromDomElement(canvas) {
       Maybe::Just(el) =>
         {
           el
@@ -1910,9 +1919,9 @@ let onMouseMove =
   draw()
 }
 
-<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [ol]),_h(AF, {m:om})])}};;class DP extends _C{get on(){return (this._canvas ? new AM(this._canvas) : new AN);}render(){const [or,os] = [(()=>{const oq=(()=>{return _match(this.on,[[_PE(AM,[_PV]),((oo)=>{return (()=>{AK.ax(AK.ag(AK.ay(oo, 0, 0, 5, 0, 2 * (Math.PI)), new AL(`blue`)));AK.af(AK.ag(oo, new AL(`gray`)), 100, 0, 80, 20);AK.af(AK.ag(AK.op(oo, (45 * (Math.PI)) / 180), new AL(`red`)), 100, 0, 80, 20);AK.cb(oo, 1, 0, 0, 1, 0, 0);return ``})()})],[_PE(AN,[]),(()=>{return ``})]])});(async()=>{await AO.x(0);return oq()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
+<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [on]),_h(AF, {m:oo})])}};;class DQ extends _C{get op(){return (this._canvas ? new AN(this._canvas) : new AO);}render(){const [ot,ou] = [(()=>{const os=(()=>{return _match(AK.s(this.op),[[_PE(AN,[_PV]),((oq)=>{return (()=>{AL.ay(AL.ah(AL.az(oq, 0, 0, 5, 0, 2 * (Math.PI)), new AM(`blue`)));AL.ag(AL.ah(oq, new AM(`gray`)), 100, 0, 80, 20);AL.ag(AL.ah(AL.or(oq, (45 * (Math.PI)) / 180), new AM(`red`)), 100, 0, 80, 20);AL.cc(oq, 1, 0, 0, 1, 0, 0);return ``})()})],[_PE(AO,[]),(()=>{return ``})]])});(async()=>{await AP.y(0);return os()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
   () {
-    case canvas {
+    case Dom.Canvas.fromDomElement(canvas) {
       Maybe::Just(el) =>
         {
           // Point of transform origin
@@ -1949,9 +1958,9 @@ let onMouseMove =
   draw()
 }
 
-<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [or]),_h(AF, {m:os})])}};;class DQ extends _C{get ou(){return (this._image ? new AM(this._image) : new AN);}get ot(){return (this._canvas ? new AM(this._canvas) : new AN);}render(){const [pb,pc] = [(()=>{const pa=(()=>{return _match(this.ot,[[_PE(AM,[_PV]),((oy)=>{return _match(this.ou,[[_PE(AM,[_PV]),((ov)=>{return (()=>{const ow=BO.eq(ov);BO.hd(ov, `display`, `none`);const ox=CG.ha(ov);AK.db(AK.cz(oy, `16px sans-serif`), new BC());AK.he(AK.da(oy, `Source`, ow.width * 0.5, 20), ox, 0, 24, ow.width, ow.height);AK.he(AK.oz(AK.da(oy, `Smoothing = TRUE`, ow.width * 2.5, 20), true), ox, ow.width, 24, ow.width * 3, ow.height * 3);AK.he(AK.oz(AK.da(oy, `Smoothing = FALSE`, ow.width * 5.5, 20), false), ox, ow.width * 4, 24, ow.width * 3, ow.height * 3);return ``})()})],[null,(()=>{return ``})]])})],[null,(()=>{return ``})]])});return _h(React.Fragment, {}, [_h("img", {"src":`/assets/star_aca6451fdeb0e4bf346a1ba9744ea7bb.png`,"onLoad":(event => (pa)(_normalizeEvent(event))),ref:(element) => { this._image = element }}),_h("canvas", {"width":`460`,"height":`210`,ref:(element) => { this._canvas = element }})])})(), `let draw =
+<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [ot]),_h(AF, {m:ou})])}};;class DR extends _C{get ow(){return (this._image ? new AN(this._image) : new AO);}get ov(){return (this._canvas ? new AN(this._canvas) : new AO);}render(){const [pd,pe] = [(()=>{const pc=(()=>{return _match(AK.s(this.ov),[[_PE(AN,[_PV]),((pa)=>{return _match(this.ow,[[_PE(AN,[_PV]),((ox)=>{return (()=>{const oy=BP.er(ox);BP.hf(ox, `display`, `none`);const oz=CH.hc(ox);AL.dc(AL.da(pa, `16px sans-serif`), new BD());AL.hg(AL.db(pa, `Source`, oy.width * 0.5, 20), oz, 0, 24, oy.width, oy.height);AL.hg(AL.pb(AL.db(pa, `Smoothing = TRUE`, oy.width * 2.5, 20), true), oz, oy.width, 24, oy.width * 3, oy.height * 3);AL.hg(AL.pb(AL.db(pa, `Smoothing = FALSE`, oy.width * 5.5, 20), false), oz, oy.width * 4, 24, oy.width * 3, oy.height * 3);return ``})()})],[null,(()=>{return ``})]])})],[null,(()=>{return ``})]])});return _h(React.Fragment, {}, [_h("img", {"src":`/assets/star_aca6451fdeb0e4bf346a1ba9744ea7bb.png`,"onLoad":(event => (pc)(_normalizeEvent(event))),ref:(element) => { this._image = element }}),_h("canvas", {"width":`460`,"height":`210`,ref:(element) => { this._canvas = element }})])})(), `let draw =
   () {
-    case canvas {
+    case Dom.Canvas.fromDomElement(canvas) {
       Maybe::Just(el) =>
         case image {
           Maybe::Just(img) =>
@@ -2002,9 +2011,9 @@ let onMouseMove =
   <canvas as canvas
     width="460"
     height="210"/>
-</>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [pb]),_h(AF, {m:pc})])}};;class DR extends _C{get pd(){return (this._canvas ? new AM(this._canvas) : new AN);}render(){const [pg,ph] = [(()=>{const pf=(()=>{return _match(this.pd,[[_PE(AM,[_PV]),((pe)=>{return (()=>{AK.t(AK.u(pe, new AL(`blue`)), 10, 10, 100, 100);return ``})()})],[_PE(AN,[]),(()=>{return ``})]])});(async()=>{await AO.x(0);return pf()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
+</>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [pd]),_h(AF, {m:pe})])}};;class DS extends _C{get pf(){return (this._canvas ? new AN(this._canvas) : new AO);}render(){const [pi,pj] = [(()=>{const ph=(()=>{return _match(AK.s(this.pf),[[_PE(AN,[_PV]),((pg)=>{return (()=>{AL.u(AL.v(pg, new AM(`blue`)), 10, 10, 100, 100);return ``})()})],[_PE(AO,[]),(()=>{return ``})]])});(async()=>{await AP.y(0);return ph()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
   () {
-    case canvas {
+    case Dom.Canvas.fromDomElement(canvas) {
       Maybe::Just(el) =>
         {
           el
@@ -2024,9 +2033,9 @@ let onMouseMove =
   draw()
 }
 
-<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [pg]),_h(AF, {m:ph})])}};;class DS extends _C{get pi(){return (this._canvas ? new AM(this._canvas) : new AN);}render(){const [pm,pn] = [(()=>{const pl=(()=>{return _match(this.pi,[[_PE(AM,[_PV]),((pk)=>{return (()=>{AK.al(AK.pj(AK.ao(AK.u(pk, new AL(`red`))), 10, 20, 150, 100, [0]));AK.al(AK.pj(AK.ao(AK.u(pk, new AL(`blue`))), 10, 20, 150, 100, [40]));AK.al(AK.pj(AK.ao(AK.u(pk, new AL(`orange`))), 10, 150, 150, 100, [10, 40]));AK.al(AK.pj(AK.ao(AK.u(pk, new AL(`green`))), 400, 20, 200, 100, [0, 30, 50, 60]));AK.al(AK.pj(AK.ao(AK.u(pk, new AL(`magenta`))), 400, 150, -200, 100, [0, 30, 50, 60]));return ``})()})],[_PE(AN,[]),(()=>{return ``})]])});(async()=>{await AO.x(0);return pl()})();return _h("canvas", {"width":`700`,"height":`300`,ref:(element) => { this._canvas = element }})})(), `let draw =
+<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [pi]),_h(AF, {m:pj})])}};;class DT extends _C{get pk(){return (this._canvas ? new AN(this._canvas) : new AO);}render(){const [po,pp] = [(()=>{const pn=(()=>{return _match(AK.s(this.pk),[[_PE(AN,[_PV]),((pm)=>{return (()=>{AL.am(AL.pl(AL.ap(AL.v(pm, new AM(`red`))), 10, 20, 150, 100, [0]));AL.am(AL.pl(AL.ap(AL.v(pm, new AM(`blue`))), 10, 20, 150, 100, [40]));AL.am(AL.pl(AL.ap(AL.v(pm, new AM(`orange`))), 10, 150, 150, 100, [10, 40]));AL.am(AL.pl(AL.ap(AL.v(pm, new AM(`green`))), 400, 20, 200, 100, [0, 30, 50, 60]));AL.am(AL.pl(AL.ap(AL.v(pm, new AM(`magenta`))), 400, 150, -200, 100, [0, 30, 50, 60]));return ``})()})],[_PE(AO,[]),(()=>{return ``})]])});(async()=>{await AP.y(0);return pn()})();return _h("canvas", {"width":`700`,"height":`300`,ref:(element) => { this._canvas = element }})})(), `let draw =
   () {
-    case canvas {
+    case Dom.Canvas.fromDomElement(canvas) {
       Maybe::Just(el) =>
         {
           // Rounded rectangle with zero radius (specified as a number)
@@ -2079,9 +2088,9 @@ let onMouseMove =
 
 <canvas as canvas
   width="700"
-  height="300"/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [pm]),_h(AF, {m:pn})])}};;class DT extends _C{get po(){return (this._canvas ? new AM(this._canvas) : new AN);}render(){const [pr,ps] = [(()=>{const pq=(()=>{return _match(this.po,[[_PE(AM,[_PV]),((pp)=>{return (()=>{AK.af(AK.ag(AK.kl(pp), new AL(`green`)), 10, 10, 100, 100);AK.af(AK.kn(pp), 150, 40, 100, 100);return ``})()})],[_PE(AN,[]),(()=>{return ``})]])});(async()=>{await AO.x(0);return pq()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
+  height="300"/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [po]),_h(AF, {m:pp})])}};;class DU extends _C{get pq(){return (this._canvas ? new AN(this._canvas) : new AO);}render(){const [pt,pu] = [(()=>{const ps=(()=>{return _match(AK.s(this.pq),[[_PE(AN,[_PV]),((pr)=>{return (()=>{AL.ag(AL.ah(AL.kn(pr), new AM(`green`)), 10, 10, 100, 100);AL.ag(AL.kp(pr), 150, 40, 100, 100);return ``})()})],[_PE(AO,[]),(()=>{return ``})]])});(async()=>{await AP.y(0);return ps()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
   () {
-    case canvas {
+    case Dom.Canvas.fromDomElement(canvas) {
       Maybe::Just(el) =>
         {
           // Save the current state
@@ -2108,9 +2117,9 @@ let onMouseMove =
   draw()
 }
 
-<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [pr]),_h(AF, {m:ps})])}};;class DU extends _C{get pt(){return (this._canvas ? new AM(this._canvas) : new AN);}render(){const [px,py] = [(()=>{const pw=(()=>{return _match(this.pt,[[_PE(AM,[_PV]),((pv)=>{return (()=>{AK.da(AK.pu(AK.da(AK.cz(pv, `48px serif`), `Hi!`, 150, 50), new DV()), `Hi!`, 150, 130);return ``})()})],[_PE(AN,[]),(()=>{return ``})]])});(async()=>{await AO.x(0);return pw()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
+<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [pt]),_h(AF, {m:pu})])}};;class DV extends _C{get pv(){return (this._canvas ? new AN(this._canvas) : new AO);}render(){const [pz,qa] = [(()=>{const py=(()=>{return _match(AK.s(this.pv),[[_PE(AN,[_PV]),((px)=>{return (()=>{AL.db(AL.pw(AL.db(AL.da(px, `48px serif`), `Hi!`, 150, 50), new DW()), `Hi!`, 150, 130);return ``})()})],[_PE(AO,[]),(()=>{return ``})]])});(async()=>{await AP.y(0);return py()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
   () {
-    case canvas {
+    case Dom.Canvas.fromDomElement(canvas) {
       Maybe::Just(el) =>
         {
           el
@@ -2132,9 +2141,9 @@ let onMouseMove =
   draw()
 }
 
-<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [px]),_h(AF, {m:py})])}};;class DW extends _C{get pz(){return (this._canvas ? new AM(this._canvas) : new AN);}render(){const [qe,qf] = [(()=>{const qd=(()=>{return _match(this.pz,[[_PE(AM,[_PV]),((qb)=>{return (()=>{const qc=CC.gl(CC.gl(CC.gl(AK.qa(qb, 20, 0, 220, 0), 0, `green`), 0.5, `cyan`), 1, `green`);AK.af(AK.ag(qb, new CD(qc)), 20, 20, 200, 200);return ``})()})],[_PE(AN,[]),(()=>{return ``})]])});(async()=>{await AO.x(0);return qd()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
+<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [pz]),_h(AF, {m:qa})])}};;class DX extends _C{get qb(){return (this._canvas ? new AN(this._canvas) : new AO);}render(){const [qg,qh] = [(()=>{const qf=(()=>{return _match(AK.s(this.qb),[[_PE(AN,[_PV]),((qd)=>{return (()=>{const qe=CD.gn(CD.gn(CD.gn(AL.qc(qd, 20, 0, 220, 0), 0, `green`), 0.5, `cyan`), 1, `green`);AL.ag(AL.ah(qd, new CE(qe)), 20, 20, 200, 200);return ``})()})],[_PE(AO,[]),(()=>{return ``})]])});(async()=>{await AP.y(0);return qf()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
   () {
-    case canvas {
+    case Dom.Canvas.fromDomElement(canvas) {
       Maybe::Just(el) =>
         {
           // Add five color stops
@@ -2162,9 +2171,9 @@ let onMouseMove =
   draw()
 }
 
-<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [qe]),_h(AF, {m:qf})])}};;class DX extends _C{get qg(){return (this._canvas ? new AM(this._canvas) : new AN);}render(){const [qj,qk] = [(()=>{const qi=(()=>{return _match(this.qg,[[_PE(AM,[_PV]),((qh)=>{return (()=>{AK.ax(AK.gt(qh, 10, 20, 150, 100));return ``})()})],[_PE(AN,[]),(()=>{return ``})]])});(async()=>{await AO.x(0);return qi()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
+<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [qg]),_h(AF, {m:qh})])}};;class DY extends _C{get qi(){return (this._canvas ? new AN(this._canvas) : new AO);}render(){const [ql,qm] = [(()=>{const qk=(()=>{return _match(AK.s(this.qi),[[_PE(AN,[_PV]),((qj)=>{return (()=>{AL.ay(AL.gv(qj, 10, 20, 150, 100));return ``})()})],[_PE(AO,[]),(()=>{return ``})]])});(async()=>{await AP.y(0);return qk()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
   () {
-    case canvas {
+    case Dom.Canvas.fromDomElement(canvas) {
       Maybe::Just(el) =>
         {
           el
@@ -2184,9 +2193,9 @@ let onMouseMove =
   draw()
 }
 
-<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [qj]),_h(AF, {m:qk})])}};;class DY extends _C{get ql(){return (this._canvas ? new AM(this._canvas) : new AN);}render(){const [qp,qq] = [(()=>{const qo=(()=>{return _match(this.ql,[[_PE(AM,[_PV]),((qn)=>{return (()=>{AK.qm(qn, new DZ());AK.af(AK.ag(qn, new AL(`blue`)), 10, 10, 100, 100);AK.af(AK.ag(qn, new AL(`red`)), 50, 50, 100, 100);return ``})()})],[_PE(AN,[]),(()=>{return ``})]])});(async()=>{await AO.x(0);return qo()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
+<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [ql]),_h(AF, {m:qm})])}};;class DZ extends _C{get qn(){return (this._canvas ? new AN(this._canvas) : new AO);}render(){const [qr,qs] = [(()=>{const qq=(()=>{return _match(AK.s(this.qn),[[_PE(AN,[_PV]),((qp)=>{return (()=>{AL.qo(qp, new EA());AL.ag(AL.ah(qp, new AM(`blue`)), 10, 10, 100, 100);AL.ag(AL.ah(qp, new AM(`red`)), 50, 50, 100, 100);return ``})()})],[_PE(AO,[]),(()=>{return ``})]])});(async()=>{await AP.y(0);return qq()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
   () {
-    case canvas {
+    case Dom.Canvas.fromDomElement(canvas) {
       Maybe::Just(el) =>
         {
           el
@@ -2213,13 +2222,15 @@ let onMouseMove =
   draw()
 }
 
-<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [qp]),_h(AF, {m:qq})])}};;class EA extends _C{get qr(){return (this._canvas ? new AM(this._canvas) : new AN);}render(){const [qv,qw] = [(()=>{const qu=(()=>{return _match(this.qr,[[_PE(AM,[_PV]),((qs)=>{return (()=>{const qt=BO.eq(qs);AK.af(AK.ag(AK.ao(qs), new AL(`#ff6`)), 0, 0, qt.width, qt.height);AK.ax(AK.dy(AK.am(AK.am(AK.an(AK.ag(AK.ao(qs), new AL(`blue`)), 20, 20), 180, 20), 130, 130)));AK.kg(qs, 10, 10, 120, 100);return ``})()})],[_PE(AN,[]),(()=>{return ``})]])});(async()=>{await AO.x(0);return qu()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
+<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [qr]),_h(AF, {m:qs})])}};;class EB extends _C{get qt(){return (this._canvas ? new AN(this._canvas) : new AO);}render(){const [qx,qy] = [(()=>{const qw=(()=>{return _match(AK.s(this.qt),[[_PE(AN,[_PV]),((qu)=>{return (()=>{const qv=BP.er(AK.es(qu));AL.ag(AL.ah(AL.ap(qu), new AM(`#ff6`)), 0, 0, qv.width, qv.height);AL.ay(AL.dz(AL.an(AL.an(AL.ao(AL.ah(AL.ap(qu), new AM(`blue`)), 20, 20), 180, 20), 130, 130)));AL.ki(qu, 10, 10, 120, 100);return ``})()})],[_PE(AO,[]),(()=>{return ``})]])});(async()=>{await AP.y(0);return qw()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
   () {
-    case canvas {
+    case Dom.Canvas.fromDomElement(canvas) {
       Maybe::Just(el) =>
         {
           let dims =
-            Dom.getDimensions(el)
+            el
+            |> Dom.Canvas.toDomElement
+            |> Dom.getDimensions
 
           // Draw yellow background
           el
@@ -2254,9 +2265,9 @@ let onMouseMove =
   draw()
 }
 
-<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [qv]),_h(AF, {m:qw})])}};;class EB extends _C{get qx(){return (this._canvas ? new AM(this._canvas) : new AN);}render(){const [ra,rb] = [(()=>{const qz=(()=>{return _match(this.qx,[[_PE(AM,[_PV]),((qy)=>{return (()=>{AK.al(AK.am(AK.an(AK.am(AK.an(AK.ao(qy), 50, 50), 200, 50), 50, 90), 280, 120));return ``})()})],[_PE(AN,[]),(()=>{return ``})]])});(async()=>{await AO.x(0);return qz()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
+<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [qx]),_h(AF, {m:qy})])}};;class EC extends _C{get qz(){return (this._canvas ? new AN(this._canvas) : new AO);}render(){const [rc,rd] = [(()=>{const rb=(()=>{return _match(AK.s(this.qz),[[_PE(AN,[_PV]),((ra)=>{return (()=>{AL.am(AL.an(AL.ao(AL.an(AL.ao(AL.ap(ra), 50, 50), 200, 50), 50, 90), 280, 120));return ``})()})],[_PE(AO,[]),(()=>{return ``})]])});(async()=>{await AP.y(0);return rb()})();return _h("canvas", {ref:(element) => { this._canvas = element }})})(), `let draw =
   () {
-    case canvas {
+    case Dom.Canvas.fromDomElement(canvas) {
       Maybe::Just(el) =>
         {
           el
@@ -2280,7 +2291,7 @@ let onMouseMove =
   draw()
 }
 
-<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [ra]),_h(AF, {m:rb})])}};;class A extends _C{constructor(props){super(props);this._d({},{rh:(()=>{return EE.rp([[`setDirection`, (()=>{return $a()})], [`setFillStyle`, (()=>{return $b()})], [`setFilter`, (()=>{return $c()})], [`setFont`, (()=>{return $d()})], [`setFontKerning`, (()=>{return $e()})], [`setGlobalAlpha`, (()=>{return $f()})], [`setGlobalCompositeOperation`, (()=>{return $g()})], [`setImageSmoothingEnabled`, (()=>{return $h()})], [`setImageSmoothingQuality`, (()=>{return $i()})], [`setLetterSpacing`, (()=>{return $j()})], [`setLineCap`, (()=>{return $k()})], [`setLineDashOffset`, (()=>{return $l()})], [`setLineJoin`, (()=>{return $m()})], [`setLineWidth`, (()=>{return $n()})], [`setMiterLimit`, (()=>{return $o()})], [`setShadowBlur`, (()=>{return $p()})], [`setShadowColor`, (()=>{return $q()})], [`setShadowOffsetX`, (()=>{return $r()})], [`setShadowOffsetY`, (()=>{return $s()})], [`setStrokeStyle`, (()=>{return $t()})], [`setTextAlign`, (()=>{return $u()})], [`setTextBaseline`, (()=>{return $v()})], [`setWordSpacing`, (()=>{return $w()})]])}),rj:(()=>{return EE.rp([[`arc`, (()=>{return $x()})], [`arcTo`, (()=>{return $y()})], [`beginPath`, (()=>{return $z()})], [`bezierCurveTo`, (()=>{return $aa()})], [`clearRect`, (()=>{return $ab()})], [`clip`, (()=>{return $ac()})], [`clipPath`, (()=>{return $ad()})], [`closePath`, (()=>{return $ae()})], [`createConicGradient`, (()=>{return $af()})], [`createImageData`, (()=>{return $ag()})], [`createLinearGradient`, (()=>{return $ah()})], [`createPattern`, (()=>{return $ai()})], [`createRadialGradient`, (()=>{return $aj()})], [`drawImage`, (()=>{return $ak()})], [`ellipse`, (()=>{return $al()})], [`fill`, (()=>{return $am()})], [`fillPath`, (()=>{return $an()})], [`fillRect`, (()=>{return $ao()})], [`fillText`, (()=>{return $ap()})], [`isPointInPath`, (()=>{return $aq()})], [`isPointInStroke`, (()=>{return $ar()})], [`lineTo`, (()=>{return $as()})], [`measureText`, (()=>{return $at()})], [`moveTo`, (()=>{return $au()})], [`putImageData`, (()=>{return $x()})], [`quadraticCurveTo`, (()=>{return $av()})], [`rect`, (()=>{return $aw()})], [`reset`, (()=>{return $ax()})], [`resetTransform`, (()=>{return $ay()})], [`restore`, (()=>{return $az()})], [`rotate`, (()=>{return $ba()})], [`roundRect`, (()=>{return $bb()})], [`save`, (()=>{return $bc()})], [`scale`, (()=>{return $bd()})], [`setLineDash`, (()=>{return $be()})], [`setTransform`, (()=>{return $bf()})], [`stroke`, (()=>{return $bg()})], [`strokeRect`, (()=>{return $bh()})], [`strokeText`, (()=>{return $bi()})], [`transform`, (()=>{return $bj()})], [`translate`, (()=>{return $bk()})]])})})}get rl(){return EC.rq;}componentWillUnmount(){EC._unsubscribe(this)}componentDidMount(){EC._subscribe(this)}rc(rd){return (ED.re(rd) ? `active` : ``)}render(){return _h("article", {}, [_h("div", {className:`page`}, [_h("div", {className:`guide guide--wide`}, [_h("div", {className:`toc`}, [_h("div", {className:`toc__wrapper`}, [_h("div", {className:`page__package`}, [_h("strong", {}, [`mint-canvas`]),_h("p", {})]),_h("div", {className:`toc__section`}, [`Config Functions`]),_h("div", {"id":`sidebar`,className:`toc__pages`}, [_h("div", {className:`sidebar`}, [_h("div", {}, [(()=>{const _0 = [];const _1 = EE.rg(this.rh);let _i = -1;for(let rf of _1){_i++;_0.push(_h("div", {"data-id":`version-item`}, [_h("a", {"href":`/${rf[0]}`,className:this.rc(rf[0])}, [rf[0]])]))};return _0})()])])]),_h("div", {className:`toc__section`}, [`Draw Functions`]),_h("div", {"id":`sidebar`,className:`toc__pages`}, [_h("div", {className:`sidebar`}, [_h("div", {}, [(()=>{const _0 = [];const _1 = EE.rg(this.rj);let _i = -1;for(let ri of _1){_i++;_0.push(_h("div", {"data-id":`version-item`}, [_h("a", {"href":`/${ri[0]}`,className:this.rc(ri[0])}, [ri[0]])]))};return _0})()])])])])]),_h("div", {className:`guide-content`}, [_match(EE.rk(this.rh, this.rl),[[_PE(AM,[_PV]),((rm)=>{return rm()})],[null,(()=>{return EF.rn()})]]),_match(EE.rk(this.rj, this.rl),[[_PE(AM,[_PV]),((ro)=>{return ro()})],[null,(()=>{return EF.rn()})]])])])])])}};;const $a=_m(() => _h(DU, {}));const $b=_m(() => _h(BH, {}));const $c=_m(() => _h(BR, {}));const $d=_m(() => _h(BE, {}));const $e=_m(() => _h(BK, {}));const $f=_m(() => _h(AS, {}));const $g=_m(() => _h(DY, {}));const $h=_m(() => _h(DQ, {}));const $i=_m(() => _h(CF, {}));const $j=_m(() => _h(DI, {}));const $k=_m(() => _h(BF, {}));const $l=_m(() => _h(DL, {}));const $m=_m(() => _h(DD, {}));const $n=_m(() => _h(DN, {}));const $o=_m(() => _h(CZ, {}));const $p=_m(() => _h(AZ, {}));const $q=_m(() => _h(CQ, {}));const $r=_m(() => _h(AP, {}));const $s=_m(() => _h(BJ, {}));const $t=_m(() => _h(DR, {}));const $u=_m(() => _h(BA, {}));const $v=_m(() => _h(BT, {}));const $w=_m(() => _h(CL, {}));const $x=_m(() => _h(DO, {}));const $y=_m(() => _h(AR, {}));const $z=_m(() => _h(DG, {}));const $aa=_m(() => _h(DJ, {}));const $ab=_m(() => _h(EA, {}));const $ac=_m(() => _h(CP, {}));const $ad=_m(() => _h(BN, {}));const $ae=_m(() => _h(BI, {}));const $af=_m(() => _h(CB, {}));const $ag=_m(() => _h(AU, {}));const $ah=_m(() => _h(DW, {}));const $ai=_m(() => _h(CI, {}));const $aj=_m(() => _h(DB, {}));const $ak=_m(() => _h(CO, {}));const $al=_m(() => _h(AX, {}));const $am=_m(() => _h(CE, {}));const $an=_m(() => _h(CA, {}));const $ao=_m(() => _h(AY, {}));const $ap=_m(() => _h(DK, {}));const $aq=_m(() => _h(CT, {}));const $ar=_m(() => _h(CR, {}));const $as=_m(() => _h(AQ, {}));const $at=_m(() => _h(CW, {}));const $au=_m(() => _h(EB, {}));const $av=_m(() => _h(CN, {}));const $aw=_m(() => _h(DX, {}));const $ax=_m(() => _h(BS, {}));const $ay=_m(() => _h(CY, {}));const $az=_m(() => _h(CV, {}));const $ba=_m(() => _h(DP, {}));const $bb=_m(() => _h(DS, {}));const $bc=_m(() => _h(DT, {}));const $bd=_m(() => _h(DF, {}));const $be=_m(() => _h(AT, {}));const $bf=_m(() => _h(AW, {}));const $bg=_m(() => _h(DM, {}));const $bh=_m(() => _h(AJ, {}));const $bi=_m(() => _h(DC, {}));const $bj=_m(() => _h(CM, {}));const $bk=_m(() => _h(DH, {}));const EC=new(class extends _S{constructor(){super();this.state={rq:`setDirection`}}get rq(){return this.state.rq;}adp(adq){return new Promise(((_resolve)=>{this.setState(_u(this.state, new Record({rq:adq})), _resolve)
+<canvas as canvas/>`];return _h(React.Fragment, {}, [_h("div", {className:`demo`}, [rc]),_h(AF, {m:rd})])}};;class A extends _C{constructor(props){super(props);this._d({},{rj:(()=>{return EF.rr([[`setDirection`, (()=>{return $a()})], [`setFillStyle`, (()=>{return $b()})], [`setFilter`, (()=>{return $c()})], [`setFont`, (()=>{return $d()})], [`setFontKerning`, (()=>{return $e()})], [`setGlobalAlpha`, (()=>{return $f()})], [`setGlobalCompositeOperation`, (()=>{return $g()})], [`setImageSmoothingEnabled`, (()=>{return $h()})], [`setImageSmoothingQuality`, (()=>{return $i()})], [`setLetterSpacing`, (()=>{return $j()})], [`setLineCap`, (()=>{return $k()})], [`setLineDashOffset`, (()=>{return $l()})], [`setLineJoin`, (()=>{return $m()})], [`setLineWidth`, (()=>{return $n()})], [`setMiterLimit`, (()=>{return $o()})], [`setShadowBlur`, (()=>{return $p()})], [`setShadowColor`, (()=>{return $q()})], [`setShadowOffsetX`, (()=>{return $r()})], [`setShadowOffsetY`, (()=>{return $s()})], [`setStrokeStyle`, (()=>{return $t()})], [`setTextAlign`, (()=>{return $u()})], [`setTextBaseline`, (()=>{return $v()})], [`setWordSpacing`, (()=>{return $w()})]])}),rl:(()=>{return EF.rr([[`arc`, (()=>{return $x()})], [`arcTo`, (()=>{return $y()})], [`beginPath`, (()=>{return $z()})], [`bezierCurveTo`, (()=>{return $aa()})], [`clearRect`, (()=>{return $ab()})], [`clip`, (()=>{return $ac()})], [`clipPath`, (()=>{return $ad()})], [`closePath`, (()=>{return $ae()})], [`createConicGradient`, (()=>{return $af()})], [`createImageData`, (()=>{return $ag()})], [`createLinearGradient`, (()=>{return $ah()})], [`createPattern`, (()=>{return $ai()})], [`createRadialGradient`, (()=>{return $aj()})], [`drawImage`, (()=>{return $ak()})], [`ellipse`, (()=>{return $al()})], [`fill`, (()=>{return $am()})], [`fillPath`, (()=>{return $an()})], [`fillRect`, (()=>{return $ao()})], [`fillText`, (()=>{return $ap()})], [`isPointInPath`, (()=>{return $aq()})], [`isPointInStroke`, (()=>{return $ar()})], [`lineTo`, (()=>{return $as()})], [`measureText`, (()=>{return $at()})], [`moveTo`, (()=>{return $au()})], [`putImageData`, (()=>{return $x()})], [`quadraticCurveTo`, (()=>{return $av()})], [`rect`, (()=>{return $aw()})], [`reset`, (()=>{return $ax()})], [`resetTransform`, (()=>{return $ay()})], [`restore`, (()=>{return $az()})], [`rotate`, (()=>{return $ba()})], [`roundRect`, (()=>{return $bb()})], [`save`, (()=>{return $bc()})], [`scale`, (()=>{return $bd()})], [`setLineDash`, (()=>{return $be()})], [`setTransform`, (()=>{return $bf()})], [`stroke`, (()=>{return $bg()})], [`strokeRect`, (()=>{return $bh()})], [`strokeText`, (()=>{return $bi()})], [`transform`, (()=>{return $bj()})], [`translate`, (()=>{return $bk()})]])})})}get rn(){return ED.rs;}componentWillUnmount(){ED._unsubscribe(this)}componentDidMount(){ED._subscribe(this)}re(rf){return (EE.rg(rf) ? `active` : ``)}render(){return _h("article", {}, [_h("div", {className:`page`}, [_h("div", {className:`guide guide--wide`}, [_h("div", {className:`toc`}, [_h("div", {className:`toc__wrapper`}, [_h("div", {className:`page__package`}, [_h("strong", {}, [`mint-canvas`]),_h("p", {})]),_h("div", {className:`toc__section`}, [`Config Functions`]),_h("div", {"id":`sidebar`,className:`toc__pages`}, [_h("div", {className:`sidebar`}, [_h("div", {}, [(()=>{const _0 = [];const _1 = EF.ri(this.rj);let _i = -1;for(let rh of _1){_i++;_0.push(_h("div", {"data-id":`version-item`}, [_h("a", {"href":`/${rh[0]}`,className:this.re(rh[0])}, [rh[0]])]))};return _0})()])])]),_h("div", {className:`toc__section`}, [`Draw Functions`]),_h("div", {"id":`sidebar`,className:`toc__pages`}, [_h("div", {className:`sidebar`}, [_h("div", {}, [(()=>{const _0 = [];const _1 = EF.ri(this.rl);let _i = -1;for(let rk of _1){_i++;_0.push(_h("div", {"data-id":`version-item`}, [_h("a", {"href":`/${rk[0]}`,className:this.re(rk[0])}, [rk[0]])]))};return _0})()])])])])]),_h("div", {className:`guide-content`}, [_match(EF.rm(this.rj, this.rn),[[_PE(AN,[_PV]),((ro)=>{return ro()})],[null,(()=>{return EG.rp()})]]),_match(EF.rm(this.rl, this.rn),[[_PE(AN,[_PV]),((rq)=>{return rq()})],[null,(()=>{return EG.rp()})]])])])])])}};;const $a=_m(() => _h(DV, {}));const $b=_m(() => _h(BI, {}));const $c=_m(() => _h(BS, {}));const $d=_m(() => _h(BF, {}));const $e=_m(() => _h(BL, {}));const $f=_m(() => _h(AT, {}));const $g=_m(() => _h(DZ, {}));const $h=_m(() => _h(DR, {}));const $i=_m(() => _h(CG, {}));const $j=_m(() => _h(DJ, {}));const $k=_m(() => _h(BG, {}));const $l=_m(() => _h(DM, {}));const $m=_m(() => _h(DE, {}));const $n=_m(() => _h(DO, {}));const $o=_m(() => _h(DA, {}));const $p=_m(() => _h(BA, {}));const $q=_m(() => _h(CR, {}));const $r=_m(() => _h(AQ, {}));const $s=_m(() => _h(BK, {}));const $t=_m(() => _h(DS, {}));const $u=_m(() => _h(BB, {}));const $v=_m(() => _h(BU, {}));const $w=_m(() => _h(CM, {}));const $x=_m(() => _h(DP, {}));const $y=_m(() => _h(AS, {}));const $z=_m(() => _h(DH, {}));const $aa=_m(() => _h(DK, {}));const $ab=_m(() => _h(EB, {}));const $ac=_m(() => _h(CQ, {}));const $ad=_m(() => _h(BO, {}));const $ae=_m(() => _h(BJ, {}));const $af=_m(() => _h(CC, {}));const $ag=_m(() => _h(AV, {}));const $ah=_m(() => _h(DX, {}));const $ai=_m(() => _h(CJ, {}));const $aj=_m(() => _h(DC, {}));const $ak=_m(() => _h(CP, {}));const $al=_m(() => _h(AY, {}));const $am=_m(() => _h(CF, {}));const $an=_m(() => _h(CB, {}));const $ao=_m(() => _h(AZ, {}));const $ap=_m(() => _h(DL, {}));const $aq=_m(() => _h(CU, {}));const $ar=_m(() => _h(CS, {}));const $as=_m(() => _h(AR, {}));const $at=_m(() => _h(CX, {}));const $au=_m(() => _h(EC, {}));const $av=_m(() => _h(CO, {}));const $aw=_m(() => _h(DY, {}));const $ax=_m(() => _h(BT, {}));const $ay=_m(() => _h(CZ, {}));const $az=_m(() => _h(CW, {}));const $ba=_m(() => _h(DQ, {}));const $bb=_m(() => _h(DT, {}));const $bc=_m(() => _h(DU, {}));const $bd=_m(() => _h(DG, {}));const $be=_m(() => _h(AU, {}));const $bf=_m(() => _h(AX, {}));const $bg=_m(() => _h(DN, {}));const $bh=_m(() => _h(AJ, {}));const $bi=_m(() => _h(DD, {}));const $bj=_m(() => _h(CN, {}));const $bk=_m(() => _h(DI, {}));const ED=new(class extends _S{constructor(){super();this.state={rs:`setDirection`}}get rs(){return this.state.rs;}adv(adw){return new Promise(((_resolve)=>{this.setState(_u(this.state, new Record({rs:adw})), _resolve)
 }))}});_insertStyles(`
 .a {
   box-shadow: 0 0 0.625em var(--shadow-color);
@@ -2411,15 +2422,15 @@ let onMouseMove =
 }
 `)
 
-  const Nothing = AN
-  const Just = AM
-  const Err = FG
-  const Ok = FH
+  const Nothing = AO
+  const Just = AN
+  const Err = FH
+  const Ok = FI
 
-  _enums.nothing = AN
-  _enums.just = AM
-  _enums.err = FG
-  _enums.ok = FH
+  _enums.nothing = AO
+  _enums.just = AN
+  _enums.err = FH
+  _enums.ok = FI
 
   
   

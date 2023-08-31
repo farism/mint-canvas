@@ -9,7 +9,7 @@ A simple example looks like this
 ```mint
 component Main {
   fun componentDidMount {
-    case canvas {
+    case Dom.Canvas.fromDomElement(canvas) {
       Maybe::Just(el) =>
         {
           el
@@ -30,7 +30,7 @@ component Main {
 }
 ```
 
-# [Demo Website]()
+# [Demo Website](https://mint-canvas.netlify.app/)
 
 Most of the examples on MDN's [CanvasRenderingContext2D](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/) site have been ported to `mint-canvas` and can be viewed on the demo website.
 
@@ -42,7 +42,7 @@ Or directly view the example source files.
 
 ## Chaining
 
-Most `Canvas` APIs return the passed in canvas `Dom.Element`. This allows you to chain calls with `|>`.
+Most `Canvas` APIs return the passed in canvas `Dom.Canvas`. This allows you to chain calls with `|>`.
 
 ```mint
 canvasEl
@@ -71,7 +71,7 @@ canvasEl
 
 ## Context2d
 
-All APIs take `Dom.Element` as the first paramter. `getContext('2d)` is called under the hood.
+All APIs take `Dom.Canvas` as the first paramter. `getContext('2d')` is called under the hood.
 
 ```mint
 /*
@@ -80,12 +80,12 @@ Adds a rectangle to the current path.
 Like other methods that modify the current path, this method does not directly render anything. To draw the rectangle onto a canvas, you can use the `fill()` or `stroke()` methods.
 */
 fun rect (
-  el : Dom.Element,
+  el : Dom.Canvas,
   x : Number,
   y : Number,
   width : number,
   height : number
-) : Dom.Element {
+) : Dom.Canvas {
   `#{el}.getContext('2d').rect(#{x}, #{y}, #{width}, #{height})`
   el
 }
