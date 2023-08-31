@@ -1,5 +1,5 @@
 store App {
-  state method = "arc"
+  state method = "setDirection"
 
   fun setMethod (m : String) {
     next { method: m }
