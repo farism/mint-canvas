@@ -19,11 +19,12 @@ suite "Canvas" {
     |> Test.Html.start
     |> CanvasTest.canvas(
       (c : Dom.Element) {
-        Canvas.measureText(c, "Hello world")
-        |> TextMetrics.width
-        |> Debug.log
+        let width =
+          Canvas.measureText(c, "Hello world")
+          |> TextMetrics.width
+          |> Math.floor
 
-        true
+        width == 49
       })
   }
 

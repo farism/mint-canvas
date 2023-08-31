@@ -1,13 +1,13 @@
 # Mint Canvas
 
-Mint-lang wrapper for browser Canvas APIs
+[Mint](https://mint-lang.com/) wrapper for browser Canvas APIs
 
 # Simple Example
 
-A very simple example may look like this
+A simple example looks like this
 
 ```mint
-component Rect {
+component Main {
   fun componentDidMount {
     case canvas {
       Maybe::Just(el) =>
@@ -30,11 +30,13 @@ component Rect {
 }
 ```
 
-# [Demo Website](https://farism.github.io/mint-canvas)
+# [Demo Website]()
 
-Most of the examples on [MDN CanvasRenderingContext2D](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/) site have been ported to `mint-canvas` and can be viewed on the demo website.
+Most of the examples on MDN's [CanvasRenderingContext2D](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/) site have been ported to `mint-canvas` and can be viewed on the demo website.
 
 # [Demo Examples folder](/example/source/examples/)
+
+Or directly view the example source files.
 
 # Patterns
 
