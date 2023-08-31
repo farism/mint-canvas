@@ -1,0 +1,12 @@
+{
+  "name": "mint-canvas-example",
+  "application": {
+    "title": "mint-canvas-example",
+    "head": "assets/head.html"
+  },
+  "source-directories": ["source", "../source"],
+  "external": {
+    "javascripts": ["assets/hljs.js", "assets/hljs-mint.js"],
+    "stylesheets": ["assets/style.css", "assets/docs.css"]
+  }
+}

@@ -1,0 +1,45 @@
+component SetGlobalAlpha {
+  fun render : Html {
+    let {result, code} =
+      @format {
+        let draw =
+          () {
+            case canvas {
+              Maybe::Just(el) =>
+                {
+                  el
+                  |> Canvas.setGlobalAlpha(0.5)
+
+                  el
+                  |> Canvas.setFillStyle(CanvasFillStyle::String("blue"))
+                  |> Canvas.fillRect(10, 10, 100, 100)
+
+                  el
+                  |> Canvas.setFillStyle(CanvasFillStyle::String("red"))
+                  |> Canvas.fillRect(50, 50, 100, 100)
+
+                  ""
+                }
+
+              Maybe::Nothing =>
+                ""
+            }
+          }
+
+        {
+          await Timer.timeout(0)
+          draw()
+        }
+
+        <canvas as canvas/>
+      }
+
+    <>
+      <div class="demo">
+        <{ result }>
+      </div>
+
+      <Hljs code={code}/>
+    </>
+  }
+}
