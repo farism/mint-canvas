@@ -1,6 +1,6 @@
 routes {
   / {
-    Window.navigate("/setDirection")
+    ""
   }
 
   /:method (method : String) {
