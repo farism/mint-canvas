@@ -1,8 +1,5 @@
 {
-  "name": "mint-canvas",
-  "application": {
-    "title": "mint-canvas"
-  },
+  "name": "canvas",
   "source-directories": ["source"],
   "test-directories": ["tests"]
 }
